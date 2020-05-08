@@ -1,0 +1,686 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 18:54:40
+
+
+1 Init
+TestTime:48.8686ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:154.8882ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:31.914ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8390004 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+#
+WIFI initialized
+
+init_thread(67), Available heap 0xc540]  contain =[WIFI initialized]
+TestTime:1174.2162ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:30.9554ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1046.2119ms
+                                                                        PASS
+10 取MAC号方式自动判断
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+BLE已写过MAC:601D9D0F4443
+自动计算WIFI MAC号:601D9D0F4442
+TestTime:3217.6189ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+TestTime:899.7955ms
+                                                                        PASS
+18 Wifi 上电
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=
+ERROR
+
+ERROR
+wifi powe
+AT response=[
+ERROR
+
+ERROR
+wifi powe] contain error=[ERROR]
+重试第1次
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:
+AT response=[gps_cn_num:0,gps_cn:0,wifi_mac:] not contain error=[OK]
+重试第2次
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=wifi power on  
+gps power on 
+
+OK
+wifi power on  
+gps power on 
+
+OK
+
+TestTime:6873.1682ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:46.8752ms
+                                                                        PASS
+26 打开WIFI串口
+TestTime:1037.1234ms
+                                                                        PASS
+27 读取WIFI MAP文件并更新MAC至内存
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+1616 1616 1616 2020 2020 0020 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2A20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 33DC 9C0D 64A6
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+更新MAP文件中的MAC成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+1616 1616 1616 2020 2020 0020 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2A20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 601D 9D0F 4442
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+TestTime:123.6694ms
+                                                                        PASS
+28 写WIFI MAP
+写入第1行MAP 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第2行MAP 
+AT response:
+[iwpriv config_set wmap,10,FFFFFFFFFFFFFFFFFFFF0200FFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第3行MAP 
+AT response:
+[iwpriv config_set wmap,20,161616161616202020200020FFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第4行MAP 
+AT response:
+[iwpriv config_set wmap,30,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第5行MAP 
+AT response:
+[iwpriv config_set wmap,40,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第6行MAP 
+AT response:
+[iwpriv config_set wmap,50,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第7行MAP 
+AT response:
+[iwpriv config_set wmap,60,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第8行MAP 
+AT response:
+[iwpriv config_set wmap,70,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第9行MAP 
+AT response:
+[iwpriv config_set wmap,80,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第10行MAP 
+AT response:
+[iwpriv config_set wmap,90,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第11行MAP 
+AT response:
+[iwpriv config_set wmap,a0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第12行MAP 
+AT response:
+[iwpriv config_set wmap,b0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第13行MAP 
+AT response:
+[iwpriv config_set wmap,c0,FFFFFFFFFFFFFFFF2A2005200000FF00
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第14行MAP 
+AT response:
+[iwpriv config_set wmap,d0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第15行MAP 
+AT response:
+[iwpriv config_set wmap,e0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第16行MAP 
+AT response:
+[iwpriv config_set wmap,f0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第17行MAP 
+AT response:
+[iwpriv config_set wmap,100,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第18行MAP 
+AT response:
+[iwpriv config_set wmap,110,FFFFFFFFFFFFFFFFFFFF601D9D0F4442
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第19行MAP 
+AT response:
+[iwpriv config_set wmap,120,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第20行MAP 
+AT response:
+[iwpriv config_set wmap,130,01FF1000FF00FF000010FFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第21行MAP 
+AT response:
+[iwpriv config_set wmap,140,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第22行MAP 
+AT response:
+[iwpriv config_set wmap,150,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第23行MAP 
+AT response:
+[iwpriv config_set wmap,160,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第24行MAP 
+AT response:
+[iwpriv config_set wmap,170,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第25行MAP 
+AT response:
+[iwpriv config_set wmap,180,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第26行MAP 
+AT response:
+[iwpriv config_set wmap,190,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第27行MAP 
+AT response:
+[iwpriv config_set wmap,1a0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第28行MAP 
+AT response:
+[iwpriv config_set wmap,1b0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第29行MAP 
+AT response:
+[iwpriv config_set wmap,1c0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第30行MAP 
+AT response:
+[iwpriv config_set wmap,1d0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第31行MAP 
+AT response:
+[iwpriv config_set wmap,1e0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+写入第32行MAP 
+AT response:
+[iwpriv config_set wmap,1f0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+TestTime:2922.7655ms
+                                                                        PASS
+29 读产品内部WIFI Map
+AT Commond=iwpriv config_get rmap,00,512
+AT Response=iwpriv config_get rmap,00,512
+
+Private Message: 0x81 0x95 0x16 0xC2 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x02 0x00 0xFF 0xFF 0xFF 0xFF 0x16 0x16 0x16 0x16 0x16 0x16 0x20 0x20 0x20 0x20 0x00 0x20 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x2A 0x20 0x05 0x20 0x00 0x00 0xFF 0x00 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x60 0x1D 0x9D 0x0F 0x44 0x42 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x01 0xFF 0x10 0x00 0xFF 0x00 0xFF 0x00 0x00 0x10 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 
+[MEM] After do cmd, available heap 55704
+
+
+# 
+TestTime:921.3558ms
+                                                                        PASS
+30 校验WIFI Map
+WIFI MAP核验：
+读出模组WIFI MAP：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+1616 1616 1616 2020 2020 0020 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2A20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 601D 9D0F 4442
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+文件 WIFI MAP：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+1616 1616 1616 2020 2020 0020 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2A20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 601D 9D0F 4442
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+一致 
+
+TestTime:65.826ms
+                                                                        PASS
+31 WIFI进入用户模式
+AT Commond=ATSC
+AT Response=ATSC
+[ATSC]: _AT_SYSTEM_Switch to OTA2 app!!
+BitIdx: 0 
+currrent is OTA1, select OTA2 
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8390004 
+boot reason: 5 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+
+WIFI initialized
+Mac:00:e0:4c:b7:23:a6
+mac_i2c_send:00e04cb723a6
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+wifi_data:d8471019fd22:-70
+wifi_data:94d9b3ebd540:-74
+wifi_data:d8471019fbba:-77
+wifi_data:a86b7cc2cabc:-78
+wifi_data:d8471019f63c:-82
+wifi_data:d8471019fd4e:-83
+
+TestTime:4105.7397ms
+                                                                        PASS
+32 检查WIFI版本号
+AT Commond=ATS?
+AT Response=ATS?
+[ATS?]: _AT_SYSTEM_HELP_
+[ATS?]: COMPILE TIME: 2020/02/29-14:06:20
+[ATS?]: SW VERSION: v.3.4.2020/02/29
+
+[MEM] After do cmd, available heap 41128
+
+
+# 
+TestTime:920.2198ms
+                                                                        PASS
+33 关闭WIFI串口
+TestTime:30.9173ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4443 PASS 
+
+TestTime:58.8333ms
+                                                                        PASS
+59 Deinit
+TestTime:42.8856ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

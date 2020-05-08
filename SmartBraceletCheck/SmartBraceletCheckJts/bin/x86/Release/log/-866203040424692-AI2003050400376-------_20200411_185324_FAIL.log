@@ -1,0 +1,100 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 18:53:24
+
+
+1 Init
+TestTime:58.8429ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:153.6418ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:31.9151ms
+                                                                        PASS
+5 发现设备
+超时：System.Func`1[System.Boolean]
+TestTime:10566.2521ms
+                                                                        FAIL
+6 关闭WIFI串口
+TestTime:31.8799ms
+                                                                        PASS
+7 打开BT串口
+TestTime:41.9315ms
+                                                                        SKIP
+10 取MAC号方式自动判断
+TestTime:37.0431ms
+                                                                        SKIP
+13 读BT MAC
+TestTime:24.9395ms
+                                                                        SKIP
+18 Wifi 上电
+TestTime:37.8987ms
+                                                                        SKIP
+20 关闭BT 串口
+给定关键字不在字典中。
+TestTime:297.7923ms
+                                                                        FAIL
+26 打开WIFI串口
+TestTime:33.9091ms
+                                                                        SKIP
+27 读取WIFI MAP文件并更新MAC至内存
+TestTime:29.5139ms
+                                                                        SKIP
+28 写WIFI MAP
+TestTime:28.9223ms
+                                                                        SKIP
+29 读产品内部WIFI Map
+TestTime:30.9174ms
+                                                                        SKIP
+30 校验WIFI Map
+TestTime:21.9414ms
+                                                                        SKIP
+31 WIFI进入用户模式
+TestTime:29.9195ms
+                                                                        SKIP
+32 检查WIFI版本号
+TestTime:28.9222ms
+                                                                        SKIP
+33 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:301.0935ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:92.8283ms
+                                                                        PASS
+59 Deinit
+TestTime:29.9207ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

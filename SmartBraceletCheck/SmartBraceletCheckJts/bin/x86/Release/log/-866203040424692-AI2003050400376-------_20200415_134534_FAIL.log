@@ -1,0 +1,50 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 13:45:34
+
+
+1 Init
+TestTime:31.9158ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:109.706ms
+                                                                        PASS
+10 取MAC号方式自动判断
+sn格式异常
+重试第1次
+sn格式异常
+重试第2次
+sn格式异常
+重试第3次
+sn格式异常
+TestTime:36926.804ms
+                                                                        FAIL
+59 Deinit
+TestTime:15.9135ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

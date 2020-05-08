@@ -1,0 +1,116 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:56:05
+
+
+1 Init
+TestTime:18.9798ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1018.8854ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+
+init_thread(67), Available heap 0xca98
+#]  contain =[WIFI initialized]
+TestTime:3464.6123ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:120.3539ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1026.1273ms
+                                                                        PASS
+11 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F436B
+OK
+TestTime:926.6357ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6860.3346ms
+                                                                        PASS
+33 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4296.3626ms
+                                                                        PASS
+34 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424759
+
+OK
+
+TestTime:870.9256ms
+                                                                        PASS
+36 打印标签IMEI设置为NB IMEI
+打印标签的IMEI 设置为NB IMEI：
+866203040424759 PASS 
+
+TestTime:23.9359ms
+                                                                        PASS
+37 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113107333673
+
+OK
+
+TestTime:848.0984ms
+                                                                        PASS
+38 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861119256016571288
+
+OK
+
+TestTime:871.379ms
+                                                                        PASS
+51 关闭BT 串口
+TestTime:126.6703ms
+                                                                        PASS
+52 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F436B PASS 
+
+TestTime:19.9458ms
+                                                                        PASS
+53 标签打印
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=D:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+content:866203040424759,,89861119256016571288,460113107333673,601D9D0F436B
+TestTime:123.7006ms
+                                                                        PASS
+54 Deinit
+TestTime:14.9617ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

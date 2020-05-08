@@ -1,0 +1,89 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:55:46
+
+
+1 Init
+TestTime:15.9573ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1052.8781ms
+                                                                        PASS
+5 发现设备
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\TaskBase\Utils\TimeUtils.cs:行号 71
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 29
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 269
+TestTime:11627.0685ms
+                                                                        FAIL
+6 关闭WIFI串口
+TestTime:133.4696ms
+                                                                        PASS
+7 打开BT串口
+TestTime:4.9869ms
+                                                                        SKIP
+11 读BT MAC
+TestTime:8.0048ms
+                                                                        SKIP
+13 设置BT 进入工厂模式
+TestTime:24.9326ms
+                                                                        SKIP
+33 设置BT CFUN为1
+TestTime:6.9814ms
+                                                                        SKIP
+34 获取NB IMEI
+TestTime:19.9453ms
+                                                                        SKIP
+36 打印标签IMEI设置为NB IMEI
+TestTime:18.9457ms
+                                                                        SKIP
+37 获取NB IMSI
+TestTime:10.9699ms
+                                                                        SKIP
+38 获取NB ICCID
+TestTime:11.9683ms
+                                                                        SKIP
+51 关闭BT 串口
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 275
+TestTime:246.9013ms
+                                                                        FAIL
+52 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:37.8987ms
+                                                                        PASS
+53 标签打印
+TestTime:5.9835ms
+                                                                        SKIP
+54 Deinit
+TestTime:16.9546ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

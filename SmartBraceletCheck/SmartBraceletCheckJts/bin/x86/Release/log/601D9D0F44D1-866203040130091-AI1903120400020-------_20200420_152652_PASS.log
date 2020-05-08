@@ -1,0 +1,177 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:26:52
+
+
+1 Init
+TestTime:47.8731ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:81.7823ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1046.6744ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:32
+mac_i2c_send:00e04cb72332
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:1241.5ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:130.2123ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1026.7708ms
+                                                                        PASS
+8 BT MAC预读
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F44D1
+OK
+BLE已写过MAC:601D9D0F44D1
+TestTime:2601.5523ms
+                                                                        PASS
+9 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:12558.5875ms
+                                                                        PASS
+10 BLE固件版本号检查
+AT Commond=AT+GETINFO
+AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:cb:2d:a7:d4:02:1d
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+TestTime:1867.4894ms
+                                                                        PASS
+11 MES Fetch Sn
+ble mac:601D9D0F44D1不为空,不从iMes取号,自动减一计算出WIFI MAC:601D9D0F44D0
+TestTime:2383.0467ms
+                                                                        PASS
+12 写BT MAC
+AT Commond=AT+SETBLEMAC=601D9D0F44D1
+AT Response=
+OKBLE MAC:601D9D0F44D1
+OKSaved mac,then reboot system!
+TestTime:3887.0705ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F44D1
+OK
+TestTime:2066.5554ms
+                                                                        PASS
+15 校验BT MAC
+BT MAC核验：读出BT MAC：601D9D0F44D1，与预写入MAC：601D9D0F44D1 一致，PASS 
+
+TestTime:38.8949ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:122.7104ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F44D1 PASS 
+
+TestTime:31.9135ms
+                                                                        PASS
+59 Deinit
+TestTime:34.9087ms
+                                                                        PASS
+
+第13项:
+读BT MAC
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

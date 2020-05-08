@@ -1,0 +1,361 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:38:58
+
+
+1 Init
+TestTime:21.9409ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:114.6942ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1057.0896ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[MG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1?<RTL8195A>ROM:[V0?<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+
+WIFI initialized
+Mac:00:e0:4c:b7:23:ee
+mac_i2c_send:00e04cb723ee
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:2392.6206ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:133.9869ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1021.7816ms
+                                                                        PASS
+8 BT MAC预读
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4479
+OK
+BLE已写过MAC:601D9D0F4479
+TestTime:2827.9221ms
+                                                                        PASS
+9 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:12645.5375ms
+                                                                        PASS
+10 BLE固件版本号检查
+AT Commond=AT+GETINFO
+AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+AT response=[
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+重试第1次
+AT Commond=AT+GETINFO
+AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+重试第2次
+AT Commond=AT+GETINFO
+AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+重试第3次
+AT Commond=AT+GETINFO
+AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+TestTime:8448.5856ms
+                                                                        FAIL
+11 MES Fetch Sn
+TestTime:27.9262ms
+                                                                        SKIP
+12 写BT MAC
+TestTime:12.9644ms
+                                                                        SKIP
+13 读BT MAC
+TestTime:15.9562ms
+                                                                        SKIP
+15 校验BT MAC
+TestTime:43.8846ms
+                                                                        SKIP
+20 关闭BT 串口
+TestTime:121.6739ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:34.9064ms
+                                                                        PASS
+59 Deinit
+TestTime:15.9221ms
+                                                                        PASS
+
+第10项:
+BLE固件版本号检查
+AILinkFactoryAuto.Task.BaseException: AT response=[
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+第10项:
+BLE固件版本号检查
+AILinkFactoryAuto.Task.BaseException: AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

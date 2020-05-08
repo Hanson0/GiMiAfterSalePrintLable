@@ -1,0 +1,1193 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:37:13
+
+
+
+1 Init
+
+TestTime:7.4411ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:61.7579ms
+                                                                        PASS
+
+4 Open Phone Application
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:35326.2893ms
+                                                                        FAIL
+
+5 Write BT MAC
+
+TestTime:6.4797ms
+                                                                        SKIP
+
+6 Close Phone Application
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:3619.8329ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:5.9836ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:39:58
+
+
+
+1 Init
+
+TestTime:11.7316ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:28.8916ms
+                                                                        PASS
+
+4 Open Phone Application
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:43:30
+
+
+
+1 Init
+
+TestTime:7.9781ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:64.5005ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:53828.0438ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLE MAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLE MAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETBLE MAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETBLE MAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:83198.6558ms
+                                                                        FAIL
+
+6 Close Phone Application
+
+TestTime:616.0419ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:6.7504ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:46:23
+
+
+
+1 Init
+
+TestTime:14.0862ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:36.8367ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:3034.7016ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+AILinkFactoryAuto.Task.BaseException: AT response=[?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+AILinkFactoryAuto.Task.BaseException: AT response=[BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+AILinkFactoryAuto.Task.BaseException: AT response=[BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:40101.3697ms
+                                                                        FAIL
+
+6 Close Phone Application
+
+TestTime:626.9355ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:6.6616ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:48:36
+
+
+
+1 Init
+
+TestTime:12.0036ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:33.8989ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:2514.6164ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:3474.8221ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:624.1969ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:5.9847ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:49:24
+
+
+
+1 Init
+
+TestTime:11.3311ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:32.7424ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:10687.4431ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:16898.9359ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:610.8804ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:5.1439ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 17:50:35
+
+
+
+1 Init
+
+TestTime:12.9599ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:33.8915ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1021.2434ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:6964.7084ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:612.4914ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:6.8306ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:03:41
+
+
+
+1 Init
+
+TestTime:16.1917ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.7427ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1030.3832ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:6045.5588ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:618.5967ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:10.1291ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:04:39
+
+
+
+1 Init
+
+TestTime:9.7092ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:62.5362ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1028.2783ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:10793.1351ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:621.7432ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:9.8361ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:06:08
+
+
+
+1 Init
+
+TestTime:11.8442ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:30.8468ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1022.4022ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56
+
+AILinkFactoryAuto.Task.BaseException: AT response=[?LE MAC->12:34:56] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=:78:90:12Saved mac,then reboot system!
+
+TestTime:7805.724ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:619.2823ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:5.9728ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:06:36
+
+
+
+1 Init
+
+TestTime:10.2166ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:29.3939ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1018.6208ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:631.1054ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:611.5169ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:9.1381ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:07:08
+
+
+
+1 Init
+
+TestTime:13.6955ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:66.0792ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:7377.0496ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:6370.2633ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:619.0262ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:7.9787ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:08:38
+
+
+
+1 Init
+
+TestTime:10.4306ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:31.9164ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1017.4245ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:637.8309ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:618.1126ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:6.2617ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:08:50
+
+
+
+1 Init
+
+TestTime:9.01ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:32.3049ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1018.6521ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:7227.8273ms
+                                                                        FAIL
+
+6 Close Phone Application
+
+TestTime:621.9725ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:8.5595ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-02, Test Time: 18:09:17
+
+
+
+1 Init
+
+TestTime:11.9621ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:30.9708ms
+                                                                        PASS
+
+4 Open Phone Application
+
+TestTime:1022.0166ms
+                                                                        PASS
+
+5 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:633.9971ms
+                                                                        PASS
+
+6 Close Phone Application
+
+TestTime:618.6382ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:12.6555ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

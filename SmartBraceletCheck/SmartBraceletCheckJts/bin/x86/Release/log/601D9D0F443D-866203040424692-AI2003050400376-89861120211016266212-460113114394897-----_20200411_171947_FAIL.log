@@ -1,0 +1,264 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 17:19:47
+
+
+1 Init
+TestTime:52.9151ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:124.5193ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1018.6652ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+#
+WIFI initialized
+Mac:00:e0:4c:b7:23:28
+mac_i2c_send:00e04cb72328
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:2354.0712ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:16.57ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1033.4592ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F443D
+OK
+TestTime:2007.6669ms
+                                                                        PASS
+19 BT 开始广播
+AT Commond=AT+OPENBLEADV
+AT Response=
+OK
+TestTime:665.1965ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:25.2131ms
+                                                                        PASS
+21 打开蓝牙扫描工具的串口
+TestTime:1029.3364ms
+                                                                        PASS
+22 开始扫描BT广播包并获取BT RSSI
+AT Commond=AT+INQ
+AT Response=OK
++INQS
+0:601D9D0F443D:RSSI:-058:
+
+TestTime:7059.0938ms
+                                                                        PASS
+23 检查BT RSSI
+BT 信号强度检查：
+模块信号强度：-58，在设定范围：-90 ~ -10之间 PASS 
+
+TestTime:60.9569ms
+                                                                        PASS
+24 停止扫描
+AT Commond=AT+SINQ
+AT Response=+INQE
+
+TestTime:881.6202ms
+                                                                        PASS
+25 关闭BT扫描工具串口
+TestTime:26.7907ms
+                                                                        PASS
+34 打开BT串口
+TestTime:1034.998ms
+                                                                        PASS
+35 检查NB软件版本号
+AT Commond=AT+CGMR
+AT Response=
+ERROR
+
+ERROR
+SOTFWAREVER:AI_L
+AT response=[
+ERROR
+
+ERROR
+SOTFWAREVER:AI_L] contain error=[ERROR]
+重试第1次
+AT Commond=AT+CGMR
+AT Response=SOTFWAREVER:AI_LITEOS_NB15_B300SP5_V1.9_20200229SWBuildTime:202002291610FOTA VER:AI-Link@AI-NB15@1.0,V150R100C20B300SP5,V150R100C20B300SP5@5,8,3,1
+OK
+
+TestTime:4406.7741ms
+                                                                        PASS
+36 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4284.961ms
+                                                                        PASS
+37 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424692
+
+OK
+
+TestTime:865.8369ms
+                                                                        PASS
+38 检查NB IMEI内部与标签一致性
+NB IMEI检查：
+模块IMEI：866203040424692，与标签IMEI：866203040424692 一致 
+
+TestTime:58.5095ms
+                                                                        PASS
+40 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113114394897
+
+OK
+
+TestTime:886.7566ms
+                                                                        PASS
+41 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861120211016266212
+
+OK
+
+TestTime:875.1741ms
+                                                                        PASS
+42 NB 附网
+AT Commond=AT+CGATT=1
+AT Response=
+OK
+
+TestTime:2193.9384ms
+                                                                        PASS
+43 NB附网检查
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+重试第1次
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+重试第2次
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+重试第3次
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+TestTime:21762.9069ms
+                                                                        FAIL
+44 获取NB信号强度
+TestTime:28.9069ms
+                                                                        SKIP
+45 检查NB信号强度
+TestTime:27.8465ms
+                                                                        SKIP
+46 获取WIFI探针-信号强度值
+TestTime:28.2658ms
+                                                                        SKIP
+47 WIFI探针-信号强度检查
+TestTime:28.4751ms
+                                                                        SKIP
+48 计步器检查
+TestTime:25.2706ms
+                                                                        SKIP
+49 温度传感器值获取
+TestTime:28.1105ms
+                                                                        SKIP
+50 温度传感器检查
+TestTime:27.4807ms
+                                                                        SKIP
+51 射频获取
+TestTime:28.1207ms
+                                                                        SKIP
+52 射频检查
+TestTime:24.0242ms
+                                                                        SKIP
+56 关闭BT 串口
+TestTime:38.4414ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F443D PASS 
+
+TestTime:60.2982ms
+                                                                        PASS
+59 Deinit
+TestTime:27.5205ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

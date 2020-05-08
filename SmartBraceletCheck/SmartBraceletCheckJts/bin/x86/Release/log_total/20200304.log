@@ -1,0 +1,5288 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 13:53:44
+
+
+
+1 Init
+
+TestTime:11.9694ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:71.8079ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1029.7091ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:24,99
+
+OK
+]  contain =[OK]
+
+TestTime:1265.6834ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1984.1223ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:850.2424ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3878.0025ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:51.8605ms
+                                                                        PASS
+
+10 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+] not contain check info=[wifi power on]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:3424.6878ms
+                                                                        PASS
+
+11 Close BT Uart
+
+TestTime:121.675ms
+                                                                        PASS
+
+12 Open Wifi Uart
+
+TestTime:1052.1961ms
+                                                                        PASS
+
+13 Read MAP
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 13:55:29
+
+
+
+1 Init
+
+TestTime:13.9616ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:66.8222ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1031.5682ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:24,99
+
+OK
+]  contain =[OK]
+
+TestTime:1229.8594ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1761.7115ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:847.6625ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3367.8882ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:15.9886ms
+                                                                        PASS
+
+10 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:2785.8237ms
+                                                                        PASS
+
+11 Close BT Uart
+
+TestTime:124.7783ms
+                                                                        PASS
+
+12 Open Wifi Uart
+
+TestTime:1045.9048ms
+                                                                        PASS
+
+13 Read MAP
+
+读取MAP文件成功：8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:32277.7108ms
+                                                                        PASS
+
+14 Write WIFI MAC
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_set wmap,0x0a,123456789012
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv config_set wmap,0x0a,123456789012
+] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_set wmap,0x0a,123456789012
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv config_set wmap,0x0a,123456789012
+] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_set wmap,0x0a,123456789012
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv config_set wmap,0x0a,123456789012
+] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_set wmap,0x0a,123456789012
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv config_set wmap,0x0a,123456789012
+] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:34467.2775ms
+                                                                        FAIL
+
+15 Close WIFI Uart
+
+TestTime:4.9863ms
+                                                                        SKIP
+
+16 Deinit
+
+TestTime:10.9705ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:10:47
+
+
+
+1 Init
+
+TestTime:14.9578ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:71.8062ms
+                                                                        PASS
+
+4 Open BT Uart
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:11:35
+
+
+
+1 Init
+
+TestTime:9.9726ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:68.8691ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1031.3378ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:24,99
+
+OK
+]  contain =[OK]
+
+TestTime:1264.2106ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1870.4402ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:834.3232ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:4031.0488ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:48.8704ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+] not contain check info=[wifi power off]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:3235.7689ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+gps_cn_num:0,gps_cn:0,wifi_mac:
+
+TestTime:1031.0732ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:121.0503ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:7463.8454ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:7552.8622ms
+                                                                        PASS
+
+15 Write WIFI MAC
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwp?Z?c nfig_set wmap,0x0a,1234567?N??n
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwp?Z?c nfig_set wmap,0x0a,1234567?N??n] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=i priv config_set wmap,0x0a,1234?67????j
+
+AILinkFactoryAuto.Task.BaseException: AT response=[i priv config_set wmap,0x0a,1234?67????j] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwp?iv ?????5???woapl0xp?,123456789012
+
+unknown command 'iwp?Z?nfig_set wmap,0x0a,1234567?N??npriv config_set wmap,0x0a,1234?67????jiwp?iv ?????5???woapl0xp'
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwp?iv ?????5???woapl0xp?,123456789012
+
+unknown command 'iwp?Z?nfig_set wmap,0x0a,1234567?N??npriv config_set wmap,0x0a,1234?67????jiwp?iv ?????5???woapl0xp'
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain error=[unknown command]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 96
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_set wmap,0x0a,123456789012
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv config_set wmap,0x0a,123456789012
+] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:9965.4906ms
+                                                                        FAIL
+
+16 Close WIFI Uart
+
+TestTime:9.9732ms
+                                                                        SKIP
+
+17 Deinit
+
+TestTime:10.971ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:12:31
+
+
+
+1 Init
+
+TestTime:17.953ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:34.9099ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1024.5486ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:24,99
+
+OK
+]  contain =[OK]
+
+TestTime:1218.043ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1543.8892ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:836.7609ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:
+
+AILinkFactoryAuto.Task.BaseException: AT response=[gps_cn_num:0,gps_cn:0,wifi_mac:] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:10381.587ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:12.9661ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:15868.1442ms
+                                                                        FAIL
+
+11 Wifi PowerOn
+
+TestTime:9.972ms
+                                                                        SKIP
+
+12 Close BT Uart
+
+TestTime:113.7401ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:9.9726ms
+                                                                        SKIP
+
+14 Read MAP
+
+TestTime:9.9732ms
+                                                                        SKIP
+
+15 Write WIFI MAC
+
+TestTime:5.983ms
+                                                                        SKIP
+
+16 Close WIFI Uart
+
+TestTime:5.9841ms
+                                                                        SKIP
+
+17 Deinit
+
+TestTime:9.9748ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:13:15
+
+
+
+1 Init
+
+TestTime:10.971ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:34.9633ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1024.5629ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:24,99
+
+OK
+]  contain =[OK]
+
+TestTime:1220.9625ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1511.9552ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:833.8806ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3300.3924ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:16.9552ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+wifi power off
+gps power off
+
+OK
+
+
+TestTime:2988.0454ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1038.0489ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:118.0392ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1055.2277ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:643.2802ms
+                                                                        PASS
+
+15 Write WIFI MAC
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwp?Z?c nfig_set wmap,0x0a,123456789012
+
+unknown command 'iwp?Z?nfig_set wmap,0x0a,123456789012'
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwp?Z?c nfig_set wmap,0x0a,123456789012
+
+unknown command 'iwp?Z?nfig_set wmap,0x0a,123456789012'
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain error=[unknown command]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 96
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_wet woa?,0x0a,12?S??????j
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv config_wet woa?,0x0a,12?S??????j] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=i pr?? con?i?u???wmcp???a,123456789p12
+
+AILinkFactoryAuto.Task.BaseException: AT response=[i pr?? con?i?u???wmcp???a,123456789p12] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv con?io_set?W{p,0?0a?L?&w??????j
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv con?io_set?W{p,0?0a?L?&w??????j] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:10407.4987ms
+                                                                        FAIL
+
+16 Close WIFI Uart
+
+TestTime:9.9731ms
+                                                                        SKIP
+
+17 Deinit
+
+TestTime:11.004ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:19:13
+
+
+
+1 Init
+
+TestTime:14.9578ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:65.8244ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1032.4233ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:23,99
+
+OK
+]  contain =[OK]
+
+TestTime:1232.1645ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1696.5248ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:842.1562ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3569.5722ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:14.9601ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+wifi power off
+gps power off
+
+OK
+
+
+TestTime:2822.8016ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1033.0285ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:118.6838ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1054.2509ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:424.0682ms
+                                                                        PASS
+
+15 Write WIFI MAC
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv config_set wmap,0x0a,123456789012
+
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+TestTime:832.191ms
+                                                                        PASS
+
+16 Close WIFI Uart
+
+TestTime:9.9766ms
+                                                                        PASS
+
+17 Deinit
+
+TestTime:11.0034ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:21:38
+
+
+
+1 Init
+
+TestTime:15.9568ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789013
+
+TestTime:37.8999ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1015.4965ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1214.7713ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1623.9022ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789013
+
+AT Response=BLE MAC->12:34:56:78:90:13Saved mac,then reboot system!
+
+TestTime:831.2273ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:13
+
+TestTime:3069.3885ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:13，与预写入MAC：12:34:56:78:90:12 不一致 FAIL
+
+
+AILinkFactoryAuto.Task.BaseException: BT MAC核验：读出BT MAC：12:34:56:78:90:13，与预写入MAC：12:34:56:78:90:12 不一致 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckBtMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\CheckBtMacExecuter.cs:行号 31
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:849.7276ms
+                                                                        FAIL
+
+10 Wifi PowerOff
+
+TestTime:5.983ms
+                                                                        SKIP
+
+11 Wifi PowerOn
+
+TestTime:9.9737ms
+                                                                        SKIP
+
+12 Close BT Uart
+
+TestTime:118.0284ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:6.9802ms
+                                                                        SKIP
+
+14 Read MAP
+
+TestTime:8.9765ms
+                                                                        SKIP
+
+15 Write WIFI MAC
+
+TestTime:8.9765ms
+                                                                        SKIP
+
+16 Close WIFI Uart
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:1315.047ms
+                                                                        FAIL
+
+17 Deinit
+
+TestTime:6.9808ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 14:22:16
+
+
+
+1 Init
+
+TestTime:17.9518ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:41.8878ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1021.0193ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:2317.5273ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1483.1387ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:835.5571ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3514.0766ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:16.9535ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+wifi power off
+gps power off
+
+OK
+
+
+TestTime:2777.2102ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1033.6127ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:114.0508ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1048.7544ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:485.7163ms
+                                                                        PASS
+
+15 Write WIFI MAC
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwp?Z????nig_set wmap,0x0a,123456789012
+
+unknown command 'iwp?Z????nig_set wmap,0x0a,123456789012'
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwp?Z????nig_set wmap,0x0a,123456789012
+
+unknown command 'iwp?Z????nig_set wmap,0x0a,123456789012'
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain error=[unknown command]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 96
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv?config5???wmap,0x0a?L?&S??????j
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv?config5???wmap,0x0a?L?&S??????j] not contain error=[[MEM] After do cmd]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv ?????}????wmap,0x0a,123456789012
+
+unknown command 'iwpriv?config5???wmap,0x0a?L?&S??????jiwpriv ?????}????wmap,0x0a,123456789012'
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+AILinkFactoryAuto.Task.BaseException: AT response=[iwpriv ?????}????wmap,0x0a,123456789012
+
+unknown command 'iwpriv?config5???wmap,0x0a?L?&S??????jiwpriv ?????}????wmap,0x0a,123456789012'
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain error=[unknown command]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 96
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=iwpriv config_set wmap,0x0a,123456789012
+
+AT Response=iwpriv co?V????????0x0a,123456789012
+
+ioctl[SIOCDEVPRIVATE] error. ret=-95
+
+Private Message: co?V????????0x0a,123456789012
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+TestTime:5680.5271ms
+                                                                        PASS
+
+16 Close WIFI Uart
+
+TestTime:11.9683ms
+                                                                        PASS
+
+17 Deinit
+
+TestTime:6.9814ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:18:39
+
+
+
+1 Init
+
+TestTime:13.9628ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.8183ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:9758.5399ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:99,99
+
+OK
+]  contain =[OK]
+
+TestTime:1264.8454ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:2819.4969ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:1173.1719ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3990.3499ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:48.8737ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+] not contain check info=[wifi power off]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2915.4313ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+gps_cn_num:0,gps_cn:0,wifi_mac:
+
+TestTime:1041.4191ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:122.6797ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1048.4585ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:507.6413ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.WriteWifiMapExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\WriteWifiMapExecuter.cs:行号 38
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:11029.4315ms
+                                                                        FAIL
+
+16 Write WIFI MAC
+
+TestTime:6.0149ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+TestTime:10.971ms
+                                                                        PASS
+
+18 Deinit
+
+TestTime:12.9667ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:22:29
+
+
+
+1 Init
+
+TestTime:13.9628ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:65.8221ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1030.2017ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1236.7048ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1388.2856ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:847.6249ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3866.7527ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:15.9568ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK] not contain check info=[wifi power off]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+wifi power off
+gps power off
+
+OK
+
+
+TestTime:2903.4204ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1034.7306ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:113.3676ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1048.4761ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:509.6381ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:24:26
+
+
+
+1 Init
+
+TestTime:14.9618ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.8178ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1026.8328ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1231.8061ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1957.8016ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:841.7973ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:2597.0308ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:15.9573ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+] not contain check info=[wifi power off]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:7486.1641ms
+                                                                        FAIL
+
+11 Wifi PowerOn
+
+TestTime:5.9892ms
+                                                                        SKIP
+
+12 Close BT Uart
+
+TestTime:115.7449ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:10.9721ms
+                                                                        SKIP
+
+14 Read MAP
+
+TestTime:7.9803ms
+                                                                        SKIP
+
+15 Write Wifi Map
+
+TestTime:5.9836ms
+                                                                        SKIP
+
+16 Write WIFI MAC
+
+TestTime:8.9765ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:979.7516ms
+                                                                        FAIL
+
+18 Deinit
+
+TestTime:8.9754ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:24:51
+
+
+
+1 Init
+
+TestTime:12.965ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:32.9767ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1022.9496ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+
++CSQ:25,99
+
+OK
+
++CSQ:25,]  contain =[OK]
+
+TestTime:8934.9715ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:3156.5564ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=99
+
+OK
+
++CSQ:25,99
+
+OK
+
++CSQ:25,99
+
+OK
+
++CSQ:25,99
+
+OK
+
++CSQ:25,99
+
+OK
+
++CSQ:25,99
+
+OK
+?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:862.5952ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3003.1175ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:18.9491ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+wifi power off
+gps power off
+
+OK
+
+
+TestTime:2878.2129ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1034.2345ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:120.6772ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1052.2012ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:1609.519ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.WriteWifiMapExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\WriteWifiMapExecuter.cs:行号 38
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:23652.5947ms
+                                                                        FAIL
+
+16 Write WIFI MAC
+
+TestTime:6.982ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+TestTime:2043.5154ms
+                                                                        PASS
+
+18 Deinit
+
+TestTime:8.9754ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:25:53
+
+
+
+1 Init
+
+TestTime:17.9046ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:45.8792ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1017.3574ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1297.9962ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1391.5653ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:840.1378ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:2175.3366ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:29.9207ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+Apps A...... Verified
+
+REBOO
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+Apps A...... Verified
+
+REBOO] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=T_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[T_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+] not contain check info=[wifi power off]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:6735.0613ms
+                                                                        FAIL
+
+11 Wifi PowerOn
+
+TestTime:8.9742ms
+                                                                        SKIP
+
+12 Close BT Uart
+
+TestTime:108.7078ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:10.9705ms
+                                                                        SKIP
+
+14 Read MAP
+
+TestTime:6.9797ms
+                                                                        SKIP
+
+15 Write Wifi Map
+
+TestTime:5.9841ms
+                                                                        SKIP
+
+16 Write WIFI MAC
+
+TestTime:5.9835ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:1491.1083ms
+                                                                        FAIL
+
+18 Deinit
+
+TestTime:11.9677ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:26:17
+
+
+
+1 Init
+
+TestTime:14.9584ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:35.9054ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1022.0899ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:26,99
+
+OK
+
++CSQ:26,99
+
+OK
+]  contain =[OK]
+
+TestTime:8934.0191ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1891.5994ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=
++CSQ:26,99
+
+OK
+
++CSQ:26,99
+
+OK
+
++CSQ:26,99
+
+OK
+
++CSQ:26,99
+
+OK
+
++CSQ:26,99
+
+OK
+
++CSQ:26,99
+
+OK
+?LE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:844.7429ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:6121.1647ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:18.9491ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:
+
+AILinkFactoryAuto.Task.BaseException: AT response=[gps_cn_num:0,gps_cn:0,wifi_mac:] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:5288.6989ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:7905.0684ms
+                                                                        FAIL
+
+12 Close BT Uart
+
+TestTime:119.425ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:9.9738ms
+                                                                        SKIP
+
+14 Read MAP
+
+TestTime:5.9842ms
+                                                                        SKIP
+
+15 Write Wifi Map
+
+TestTime:6.0166ms
+                                                                        SKIP
+
+16 Write WIFI MAC
+
+TestTime:6.9808ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:1508.0344ms
+                                                                        FAIL
+
+18 Deinit
+
+TestTime:6.9797ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:26:58
+
+
+
+1 Init
+
+TestTime:15.9568ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:34.9052ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1017.7669ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1222.0866ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:2384.6226ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=[]BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:837.1329ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:2541.2472ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:26.9272ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+] not contain check info=[wifi power off]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 117
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:7698.7354ms
+                                                                        FAIL
+
+11 Wifi PowerOn
+
+TestTime:7.9809ms
+                                                                        SKIP
+
+12 Close BT Uart
+
+TestTime:125.0206ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:6.0086ms
+                                                                        SKIP
+
+14 Read MAP
+
+TestTime:9.9771ms
+                                                                        SKIP
+
+15 Write Wifi Map
+
+TestTime:9.9738ms
+                                                                        SKIP
+
+16 Write WIFI MAC
+
+TestTime:4.9875ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:1472.0909ms
+                                                                        FAIL
+
+18 Deinit
+
+TestTime:5.9882ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:28:19
+
+
+
+1 Init
+
+TestTime:14.9925ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.849ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1031.5193ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1224.1398ms
+                                                                        PASS
+
+6 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:1759.2953ms
+                                                                        PASS
+
+7 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=123456789012
+
+AT Response=BLE MAC->12:34:56:78:90:12Saved mac,then reboot system!
+
+TestTime:840.7505ms
+                                                                        PASS
+
+8 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[BLE MAC->]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC->12:34:56:78:90:12
+
+TestTime:3698.3776ms
+                                                                        PASS
+
+9 Check BT MAC
+
+BT MAC核验：读出BT MAC：12:34:56:78:90:12，与预写入MAC：12:34:56:78:90:12 一致，PASS 
+
+
+TestTime:17.9513ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=Verified
+
+REBOOT
+
+AILinkFactoryAuto.Task.BaseException: AT response=[Verified
+
+REBOOT] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 104
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+wifi power off
+gps power off
+
+OK
+
+??????????????
+
+
+TestTime:2926.4712ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1037.3385ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:114.693ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1048.0739ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:721.8625ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.WriteWifiMapExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\WriteWifiMapExecuter.cs:行号 38
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:22430.6189ms
+                                                                        FAIL
+
+16 Write WIFI MAC
+
+TestTime:5.9825ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+TestTime:7.9775ms
+                                                                        PASS
+
+18 Deinit
+
+TestTime:7.9918ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:30:27
+
+
+
+1 Init
+
+TestTime:17.9518ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:75.7953ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1027.6053ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1232.1173ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:1043.6838ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1034.2863ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:126.6801ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1049.2356ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:2029.7022ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.WriteWifiMapExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\WriteWifiMapExecuter.cs:行号 38
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:93600.9726ms
+                                                                        FAIL
+
+16 Write WIFI MAC
+
+TestTime:5.9841ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+TestTime:11.9683ms
+                                                                        PASS
+
+18 Deinit
+
+TestTime:7.9776ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:44:29
+
+
+
+1 Init
+
+TestTime:9.03ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:65.8785ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1031.3202ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1236.277ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2047.8657ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1042.05ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:130.6504ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1053.8328ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:27.9238ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+Write MapLine=1 AT response=[iwpriv config_set wmap,0x0a,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=2 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFF0200FFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=3 AT response=[iwpriv config_set wmap,0x0a,242424242424252525250225FFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=4 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=5 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=6 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=7 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=8 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=9 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=10 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=11 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+Write MapLine=12 AT response=[iwpriv config_set wmap,0x0a,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x6
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] contain OK=[[MEM] After do cmd] not contain ERROR=[unknown command]
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:47:14
+
+
+
+1 Init
+
+TestTime:14.9254ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.8684ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1029.3564ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1231.4807ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2037.616ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 16:47:40
+
+
+
+1 Init
+
+TestTime:11.9671ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:65.8266ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1031.4726ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1231.1377ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2053.8987ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1041.8628ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:123.0671ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1052.8491ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:44.8841ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 17:07:04
+
+
+
+1 Init
+
+TestTime:8.9765ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.8172ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1032.818ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1233.5878ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2046.5931ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1071.1361ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:120.6783ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\OpenPhoneExecutor.cs:行号 78
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:15950.4106ms
+                                                                        FAIL
+
+14 Read MAP
+
+TestTime:5.9847ms
+                                                                        SKIP
+
+15 Write Wifi Map
+
+TestTime:5.9847ms
+                                                                        SKIP
+
+16 Write WIFI MAC
+
+TestTime:6.9808ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:1247.7214ms
+                                                                        FAIL
+
+18 Deinit
+
+TestTime:6.9803ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 17:07:30
+
+
+
+1 Init
+
+TestTime:11.9688ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:31.9465ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1018.9258ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1220.1723ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2045.023ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1038.223ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:118.9364ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1013.2307ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:32.9113ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+System.Exception: 写入错误 行数=1 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.WriteWifiMapExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\WriteWifiMapExecuter.cs:行号 61
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:13338.4073ms
+                                                                        FAIL
+
+16 Write WIFI MAC
+
+TestTime:8.9742ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+TestTime:1504.4715ms
+                                                                        PASS
+
+18 Deinit
+
+TestTime:7.9781ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-04, Test Time: 17:09:47
+
+
+
+1 Init
+
+TestTime:9.9726ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:67.8183ms
+                                                                        PASS
+
+4 Open BT Uart
+
+TestTime:1030.3496ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[
++CSQ:25,99
+
+OK
+]  contain =[OK]
+
+TestTime:1232.6731ms
+                                                                        PASS
+
+10 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:2048.6462ms
+                                                                        PASS
+
+11 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:1036.2279ms
+                                                                        PASS
+
+12 Close BT Uart
+
+TestTime:118.6815ms
+                                                                        PASS
+
+13 Open Wifi Uart
+
+TestTime:1072.1322ms
+                                                                        PASS
+
+14 Read MAP
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2424 2424 2424 2525 2525 0225 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2520 051C 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF B7D4 1661 B19D
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:53.8549ms
+                                                                        PASS
+
+15 Write Wifi Map
+
+System.Exception: 写入错误 行数=1 
+ 串口返回:
+iwpriv config_set wmap,0x00,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x8
+LMAP_RTRY
+EFUSE PG No Enough Space!
+LMAP FAIL idx: 0x8
+LMAP_RTRY
+
+[MEM] After do cmd, available heap 55704
+
+
+# 
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.WriteWifiMapExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\WriteWifiMapExecuter.cs:行号 61
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:14438.4582ms
+                                                                        FAIL
+
+16 Write WIFI MAC
+
+TestTime:5.9864ms
+                                                                        SKIP
+
+17 Close WIFI Uart
+
+TestTime:8.977ms
+                                                                        PASS
+
+18 Deinit
+
+TestTime:10.971ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

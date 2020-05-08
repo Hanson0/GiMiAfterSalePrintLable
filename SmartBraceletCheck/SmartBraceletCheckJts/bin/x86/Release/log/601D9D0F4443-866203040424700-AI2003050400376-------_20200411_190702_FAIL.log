@@ -1,0 +1,188 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 19:07:02
+
+
+1 Init
+TestTime:44.8784ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424700
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:99.5582ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:25.2194ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+#
+LDO Mode, BD_Info: 0 
+
+WIFI initialized
+]  contain =[WIFI initialized]
+TestTime:1755.2287ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:19.0248ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1035.7443ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+TestTime:879.2211ms
+                                                                        PASS
+19 BT 开始广播
+AT Commond=AT+OPENBLEADV
+AT Response=
+OK
+TestTime:675.2732ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:29.9184ms
+                                                                        PASS
+21 打开蓝牙扫描工具的串口
+超时：System.Func`1[System.Boolean]
+TestTime:11325.7565ms
+                                                                        FAIL
+22 开始扫描BT广播包并获取BT RSSI
+TestTime:60.8892ms
+                                                                        SKIP
+23 检查BT RSSI
+TestTime:15.9584ms
+                                                                        SKIP
+24 停止扫描
+给定关键字不在字典中。
+TestTime:253.906ms
+                                                                        FAIL
+25 关闭BT扫描工具串口
+给定关键字不在字典中。
+TestTime:263.2147ms
+                                                                        FAIL
+34 打开BT串口
+TestTime:10.9716ms
+                                                                        SKIP
+35 检查NB软件版本号
+TestTime:17.2008ms
+                                                                        SKIP
+36 设置BT CFUN为1
+TestTime:20.9436ms
+                                                                        SKIP
+37 获取NB IMEI
+TestTime:8.9793ms
+                                                                        SKIP
+38 检查NB IMEI内部与标签一致性
+TestTime:24.9327ms
+                                                                        SKIP
+39 打印标签IMEI设置为NB IMEI
+TestTime:17.9518ms
+                                                                        SKIP
+40 获取NB IMSI
+TestTime:13.9617ms
+                                                                        SKIP
+41 获取NB ICCID
+TestTime:25.9299ms
+                                                                        SKIP
+42 NB 附网
+TestTime:24.9338ms
+                                                                        SKIP
+43 NB附网检查
+TestTime:11.9677ms
+                                                                        SKIP
+44 获取NB信号强度
+TestTime:25.9305ms
+                                                                        SKIP
+45 检查NB信号强度
+TestTime:15.9573ms
+                                                                        SKIP
+46 获取WIFI探针-信号强度值
+TestTime:10.9698ms
+                                                                        SKIP
+47 WIFI探针-信号强度检查
+TestTime:23.9821ms
+                                                                        SKIP
+48 计步器检查
+TestTime:24.9315ms
+                                                                        SKIP
+49 温度传感器值获取
+TestTime:11.9677ms
+                                                                        SKIP
+50 温度传感器检查
+TestTime:22.912ms
+                                                                        SKIP
+51 射频获取
+TestTime:12.9649ms
+                                                                        SKIP
+52 射频检查
+TestTime:29.9195ms
+                                                                        SKIP
+56 关闭BT 串口
+给定关键字不在字典中。
+TestTime:255.8857ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4443 PASS 
+
+TestTime:36.9026ms
+                                                                        PASS
+59 Deinit
+TestTime:34.9064ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

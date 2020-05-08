@@ -1,0 +1,120 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 11:16:03
+
+
+1 Init
+TestTime:29.3609ms
+                                                                        PASS
+2 Parse Label
+IMEI=66203040129788
+MEID=
+SN=AI1903120400020
+MAC=
+IMEI invalid
+TestTime:359.0056ms
+                                                                        FAIL
+4 打开WIFI串口
+TestTime:30.2893ms
+                                                                        SKIP
+5 发现设备
+TestTime:23.3022ms
+                                                                        SKIP
+6 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:290.3835ms
+                                                                        FAIL
+7 打开BT串口
+TestTime:14.3837ms
+                                                                        SKIP
+8 写BT固件
+TestTime:20.7792ms
+                                                                        SKIP
+9 BLE固件版本号检查
+TestTime:32.2406ms
+                                                                        SKIP
+10 读BT MAC
+TestTime:16.863ms
+                                                                        SKIP
+11 取MAC号方式自动判断
+TestTime:33.2236ms
+                                                                        SKIP
+12 MES Fetch Sn
+TestTime:17.0177ms
+                                                                        SKIP
+13 写BT MAC
+TestTime:9.9709ms
+                                                                        SKIP
+14 读BT MAC
+TestTime:13.3745ms
+                                                                        SKIP
+15 校验BT MAC
+TestTime:24.7984ms
+                                                                        SKIP
+16 设置BT 进入工厂模式
+TestTime:33.7271ms
+                                                                        SKIP
+17 Wifi 断电
+TestTime:23.3119ms
+                                                                        SKIP
+18 Wifi 上电
+TestTime:10.9118ms
+                                                                        SKIP
+20 关闭BT 串口
+给定关键字不在字典中。
+TestTime:239.4032ms
+                                                                        FAIL
+26 打开WIFI串口
+TestTime:14.8787ms
+                                                                        SKIP
+27 读取WIFI MAP文件并更新MAC至内存
+TestTime:27.7748ms
+                                                                        SKIP
+29 读产品内部WIFI Map
+TestTime:30.2813ms
+                                                                        SKIP
+32 检查WIFI版本号
+TestTime:14.8798ms
+                                                                        SKIP
+33 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:243.7751ms
+                                                                        FAIL
+56 关闭BT 串口
+给定关键字不在字典中。
+TestTime:243.2011ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:79.7922ms
+                                                                        PASS
+59 Deinit
+TestTime:12.9376ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

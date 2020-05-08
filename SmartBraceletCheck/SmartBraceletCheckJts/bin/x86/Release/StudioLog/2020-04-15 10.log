@@ -1,0 +1,165 @@
+2020-04-15 10:09:36,754 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-15 10:09:36,832 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-15 10:09:36,839 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-15 10:09:36,895 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-15 10:09:37,286 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-15 10:09:37,302 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 10:09:37,306 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 10:09:37,331 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-15 10:09:37,815 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 10:11:05,932 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 10:11:59,075 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 10:12:17,491 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 10:12:17
+
+
+2020-04-15 10:12:17,535 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-15 10:12:17,552 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-15 10:12:17,560 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:32.9266ms
+                                                                        PASS
+2020-04-15 10:12:17,582 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-15 10:12:17,601 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040130091
+2020-04-15 10:12:17,620 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-15 10:12:17,637 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI1903120400020
+2020-04-15 10:12:17,653 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-15 10:12:17,704 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:122.5339ms
+                                                                        PASS
+2020-04-15 10:12:17,818 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 58 Print Label
+2020-04-15 10:12:17,887 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 标签打印失败error:BarTender打印模板不存在
+2020-04-15 10:12:17,955 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 标签打印失败error:BarTender打印模板不存在
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content)
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 10:12:18,160 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:342.826ms
+                                                                        FAIL
+2020-04-15 10:12:18,183 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-15 10:12:18,199 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:15.9687ms
+                                                                        PASS
+2020-04-15 10:12:18,228 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-04-15 10:14:28,510 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 10:14:44,919 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 10:14:44
+
+
+2020-04-15 10:14:44,955 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-15 10:14:44,977 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-15 10:14:44,988 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:42.8868ms
+                                                                        PASS
+2020-04-15 10:14:45,008 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-15 10:14:45,026 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-15 10:14:45,041 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-15 10:14:45,057 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-15 10:14:45,075 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-15 10:14:45,090 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:81.7805ms
+                                                                        PASS
+2020-04-15 10:14:45,197 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 58 Print Label
+2020-04-15 10:14:56,811 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=E:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+2020-04-15 10:14:56,858 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - content:866203040424692,AI2003050400376,,,
+2020-04-15 10:15:02,009 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 标签打印失败error:打印失败,还存在未打印的打印数据
+2020-04-15 10:15:02,053 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 标签打印失败error:打印失败,还存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content)
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 10:15:02,259 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:17062.8678ms
+                                                                        FAIL
+2020-04-15 10:15:02,285 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-15 10:15:02,316 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:32.913ms
+                                                                        PASS
+2020-04-15 10:15:02,366 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-04-15 10:15:19,382 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 10:15:19
+
+
+2020-04-15 10:15:19,410 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-15 10:15:19,421 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-15 10:15:19,429 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:27.9249ms
+                                                                        PASS
+2020-04-15 10:15:19,455 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-15 10:15:19,465 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-15 10:15:19,482 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-15 10:15:19,511 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-15 10:15:19,533 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-15 10:15:19,553 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:98.7549ms
+                                                                        PASS
+2020-04-15 10:15:19,658 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 58 Print Label
+2020-04-15 10:15:21,089 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=E:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+2020-04-15 10:15:21,117 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - content:866203040424692,AI2003050400376,,,
+2020-04-15 10:15:31,213 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:11556.6009ms
+                                                                        PASS
+2020-04-15 10:15:31,243 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-15 10:15:31,259 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:15.9578ms
+                                                                        PASS
+2020-04-15 10:15:31,279 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2020-04-15 10:16:43,746 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功

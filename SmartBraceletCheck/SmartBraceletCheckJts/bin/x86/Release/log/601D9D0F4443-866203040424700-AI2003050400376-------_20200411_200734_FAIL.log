@@ -1,0 +1,160 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 20:07:34
+
+
+1 Init
+TestTime:21.0824ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424700
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:108.6178ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:24.89ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:e2
+mac_i2c_send:00e04cb723e2
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+
+#]  contain =[WIFI initialized]
+TestTime:2051.8308ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:16.0114ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1016.2338ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+TestTime:849.6737ms
+                                                                        PASS
+36 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+
+TestTime:4743.4395ms
+                                                                        PASS
+37 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424700
+
+OK
+
+TestTime:832.7755ms
+                                                                        PASS
+40 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+ERROR
+
+AT response=[
+ERROR
+] contain error=[ERROR]
+重试第1次
+AT Commond=AT+CIMI
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:
+AT response=[gps_cn_num:0,gps_cn:0,wifi_mac:] not contain error=[OK]
+重试第2次
+AT Commond=AT+CIMI
+AT Response=
+ERROR
+
+AT response=[
+ERROR
+] contain error=[ERROR]
+重试第3次
+AT Commond=AT+CIMI
+AT Response=
+ERROR
+
+ERROR
+
+AT response=[
+ERROR
+
+ERROR
+] contain error=[ERROR]
+TestTime:4233.3936ms
+                                                                        FAIL
+41 获取NB ICCID
+TestTime:24.9343ms
+                                                                        SKIP
+42 NB 附网
+TestTime:12.9649ms
+                                                                        SKIP
+43 NB附网检查
+TestTime:9.9738ms
+                                                                        SKIP
+44 获取NB信号强度
+TestTime:12.9655ms
+                                                                        SKIP
+45 检查NB信号强度
+TestTime:12.9655ms
+                                                                        SKIP
+46 获取WIFI探针-信号强度值
+TestTime:11.9682ms
+                                                                        SKIP
+47 WIFI探针-信号强度检查
+TestTime:11.9364ms
+                                                                        SKIP
+51 射频获取
+TestTime:15.9323ms
+                                                                        SKIP
+52 射频检查
+TestTime:11.1815ms
+                                                                        SKIP
+56 关闭BT 串口
+TestTime:13.9775ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4443 PASS 
+
+TestTime:24.9582ms
+                                                                        PASS
+59 Deinit
+TestTime:12.9638ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

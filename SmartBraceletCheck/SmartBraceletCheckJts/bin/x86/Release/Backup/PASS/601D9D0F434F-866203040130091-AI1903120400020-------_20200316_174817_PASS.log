@@ -1,0 +1,166 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-16, Test Time: 17:48:17
+
+
+1 Init
+TestTime:8.9759ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:72.8035ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1045.7592ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x??? SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+[*W???LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+TestTime:3471.6619ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:126.699ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1014.8639ms
+                                                                        PASS
+8 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:13587.7807ms
+                                                                        PASS
+9 MES Fetch Sn
+TestTime:303.2475ms
+                                                                        PASS
+10 写BT MAC
+AT Commond=AT+SETBLEMAC=601D9D0F434F
+AT Response=BLE MAC:601D9D0F434F
+OKSaved mac,then reboot system!
+TestTime:3845.8686ms
+                                                                        PASS
+11 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run()
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F434F
+OK
+TestTime:1942.0956ms
+                                                                        PASS
+12 校验BT MAC
+BT MAC核验：读出BT MAC：601D9D0F434F，与预写入MAC：601D9D0F434F 一致，PASS 
+
+TestTime:43.8818ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6845.0085ms
+                                                                        PASS
+50 关闭BT 串口
+TestTime:126.4464ms
+                                                                        PASS
+51 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F434F PASS 
+
+TestTime:11.9671ms
+                                                                        PASS
+52 Deinit
+TestTime:8.9754ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

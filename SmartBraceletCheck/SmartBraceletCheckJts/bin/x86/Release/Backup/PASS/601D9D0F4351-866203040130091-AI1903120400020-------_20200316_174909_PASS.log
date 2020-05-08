@@ -1,0 +1,159 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-16, Test Time: 17:49:09
+
+
+1 Init
+TestTime:10.9711ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:28.9223ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1016.2634ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[tem_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+#
+WIFI initialized
+
+init_thread(67), Available heap 0xc540]  contain =[WIFI initialized]
+TestTime:3422.4081ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:121.9175ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1016.3078ms
+                                                                        PASS
+8 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:13250.1792ms
+                                                                        PASS
+9 MES Fetch Sn
+TestTime:54.8546ms
+                                                                        PASS
+10 写BT MAC
+AT Commond=AT+SETBLEMAC=601D9D0F4351
+AT Response=BLE MAC:601D9D0F4351
+OKSaved mac,then reboot system!
+TestTime:3835.1428ms
+                                                                        PASS
+11 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run()
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4351
+OK
+TestTime:1883.6207ms
+                                                                        PASS
+12 校验BT MAC
+BT MAC核验：读出BT MAC：601D9D0F4351，与预写入MAC：601D9D0F4351 一致，PASS 
+
+TestTime:16.9535ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6835.1149ms
+                                                                        PASS
+50 关闭BT 串口
+TestTime:126.9772ms
+                                                                        PASS
+51 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4351 PASS 
+
+TestTime:14.9607ms
+                                                                        PASS
+52 Deinit
+TestTime:5.9824ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

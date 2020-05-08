@@ -1,0 +1,190 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 15:22:59
+
+
+1 Init
+TestTime:22.937ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:71.165ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1020.7701ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+
+#Mac:00:e0:4c:b7:23:de
+mac_i2c_send:00e04cb723de
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:2351.9424ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:14.9629ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1018.8484ms
+                                                                        PASS
+8 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:12927.8696ms
+                                                                        PASS
+9 BLE固件版本号检查
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第1次
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第2次
+AT Commond=AT+GETINFO
+AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:c3:47:73:55:91:b5
+BLE_VER:AI_WRIST_V1.12
+BLE_BT:Apr  8 2020 11:17:23
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+TestTime:6128.0072ms
+                                                                        PASS
+10 取MAC号方式自动判断
+AT Commond=AT+GETBLEMAC
+AT Response=
+OKBLE MAC:000000000000
+OK
+BLE未写过MAC:000000000000
+TestTime:6191.7686ms
+                                                                        PASS
+11 MES Fetch Sn
+TestTime:16733.3617ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:BLE MAC:000000000000
+OK
+TestTime:854.4586ms
+                                                                        PASS
+14 展示BT MAC二维码
+值“0”不是 Interval 的有效值。Interval 必须大于 0。
+参数名: Interval
+TestTime:298.8356ms
+                                                                        FAIL
+17 Wifi 断电
+TestTime:14.9964ms
+                                                                        SKIP
+18 Wifi 上电
+TestTime:13.4804ms
+                                                                        SKIP
+20 关闭BT 串口
+TestTime:15.7678ms
+                                                                        PASS
+26 打开WIFI串口
+TestTime:12.5929ms
+                                                                        SKIP
+27 读取WIFI MAP文件并更新MAC至内存
+TestTime:11.9381ms
+                                                                        SKIP
+28 写WIFI MAP
+TestTime:13.027ms
+                                                                        SKIP
+29 读产品内部WIFI Map
+TestTime:11.9659ms
+                                                                        SKIP
+30 校验WIFI Map
+TestTime:12.0388ms
+                                                                        SKIP
+32 检查WIFI版本号
+TestTime:13.9628ms
+                                                                        SKIP
+33 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:244.0687ms
+                                                                        FAIL
+59 Deinit
+TestTime:32.9102ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

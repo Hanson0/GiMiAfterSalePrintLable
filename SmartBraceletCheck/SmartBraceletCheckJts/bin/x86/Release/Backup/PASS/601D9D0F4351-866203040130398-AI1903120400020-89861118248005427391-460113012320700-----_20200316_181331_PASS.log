@@ -1,0 +1,136 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-16, Test Time: 18:13:31
+
+
+1 Init
+TestTime:12.9655ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130398
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:27.9228ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1021.5398ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+
+init_thread(67), Available heap 0xca98
+#]  contain =[WIFI initialized]
+TestTime:3420.8391ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:124.6675ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1013.5561ms
+                                                                        PASS
+11 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4351
+OK
+TestTime:834.096ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6833.1722ms
+                                                                        PASS
+14 Wifi 断电
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=wifi power off
+gps power off
+
+OK
+
+TestTime:832.7711ms
+                                                                        PASS
+15 Wifi 上电
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+TestTime:834.484ms
+                                                                        PASS
+33 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4241.5878ms
+                                                                        PASS
+34 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040130398
+
+OK
+
+TestTime:829.1654ms
+                                                                        PASS
+35 检查NB IMEI内部与标签一致性
+NB IMEI检查：
+模块IMEI：866203040130398，与标签IMEI：866203040130398 一致 
+
+TestTime:15.9584ms
+                                                                        PASS
+36 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113012320700
+
+OK
+
+TestTime:834.769ms
+                                                                        PASS
+37 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861118248005427391
+
+OK
+
+TestTime:837.8074ms
+                                                                        PASS
+50 关闭BT 串口
+TestTime:108.3654ms
+                                                                        PASS
+51 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4351 PASS 
+
+TestTime:14.9595ms
+                                                                        PASS
+52 Deinit
+TestTime:5.9842ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

@@ -1,0 +1,2104 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 10:56:33
+
+
+
+1 Init
+
+TestTime:17.9513ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:7997.6522ms
+                                                                        PASS
+
+6 UartCheck
+
+AILinkFactoryAuto.Task.BaseException: AILinkFactoryAuto.Task.BaseException: System.UnauthorizedAccessException: 对端口“COM9”的访问被拒绝。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.InternalResources.WinIOError(String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 50
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 54
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 79
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:354.3033ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:17.2271ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 10:57:03
+
+
+
+1 Init
+
+TestTime:18.9491ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1293.0869ms
+                                                                        PASS
+
+6 UartCheck
+
+AILinkFactoryAuto.Task.BaseException: System.Exception: 形参字节数组为空
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.sumByteArry(Byte[] bytes) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 111
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 61
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 79
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:5441.4804ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:14.9589ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 10:57:36
+
+
+
+1 Init
+
+TestTime:19.9731ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1297.8821ms
+                                                                        PASS
+
+6 UartCheck
+
+AILinkFactoryAuto.Task.BaseException: System.Exception: 形参字节数组为空
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.sumByteArry(Byte[] bytes) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 111
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 61
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 79
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:5433.5347ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:14.9584ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 10:58:29
+
+
+
+1 Init
+
+TestTime:16.1365ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1294.8499ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1515.8512ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：System.Byte[] 与 发送:System.Byte[]不相差1，FAIL，
+
+
+AILinkFactoryAuto.Task.BaseException: AILinkFactoryAuto.Task.BaseException: 返回：System.Byte[] 与 发送:System.Byte[]不相差1，FAIL，
+
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 65
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 79
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:15:23
+
+
+
+1 Init
+
+TestTime:17.9519ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1460.3709ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1521.6254ms
+                                                                        PASS
+
+6 UartCheck
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:15:58
+
+
+
+1 Init
+
+TestTime:16.954ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1308.3616ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1495.1107ms
+                                                                        PASS
+
+6 UartCheck
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:17:07
+
+
+
+1 Init
+
+TestTime:16.0694ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1317.742ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1475.8492ms
+                                                                        PASS
+
+6 UartCheck
+
+AILinkFactoryAuto.Task.BaseException: System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 61
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 90
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:15649.0514ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:16.9551ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:19:11
+
+
+
+1 Init
+
+TestTime:20.0232ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1332.6048ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1495.2455ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123不相差1，FAIL，
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:25:18
+
+
+
+1 Init
+
+TestTime:15.9584ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1312.8455ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1500.5452ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123不相差1，FAIL，
+
+
+AILinkFactoryAuto.Task.BaseException: 返回：234 与 发送:123不相差1，FAIL，
+
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 91
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:15123.7185ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:12.965ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:25:47
+
+
+
+1 Init
+
+TestTime:17.9541ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1295.326ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1482.2578ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123不相差1，FAIL，
+
+
+AILinkFactoryAuto.Task.BaseException: 返回：234 与 发送:123不相差1，FAIL，
+
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 91
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:9375.3044ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:13.0981ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:26:30
+
+
+
+1 Init
+
+TestTime:15.9568ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1296.6715ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1495.9134ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123不相差1，FAIL，
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:28:28
+
+
+
+1 Init
+
+TestTime:14.9595ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:6092.4194ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1493.7652ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123每一位相差1，PASS，
+
+
+TestTime:14846.2505ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:14.9618ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:28:54
+
+
+
+1 Init
+
+TestTime:18.9503ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1299.9096ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1495.3252ms
+                                                                        PASS
+
+6 UartCheck
+
+返回： 与 发送:123不相差1，FAIL，
+
+
+AILinkFactoryAuto.Task.BaseException: 返回：234 与 发送:123每一位不相差1，FAIL，
+
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.UartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\UartCheckExecuter.cs:行号 91
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:8342.3419ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:13.6573ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:29:30
+
+
+
+1 Init
+
+TestTime:17.953ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1300.7095ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1481.9574ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123每一位相差1，PASS，
+
+
+TestTime:5138.0159ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:14.1898ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:29:58
+
+
+
+1 Init
+
+TestTime:16.9546ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1303.8668ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1482.6373ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：234 与 发送:123每一位相差1，PASS，
+
+
+TestTime:5137.9424ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:13.6095ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:32:23
+
+
+
+1 Init
+
+TestTime:16.9574ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1306.2078ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1483.6891ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：62158 与 发送:51047每一位相差1，PASS，
+
+
+TestTime:965.7068ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:14.3258ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:35:53
+
+
+
+1 Init
+
+TestTime:17.9513ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1328.783ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1624.3457ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：62158 与 发送:51047每一位相差1，PASS，
+
+
+TestTime:982.1892ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:10.9705ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:36:50
+
+
+
+1 Init
+
+TestTime:21.975ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:91.9995ms
+                                                                        PASS
+
+3 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1327.891ms
+                                                                        PASS
+
+5 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1529.4938ms
+                                                                        PASS
+
+6 UartCheck
+
+返回：62158 与 发送:51047每一位相差1，PASS，
+
+
+TestTime:946.4835ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:18.9457ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:37:15
+
+
+
+1 Init
+
+TestTime:18.9486ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=12
+
+AILinkFactoryAuto.Task.BaseException: MAC invalid
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckMac(String mac)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:319.5192ms
+                                                                        FAIL
+
+3 Find Device
+
+TestTime:19.9447ms
+                                                                        SKIP
+
+5 PushBinToBoard
+
+TestTime:12.9633ms
+                                                                        SKIP
+
+6 UartCheck
+
+TestTime:14.9589ms
+                                                                        SKIP
+
+7 Deinit
+
+TestTime:16.9552ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:50:58
+
+
+
+1 Init
+
+TestTime:22.941ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:66.8308ms
+                                                                        PASS
+
+3 iMES Pre Check
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第2次
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第3次
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:1056.671ms
+                                                                        FAIL
+
+4 Find Device
+
+TestTime:17.9524ms
+                                                                        SKIP
+
+6 PushBinToBoard
+
+TestTime:14.9589ms
+                                                                        SKIP
+
+7 UartCheck
+
+TestTime:13.9918ms
+                                                                        SKIP
+
+8 Deinit
+
+TestTime:21.9409ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:51:12
+
+
+
+1 Init
+
+TestTime:18.9502ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:65.8569ms
+                                                                        PASS
+
+3 iMES Pre Check
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第2次
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第3次
+
+System.Exception: Server:factoryId is null or empty
+   在 Mes.Test.IniUtils.ReadNotNullOrEmpty(String section, String key) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\IniUtils.cs:行号 35
+   在 Mes.Test.ConfigOfMes.get_FactoryId() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\ConfigOfMes.cs:行号 51
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 20
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\C#\AiLinkFactory\TaskBase\Task\Executer\MesPreCheckExecuter.cs:行号 22
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:992.5287ms
+                                                                        FAIL
+
+4 Find Device
+
+TestTime:14.9612ms
+                                                                        SKIP
+
+6 PushBinToBoard
+
+TestTime:18.0008ms
+                                                                        SKIP
+
+7 UartCheck
+
+TestTime:15.9608ms
+                                                                        SKIP
+
+8 Deinit
+
+TestTime:14.9327ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:51:36
+
+
+
+1 Init
+
+TestTime:20.9436ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:69.4431ms
+                                                                        PASS
+
+4 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1482.1713ms
+                                                                        PASS
+
+6 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1517.2473ms
+                                                                        PASS
+
+7 UartCheck
+
+返回：62158 与 发送:51047每一位相差1，PASS，
+
+
+TestTime:968.4102ms
+                                                                        PASS
+
+8 Deinit
+
+TestTime:13.9975ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 11:54:14
+
+
+
+1 Init
+
+TestTime:13.9606ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:93.7535ms
+                                                                        PASS
+
+4 Find Device
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb devices
+List of devices attached 
+0505973476	device
+
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，检测到设备 
+
+
+TestTime:1314.4226ms
+                                                                        PASS
+
+6 PushBinToBoard
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb push ../bin/uart_test /tmp
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+Adb返回：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug>CD MK-TMYYMK-01(ADB)_1.30.28R1.A2
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>adb shell chmod +x /tmp/uart_test
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierUartCheck\bin\Debug\MK-TMYYMK-01(ADB)_1.30.28R1.A2>exit
+，
+
+
+启动成功，准备发串口命令
+
+TestTime:1511.2279ms
+                                                                        PASS
+
+7 UartCheck
+
+返回：62158 与 发送:51047每一位相差1，PASS，
+
+
+TestTime:967.7713ms
+                                                                        PASS
+
+8 Deinit
+
+TestTime:12.9655ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  MDM9X07                         **********
+     ***********                  version: 0.01                   **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-02-15, Test Time: 13:11:41
+
+
+
+1 Init
+
+TestTime:18.9468ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:62.8315ms
+                                                                        PASS
+
+4 Find Device
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval) 位置 E:\C#\AiLinkFactory\TaskBase\Utils\TimeUtils.cs:行号 71
+   在 AILinkFactoryAuto.Task.HaierVoice.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\海尔语音模块\串口检查\HaierUartCheck\HaierVoiceCheck\HaierVoice\Executer\FindDeviceExecuter.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 E:\C#\AiLinkFactory\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:11463.0623ms
+                                                                        FAIL
+
+6 PushBinToBoard
+
+TestTime:12.9656ms
+                                                                        SKIP
+
+7 UartCheck
+
+TestTime:14.9595ms
+                                                                        SKIP
+
+8 Deinit
+
+TestTime:13.9623ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

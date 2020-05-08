@@ -1,0 +1,237 @@
+2020-04-15 13:44:52,691 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-15 13:44:52,768 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-15 13:44:52,775 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-15 13:44:52,816 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-15 13:44:53,176 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-15 13:44:53,188 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:44:53,195 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:44:53,221 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-15 13:44:53,667 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 13:45:07,222 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-15 13:45:07,294 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-15 13:45:07,307 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-15 13:45:07,349 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-15 13:45:07,676 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-15 13:45:07,690 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:45:07,695 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:45:07,720 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-15 13:45:08,139 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 13:45:22,734 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 13:45:34,629 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 13:45:34
+
+
+2020-04-15 13:45:34,676 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-15 13:45:34,692 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-15 13:45:34,698 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:31.9158ms
+                                                                        PASS
+2020-04-15 13:45:34,714 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-15 13:45:34,729 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-15 13:45:34,746 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-15 13:45:34,760 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-15 13:45:34,775 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-15 13:45:34,823 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:109.706ms
+                                                                        PASS
+2020-04-15 13:45:34,852 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 取MAC号方式自动判断
+2020-04-15 13:45:40,011 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - sn格式异常
+2020-04-15 13:45:40,045 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: sn格式异常
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:45:40,252 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-15 13:45:43,563 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - sn格式异常
+2020-04-15 13:45:43,574 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: sn格式异常
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:45:43,779 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第2次
+2020-04-15 13:46:09,247 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - sn格式异常
+2020-04-15 13:46:09,262 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: sn格式异常
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:46:09,467 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第3次
+2020-04-15 13:46:11,562 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - sn格式异常
+2020-04-15 13:46:11,574 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: sn格式异常
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:46:11,778 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:36926.804ms
+                                                                        FAIL
+2020-04-15 13:46:11,866 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-15 13:46:11,881 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:15.9135ms
+                                                                        PASS
+2020-04-15 13:46:11,899 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-04-15 13:46:36,768 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-15 13:46:36,837 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-15 13:46:36,848 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-15 13:46:36,885 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-15 13:46:37,225 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-15 13:46:37,238 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:46:37,243 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:46:37,267 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-15 13:46:37,650 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 13:46:44,679 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 13:46:47,694 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 13:46:47
+
+
+2020-04-15 13:46:47,730 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-15 13:46:47,743 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-15 13:46:47,754 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:26.926ms
+                                                                        PASS
+2020-04-15 13:46:47,767 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-15 13:46:47,795 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-15 13:46:47,810 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-15 13:46:47,823 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-15 13:46:47,836 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-15 13:46:47,885 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:117.6847ms
+                                                                        PASS
+2020-04-15 13:46:47,911 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 取MAC号方式自动判断
+2020-04-15 13:46:51,340 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 0xA05030:该sn不存在
+2020-04-15 13:46:51,373 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 0xA05030:该sn不存在
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:46:51,581 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-15 13:46:53,921 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 0xA05030:该sn不存在
+2020-04-15 13:46:53,932 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 0xA05030:该sn不存在
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:46:54,138 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第2次
+2020-04-15 13:46:57,934 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 0xA05030:该sn不存在
+2020-04-15 13:46:57,949 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 0xA05030:该sn不存在
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:46:58,156 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第3次
+2020-04-15 13:47:00,158 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 0xA05030:该sn不存在
+2020-04-15 13:47:00,176 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 0xA05030:该sn不存在
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:47:00,381 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:12471.2717ms
+                                                                        FAIL
+2020-04-15 13:47:00,465 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-15 13:47:00,480 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:15.9584ms
+                                                                        PASS
+2020-04-15 13:47:00,498 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-04-15 13:47:39,183 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-15 13:47:39,257 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-15 13:47:39,269 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-15 13:47:39,306 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-15 13:47:39,644 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-15 13:47:39,657 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:47:39,663 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-15 13:47:39,691 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-15 13:47:40,119 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-15 13:47:43,833 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-15, Test Time: 13:47:43
+
+
+2020-04-15 13:47:43,880 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-15 13:47:43,896 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-15 13:47:43,905 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:28.9228ms
+                                                                        PASS
+2020-04-15 13:47:43,923 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-15 13:47:43,936 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-15 13:47:43,955 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-15 13:47:43,968 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-15 13:47:43,982 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-15 13:47:44,047 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:124.6655ms
+                                                                        PASS
+2020-04-15 13:47:44,074 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 取MAC号方式自动判断
+2020-04-15 13:47:47,266 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 0xA04021:重复过站,当前应过【手环老化】
+2020-04-15 13:47:47,337 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 0xA04021:重复过站,当前应过【手环老化】
+   在 Mes.Test.MesProcess.PreCheck(String sn) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\对接IMES\MesDll\MesDll\Test\MesProcess.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.AccessToMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\AccessToMacExecuter.cs:行号 215
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-15 13:47:47,542 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次

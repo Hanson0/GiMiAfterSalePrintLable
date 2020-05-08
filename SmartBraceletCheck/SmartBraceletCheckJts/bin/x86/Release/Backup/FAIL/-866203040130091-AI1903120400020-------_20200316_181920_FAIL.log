@@ -1,0 +1,121 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-16, Test Time: 18:19:20
+
+
+1 Init
+TestTime:16.9551ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:31.9135ms
+                                                                        PASS
+3 iMES Pre Check
+System.Exception: 系统错误，未处理异常！
+   在 Mes.Test.MesProcess.PreCheck(String sn)
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+重试第1次
+System.Exception: 系统错误，未处理异常！
+   在 Mes.Test.MesProcess.PreCheck(String sn)
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+重试第2次
+System.Exception: 系统错误，未处理异常！
+   在 Mes.Test.MesProcess.PreCheck(String sn)
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+重试第3次
+System.Exception: 系统错误，未处理异常！
+   在 Mes.Test.MesProcess.PreCheck(String sn)
+   在 AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+TestTime:1577.7621ms
+                                                                        FAIL
+4 打开WIFI串口
+TestTime:6.9802ms
+                                                                        SKIP
+5 发现设备
+TestTime:8.5044ms
+                                                                        SKIP
+6 关闭WIFI串口
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+TestTime:232.8071ms
+                                                                        FAIL
+7 打开BT串口
+TestTime:5.9836ms
+                                                                        SKIP
+11 读BT MAC
+TestTime:6.9262ms
+                                                                        SKIP
+13 设置BT 进入工厂模式
+TestTime:12.3045ms
+                                                                        SKIP
+14 Wifi 断电
+TestTime:9.9732ms
+                                                                        SKIP
+15 Wifi 上电
+TestTime:5.9841ms
+                                                                        SKIP
+33 设置BT CFUN为1
+TestTime:9.9191ms
+                                                                        SKIP
+34 获取NB IMEI
+TestTime:6.0364ms
+                                                                        SKIP
+35 检查NB IMEI内部与标签一致性
+TestTime:5.9842ms
+                                                                        SKIP
+36 获取NB IMSI
+TestTime:7.9787ms
+                                                                        SKIP
+37 获取NB ICCID
+TestTime:5.9842ms
+                                                                        SKIP
+50 关闭BT 串口
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+TestTime:218.5404ms
+                                                                        FAIL
+51 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:32.9119ms
+                                                                        PASS
+52 Deinit
+TestTime:8.9777ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

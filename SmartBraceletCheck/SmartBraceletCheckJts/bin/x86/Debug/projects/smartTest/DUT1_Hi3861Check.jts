@@ -1,0 +1,197 @@
+{
+  "$type": "System.Collections.Generic.List`1[[AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base]], mscorlib",
+  "$values": [
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Init",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.InitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.InitExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Parse Label",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.ParseLabelProperties, AILinkFactoryAuto.Base",
+        "SnLocation": 0,
+        "ImeiLocation": 0,
+        "MeidLocation": 0,
+        "MacLocation": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.ParseLabelExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "iMES Pre Check",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.MesPreCheckProperties, AILinkFactoryAuto.Base",
+        "EnableCheckSn": false,
+        "EnableCheckMac": true,
+        "EnableCheckImei": false,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "打开AT指令串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 1000,
+        "PortName": "COM5",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "EndLine": "\\r\\n",
+        "AutoKey": null,
+        "ExecuteCondition": 1,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "发现设备",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.FindDeviceProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestPowerOnAT": "",
+        "AtCommandInterval": 1000,
+        "EndLine": "\r\n",
+        "AtCommandOk": "ERROR",
+        "ExecuteCondition": 1,
+        "Timeout": 10000,
+        "SleepTimeBefore": 200,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "读取License文件",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.ReadMapProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "BinFolderPath": "./bin",
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.ReadMapExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查产品License",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.GetLicenseProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "PortName": "COM25",
+        "BaudRate": 115200,
+        "Rts": false,
+        "Dtr": false,
+        "AtCommand": "AT+LIC?",
+        "AtCommandError": "ERROR",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 2000,
+        "CheckInfo": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{BinFileString}"
+          ]
+        },
+        "IsToUpper": true,
+        "EndLine": "\r\n",
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.GetLicenseExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "关闭WIFI串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.CommonProperties, AILinkFactoryAuto.Base",
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Deinit",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.DeinitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "LogType": 0,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.DeinitExecuter, AILinkFactoryAuto.Base"
+      }
+    }
+  ]
+}

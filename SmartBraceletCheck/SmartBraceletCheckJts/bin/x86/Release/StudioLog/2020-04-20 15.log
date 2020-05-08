@@ -1,0 +1,1336 @@
+2020-04-20 15:18:23,114 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-20 15:18:23,188 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-20 15:18:23,194 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-20 15:18:23,229 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-20 15:18:23,558 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-20 15:18:23,569 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-20 15:18:23,573 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-20 15:18:23,595 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-20 15:18:24,039 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:19:07,583 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:21:12,936 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:21:12
+
+
+2020-04-20 15:21:12,974 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-20 15:21:12,992 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-20 15:21:13,002 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:32.9096ms
+                                                                        PASS
+2020-04-20 15:21:13,020 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-20 15:21:13,036 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040129788
+2020-04-20 15:21:13,051 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-20 15:21:13,066 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI1903120400020
+2020-04-20 15:21:13,081 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-20 15:21:13,130 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:109.6544ms
+                                                                        PASS
+2020-04-20 15:21:13,147 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 打开WIFI串口
+2020-04-20 15:21:14,219 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1073.8434ms
+                                                                        PASS
+2020-04-20 15:21:14,245 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 发现设备
+2020-04-20 15:21:16,594 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 检测到产品上电，AT response=[ead_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[00
+0000f6]
+read_mode idx:0, flash?<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+2020-04-20 15:21:16,667 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2422.5914ms
+                                                                        PASS
+2020-04-20 15:21:16,688 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 关闭WIFI串口
+2020-04-20 15:21:16,832 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:143.6569ms
+                                                                        PASS
+2020-04-20 15:21:16,864 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 打开BT串口
+2020-04-20 15:21:17,890 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1026.0721ms
+                                                                        PASS
+2020-04-20 15:21:17,907 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 BT MAC预读
+2020-04-20 15:21:19,467 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:21:20,503 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+2020-04-20 15:21:20,549 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 不包含BLE MAC:信息,未能获取到BLE MAC
+2020-04-20 15:21:20,592 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: 不包含BLE MAC:信息,未能获取到BLE MAC
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.IsitWrittenToTheBtMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\IsitWrittenToTheBtMacExecuter.cs:行号 132
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:21:20,800 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:21:22,338 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:21:23,363 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4585
+OK
+2020-04-20 15:21:23,398 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BLE已写过MAC:601D9D0F4585
+2020-04-20 15:21:23,436 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:5529.1191ms
+                                                                        PASS
+2020-04-20 15:21:23,457 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 写BT固件
+2020-04-20 15:21:23,577 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash中...
+
+2020-04-20 15:21:24,952 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+2020-04-20 15:21:25,086 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 写BT 固件中...
+
+2020-04-20 15:21:35,274 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+2020-04-20 15:21:35,292 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT 应用系统复位中...
+
+2020-04-20 15:21:35,935 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+2020-04-20 15:21:35,959 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+2020-04-20 15:21:35,973 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:12516.4881ms
+                                                                        PASS
+2020-04-20 15:21:35,990 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 BLE固件版本号检查
+2020-04-20 15:21:36,810 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:21:37,847 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+2020-04-20 15:21:37,881 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[] not contain error=[GET INFO OK]
+2020-04-20 15:21:37,896 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[GET INFO OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:21:38,100 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:21:38,918 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:21:39,948 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:f1:ce:27:84:85:8d
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:21:40,005 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:4014.947ms
+                                                                        PASS
+2020-04-20 15:21:40,023 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 MES Fetch Sn
+2020-04-20 15:22:02,670 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - ble mac:601D9D0F4585不为空,不从iMes取号,自动减一计算出WIFI MAC:601D9D0F4584
+2020-04-20 15:22:02,711 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:22688.1632ms
+                                                                        PASS
+2020-04-20 15:22:02,817 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 写BT MAC
+2020-04-20 15:22:05,833 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+SETBLEMAC=601D9D0F4585
+2020-04-20 15:22:06,664 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OKgps_cn_num:0,gps_cn:0,wifi_mac:BLE MAC:601D9D0F4585
+OKSaved mac,then reboot system!
+2020-04-20 15:22:06,691 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:3874.3917ms
+                                                                        PASS
+2020-04-20 15:22:06,714 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 读BT MAC
+2020-04-20 15:22:06,729 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:22:07,553 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+2020-04-20 15:22:07,578 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[] not contain error=[OK]
+2020-04-20 15:22:07,591 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:22:07,800 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:22:07,814 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:22:08,646 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4585
+OK
+2020-04-20 15:22:08,675 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1960.9384ms
+                                                                        PASS
+2020-04-20 15:22:08,696 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 校验BT MAC
+2020-04-20 15:22:08,731 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT MAC核验：读出BT MAC：601D9D0F4585，与预写入MAC：601D9D0F4585 一致，PASS 
+
+2020-04-20 15:22:08,748 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:53.856ms
+                                                                        PASS
+2020-04-20 15:22:08,773 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 关闭BT 串口
+2020-04-20 15:22:08,911 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:139.6274ms
+                                                                        PASS
+2020-04-20 15:22:08,994 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 57 LOG MAC为BT MAC
+2020-04-20 15:22:09,006 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - LOG MAC设置为BT MAC：
+601D9D0F4585 PASS 
+
+2020-04-20 15:22:09,035 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:41.8878ms
+                                                                        PASS
+2020-04-20 15:22:09,053 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 58 Print Label
+2020-04-20 15:22:09,096 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 标签打印失败error:BarTender打印模板不存在
+2020-04-20 15:22:09,146 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 标签打印失败error:BarTender打印模板不存在
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content)
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:22:09,352 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:299.1972ms
+                                                                        FAIL
+2020-04-20 15:22:09,369 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-20 15:22:09,384 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:14.9594ms
+                                                                        PASS
+2020-04-20 15:22:09,405 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第8项:
+BT MAC预读
+AILinkFactoryAuto.Task.BaseException: 不包含BLE MAC:信息,未能获取到BLE MAC
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.IsitWrittenToTheBtMacExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\IsitWrittenToTheBtMacExecuter.cs:行号 132
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+第10项:
+BLE固件版本号检查
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[GET INFO OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+第13项:
+读BT MAC
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+第58项:
+Print Label
+System.Exception: 标签打印失败error:BarTender打印模板不存在
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content)
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-04-20 15:22:09,427 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-04-20 15:22:18,853 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:24:05,307 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:24:13,871 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:24:13
+
+
+2020-04-20 15:24:13,904 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-20 15:24:13,916 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-20 15:24:13,926 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:29.9207ms
+                                                                        PASS
+2020-04-20 15:24:13,945 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-20 15:24:13,959 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040130091
+2020-04-20 15:24:13,973 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-20 15:24:13,986 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI1903120400020
+2020-04-20 15:24:13,997 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-20 15:24:14,010 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:64.8316ms
+                                                                        PASS
+2020-04-20 15:24:14,032 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 打开WIFI串口
+2020-04-20 15:24:15,054 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1023.1851ms
+                                                                        PASS
+2020-04-20 15:24:15,080 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 发现设备
+2020-04-20 15:24:18,501 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+2020-04-20 15:24:18,544 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:3464.5076ms
+                                                                        PASS
+2020-04-20 15:24:18,567 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 关闭WIFI串口
+2020-04-20 15:24:18,688 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:120.6453ms
+                                                                        PASS
+2020-04-20 15:24:18,705 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 打开BT串口
+2020-04-20 15:24:19,727 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1022.3209ms
+                                                                        PASS
+2020-04-20 15:24:19,804 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 BT MAC预读
+2020-04-20 15:24:21,319 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:24:22,348 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4585
+OK
+2020-04-20 15:24:22,400 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BLE已写过MAC:601D9D0F4585
+2020-04-20 15:24:22,417 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2614.036ms
+                                                                        PASS
+2020-04-20 15:24:22,440 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 写BT固件
+2020-04-20 15:24:22,557 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash中...
+
+2020-04-20 15:24:23,424 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+2020-04-20 15:24:23,443 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 写BT 固件中...
+
+2020-04-20 15:24:33,679 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+2020-04-20 15:24:33,700 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT 应用系统复位中...
+
+2020-04-20 15:24:34,548 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+2020-04-20 15:24:34,571 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+2020-04-20 15:24:34,585 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:12144.8589ms
+                                                                        PASS
+2020-04-20 15:24:34,628 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 BLE固件版本号检查
+2020-04-20 15:24:35,444 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:24:36,470 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:f1:ce:27:84:85:8d
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:24:36,511 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1883.6356ms
+                                                                        PASS
+2020-04-20 15:24:36,539 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 MES Fetch Sn
+2020-04-20 15:24:38,296 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - ble mac:601D9D0F4585不为空,不从iMes取号,自动减一计算出WIFI MAC:601D9D0F4584
+2020-04-20 15:24:38,321 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1781.4024ms
+                                                                        PASS
+2020-04-20 15:24:38,349 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 写BT MAC
+2020-04-20 15:24:41,372 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+SETBLEMAC=601D9D0F4585
+2020-04-20 15:24:42,207 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OKBLE MAC:601D9D0F4585
+OKSaved mac,then reboot system!
+2020-04-20 15:24:42,225 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:3875.9806ms
+                                                                        PASS
+2020-04-20 15:24:42,268 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 读BT MAC
+2020-04-20 15:24:42,286 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:24:43,112 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+2020-04-20 15:24:43,137 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[] not contain error=[OK]
+2020-04-20 15:24:43,149 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:24:43,377 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:24:43,395 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:24:44,223 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4585
+OK
+2020-04-20 15:24:44,243 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1975.4343ms
+                                                                        PASS
+2020-04-20 15:24:44,279 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 校验BT MAC
+2020-04-20 15:24:44,291 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT MAC核验：读出BT MAC：601D9D0F4585，与预写入MAC：601D9D0F4585 一致，PASS 
+
+2020-04-20 15:24:44,307 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:32.9125ms
+                                                                        PASS
+2020-04-20 15:24:44,333 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 关闭BT 串口
+2020-04-20 15:24:44,461 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:129.6633ms
+                                                                        PASS
+2020-04-20 15:24:44,541 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 57 LOG MAC为BT MAC
+2020-04-20 15:24:44,556 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - LOG MAC设置为BT MAC：
+601D9D0F4585 PASS 
+
+2020-04-20 15:24:44,573 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:32.9141ms
+                                                                        PASS
+2020-04-20 15:24:44,593 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-20 15:24:44,612 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:21.9096ms
+                                                                        PASS
+2020-04-20 15:24:44,657 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第13项:
+读BT MAC
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-04-20 15:24:44,670 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2020-04-20 15:26:52,870 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:26:52
+
+
+2020-04-20 15:26:52,894 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-20 15:26:52,927 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-20 15:26:52,932 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:47.8731ms
+                                                                        PASS
+2020-04-20 15:26:52,952 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-20 15:26:52,962 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040130091
+2020-04-20 15:26:52,991 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-20 15:26:53,005 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI1903120400020
+2020-04-20 15:26:53,019 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-20 15:26:53,034 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:81.7823ms
+                                                                        PASS
+2020-04-20 15:26:53,057 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 打开WIFI串口
+2020-04-20 15:26:54,102 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1046.6744ms
+                                                                        PASS
+2020-04-20 15:26:54,135 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 发现设备
+2020-04-20 15:26:55,354 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:32
+mac_i2c_send:00e04cb72332
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+2020-04-20 15:26:55,377 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1241.5ms
+                                                                        PASS
+2020-04-20 15:26:55,407 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 关闭WIFI串口
+2020-04-20 15:26:55,537 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:130.2123ms
+                                                                        PASS
+2020-04-20 15:26:55,557 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 打开BT串口
+2020-04-20 15:26:56,584 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1026.7708ms
+                                                                        PASS
+2020-04-20 15:26:56,627 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 BT MAC预读
+2020-04-20 15:26:58,143 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:26:59,180 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F44D1
+OK
+2020-04-20 15:26:59,196 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BLE已写过MAC:601D9D0F44D1
+2020-04-20 15:26:59,228 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2601.5523ms
+                                                                        PASS
+2020-04-20 15:26:59,246 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 写BT固件
+2020-04-20 15:26:59,362 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash中...
+
+2020-04-20 15:27:00,599 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+2020-04-20 15:27:00,645 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 写BT 固件中...
+
+2020-04-20 15:27:10,863 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+2020-04-20 15:27:10,886 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT 应用系统复位中...
+
+2020-04-20 15:27:11,764 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+2020-04-20 15:27:11,789 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+2020-04-20 15:27:11,805 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:12558.5875ms
+                                                                        PASS
+2020-04-20 15:27:11,830 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 BLE固件版本号检查
+2020-04-20 15:27:12,651 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:27:13,676 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:cb:2d:a7:d4:02:1d
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:27:13,697 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1867.4894ms
+                                                                        PASS
+2020-04-20 15:27:13,719 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 MES Fetch Sn
+2020-04-20 15:27:16,083 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - ble mac:601D9D0F44D1不为空,不从iMes取号,自动减一计算出WIFI MAC:601D9D0F44D0
+2020-04-20 15:27:16,102 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2383.0467ms
+                                                                        PASS
+2020-04-20 15:27:16,126 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 写BT MAC
+2020-04-20 15:27:19,148 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+SETBLEMAC=601D9D0F44D1
+2020-04-20 15:27:19,975 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OKBLE MAC:601D9D0F44D1
+OKSaved mac,then reboot system!
+2020-04-20 15:27:20,013 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:3887.0705ms
+                                                                        PASS
+2020-04-20 15:27:20,037 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 读BT MAC
+2020-04-20 15:27:20,082 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:27:20,912 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+2020-04-20 15:27:20,985 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[] not contain error=[OK]
+2020-04-20 15:27:21,008 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:27:21,214 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:27:21,239 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:27:22,069 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F44D1
+OK
+2020-04-20 15:27:22,103 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2066.5554ms
+                                                                        PASS
+2020-04-20 15:27:22,126 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 校验BT MAC
+2020-04-20 15:27:22,138 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT MAC核验：读出BT MAC：601D9D0F44D1，与预写入MAC：601D9D0F44D1 一致，PASS 
+
+2020-04-20 15:27:22,163 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:38.8949ms
+                                                                        PASS
+2020-04-20 15:27:22,193 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 关闭BT 串口
+2020-04-20 15:27:22,311 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:122.7104ms
+                                                                        PASS
+2020-04-20 15:27:22,399 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 57 LOG MAC为BT MAC
+2020-04-20 15:27:22,414 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - LOG MAC设置为BT MAC：
+601D9D0F44D1 PASS 
+
+2020-04-20 15:27:22,430 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:31.9135ms
+                                                                        PASS
+2020-04-20 15:27:22,453 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-20 15:27:22,481 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:34.9087ms
+                                                                        PASS
+2020-04-20 15:27:22,498 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第13项:
+读BT MAC
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-04-20 15:27:22,517 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2020-04-20 15:28:34,173 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:28:34
+
+
+2020-04-20 15:28:34,199 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-20 15:28:34,226 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-20 15:28:34,234 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:44.833ms
+                                                                        PASS
+2020-04-20 15:28:34,252 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-20 15:28:34,276 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-20 15:28:34,290 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-20 15:28:34,318 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-20 15:28:34,332 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-20 15:28:34,351 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:99.7682ms
+                                                                        PASS
+2020-04-20 15:28:34,378 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 打开WIFI串口
+2020-04-20 15:28:35,406 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1028.9336ms
+                                                                        PASS
+2020-04-20 15:28:35,448 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 发现设备
+2020-04-20 15:28:37,770 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 检测到产品上电，AT response=[ 
+WIFI initialized
+Mac:00:e0:4c:b7:23:e0
+mac_i2c_send:00e04cb723e0
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:4]  contain =[WIFI initialized]
+2020-04-20 15:28:37,802 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2353.4669ms
+                                                                        PASS
+2020-04-20 15:28:37,821 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 关闭WIFI串口
+2020-04-20 15:28:37,966 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:145.5768ms
+                                                                        PASS
+2020-04-20 15:28:38,003 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 打开BT串口
+2020-04-20 15:28:39,030 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1026.7725ms
+                                                                        PASS
+2020-04-20 15:28:39,056 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 BT MAC预读
+2020-04-20 15:28:40,570 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:28:41,613 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4479
+OK
+2020-04-20 15:28:41,673 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BLE已写过MAC:601D9D0F4479
+2020-04-20 15:28:41,694 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2639.7429ms
+                                                                        PASS
+2020-04-20 15:28:41,727 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 写BT固件
+2020-04-20 15:28:41,844 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash中...
+
+2020-04-20 15:28:42,713 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+2020-04-20 15:28:42,737 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 写BT 固件中...
+
+2020-04-20 15:28:52,893 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+2020-04-20 15:28:52,913 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT 应用系统复位中...
+
+2020-04-20 15:28:53,814 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+2020-04-20 15:28:53,836 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+2020-04-20 15:28:53,852 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:12124.4705ms
+                                                                        PASS
+2020-04-20 15:28:53,891 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 BLE固件版本号检查
+2020-04-20 15:28:54,709 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:28:55,754 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:28:55,772 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1881.5046ms
+                                                                        PASS
+2020-04-20 15:28:55,813 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 MES Fetch Sn
+2020-04-20 15:28:57,882 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - ble mac:601D9D0F4479不为空,不从iMes取号,自动减一计算出WIFI MAC:601D9D0F4478
+2020-04-20 15:28:57,913 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2099.4309ms
+                                                                        PASS
+2020-04-20 15:28:57,932 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 写BT MAC
+2020-04-20 15:29:00,960 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+SETBLEMAC=601D9D0F4479
+2020-04-20 15:29:01,808 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OKBLE MAC:601D9D0F4479
+OKSaved mac,then reboot system!
+2020-04-20 15:29:01,868 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:3936.2879ms
+                                                                        PASS
+2020-04-20 15:29:01,889 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 读BT MAC
+2020-04-20 15:29:01,904 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:29:02,741 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+2020-04-20 15:29:02,769 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[] not contain error=[OK]
+2020-04-20 15:29:02,789 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:29:02,995 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:29:03,023 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:29:03,851 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4479
+OK
+2020-04-20 15:29:03,881 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1992.4247ms
+                                                                        PASS
+2020-04-20 15:29:03,904 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 校验BT MAC
+2020-04-20 15:29:03,926 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT MAC核验：读出BT MAC：601D9D0F4479，与预写入MAC：601D9D0F4479 一致，PASS 
+
+2020-04-20 15:29:03,943 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:41.8884ms
+                                                                        PASS
+2020-04-20 15:29:03,989 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 关闭BT 串口
+2020-04-20 15:29:04,116 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:127.7741ms
+                                                                        PASS
+2020-04-20 15:29:04,212 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 57 LOG MAC为BT MAC
+2020-04-20 15:29:04,227 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - LOG MAC设置为BT MAC：
+601D9D0F4479 PASS 
+
+2020-04-20 15:29:04,255 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:43.8829ms
+                                                                        PASS
+2020-04-20 15:29:04,276 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-20 15:29:04,302 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:27.8937ms
+                                                                        PASS
+2020-04-20 15:29:04,321 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第13项:
+读BT MAC
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-04-20 15:29:04,351 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2020-04-20 15:34:03,886 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-20 15:34:03,963 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-20 15:34:03,976 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-20 15:34:04,016 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-20 15:34:04,188 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-20 15:34:04,203 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-20 15:34:04,208 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-20 15:34:04,233 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-20 15:34:04,590 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:35:32,012 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:36:16,254 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:38:31,340 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-20 15:38:31,415 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-04-20 15:38:31,425 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.01
+2020-04-20 15:38:31,459 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormLog................Success!
+2020-04-20 15:38:31,620 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - FormMain................Success!
+2020-04-20 15:38:31,634 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-20 15:38:31,638 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - AILinkFactoryAutoV0.01
+2020-04-20 15:38:31,665 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[SmartBracelet.jts]
+2020-04-20 15:38:32,008 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:38:43,848 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-04-20 15:38:58,319 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-20, Test Time: 15:38:58
+
+
+2020-04-20 15:38:58,363 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-04-20 15:38:58,377 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2020-04-20 15:38:58,383 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:21.9409ms
+                                                                        PASS
+2020-04-20 15:38:58,401 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-04-20 15:38:58,415 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=866203040424692
+2020-04-20 15:38:58,429 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-04-20 15:38:58,443 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=AI2003050400376
+2020-04-20 15:38:58,457 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-04-20 15:38:58,516 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:114.6942ms
+                                                                        PASS
+2020-04-20 15:38:58,538 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 打开WIFI串口
+2020-04-20 15:38:59,594 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1057.0896ms
+                                                                        PASS
+2020-04-20 15:38:59,616 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 发现设备
+2020-04-20 15:39:01,958 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 检测到产品上电，AT response=[MG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1?<RTL8195A>ROM:[V0?<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+
+WIFI initialized
+Mac:00:e0:4c:b7:23:ee
+mac_i2c_send:00e04cb723ee
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+2020-04-20 15:39:02,009 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2392.6206ms
+                                                                        PASS
+2020-04-20 15:39:02,041 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 关闭WIFI串口
+2020-04-20 15:39:02,175 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:133.9869ms
+                                                                        PASS
+2020-04-20 15:39:02,197 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 打开BT串口
+2020-04-20 15:39:03,218 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:1021.7816ms
+                                                                        PASS
+2020-04-20 15:39:03,231 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 BT MAC预读
+2020-04-20 15:39:04,977 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETBLEMAC
+2020-04-20 15:39:06,003 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=BLE MAC:601D9D0F4479
+OK
+2020-04-20 15:39:06,033 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BLE已写过MAC:601D9D0F4479
+2020-04-20 15:39:06,059 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:2827.9221ms
+                                                                        PASS
+2020-04-20 15:39:06,078 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 写BT固件
+2020-04-20 15:39:06,197 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash中...
+
+2020-04-20 15:39:07,518 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+2020-04-20 15:39:07,633 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 写BT 固件中...
+
+2020-04-20 15:39:17,793 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+2020-04-20 15:39:17,818 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - BT 应用系统复位中...
+
+2020-04-20 15:39:18,683 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+2020-04-20 15:39:18,708 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+2020-04-20 15:39:18,724 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:12645.5375ms
+                                                                        PASS
+2020-04-20 15:39:18,743 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 BLE固件版本号检查
+2020-04-20 15:39:19,569 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:39:20,596 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:39:20,618 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+2020-04-20 15:39:20,639 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:39:20,847 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-04-20 15:39:21,699 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:39:22,723 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:39:22,743 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+2020-04-20 15:39:22,759 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:39:22,965 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第2次
+2020-04-20 15:39:23,777 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:39:24,832 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:39:24,852 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+2020-04-20 15:39:24,873 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:39:25,084 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第3次
+2020-04-20 15:39:25,919 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+GETINFO
+2020-04-20 15:39:26,944 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+2020-04-20 15:39:26,966 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+2020-04-20 15:39:26,986 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-04-20 15:39:27,191 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:8448.5856ms
+                                                                        FAIL
+2020-04-20 15:39:27,213 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 MES Fetch Sn
+2020-04-20 15:39:27,241 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:27.9262ms
+                                                                        SKIP
+2020-04-20 15:39:27,257 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 写BT MAC
+2020-04-20 15:39:27,270 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:12.9644ms
+                                                                        SKIP
+2020-04-20 15:39:27,286 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 读BT MAC
+2020-04-20 15:39:27,302 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:15.9562ms
+                                                                        SKIP
+2020-04-20 15:39:27,320 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 校验BT MAC
+2020-04-20 15:39:27,363 [thread-dut-1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:43.8846ms
+                                                                        SKIP
+2020-04-20 15:39:27,385 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 关闭BT 串口
+2020-04-20 15:39:27,504 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:121.6739ms
+                                                                        PASS
+2020-04-20 15:39:27,566 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 57 LOG MAC为BT MAC
+2020-04-20 15:39:27,582 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - LOG MAC设置为BT MAC：
+ PASS 
+
+2020-04-20 15:39:27,600 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:34.9064ms
+                                                                        PASS
+2020-04-20 15:39:27,620 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 59 Deinit
+2020-04-20 15:39:27,636 [thread-dut-1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:15.9221ms
+                                                                        PASS
+2020-04-20 15:39:27,657 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第10项:
+BLE固件版本号检查
+AILinkFactoryAuto.Task.BaseException: AT response=[
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+第10项:
+BLE固件版本号检查
+AILinkFactoryAuto.Task.BaseException: AT response=[
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d8:6f:87:61:05:9a
+BLE_VER:AI_WRIST_V1.16
+BLE_BT:Apr 13 2020 19:56:34
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+] not contain check info=[AI_WRIST_V1.15]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-04-20 15:39:27,678 [thread-dut-1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-04-20 15:41:04,286 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功

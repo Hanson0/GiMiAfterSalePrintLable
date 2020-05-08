@@ -1,0 +1,2443 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-11, Test Time: 14:49:25
+
+
+
+1 Init
+
+TestTime:17.949ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=866203040130091
+
+MEID=
+
+SN=AI1903120400020
+
+MAC=
+
+TestTime:114.6055ms
+                                                                        PASS
+
+4 Open Wifi Uart
+
+TestTime:1038.2624ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[?VRcalibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SE?f????
+OTA1 ]S)R???053cf8:5072???050?IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+
+TestTime:2394.2185ms
+                                                                        PASS
+
+6 Close WIFI Uart
+
+TestTime:118.6839ms
+                                                                        PASS
+
+7 Open BT Uart
+
+TestTime:1019.5442ms
+                                                                        PASS
+
+8 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:15946.1786ms
+                                                                        PASS
+
+10 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=E000E64CCACE
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=E000E64CCACE
+
+AT Response=BLE MAC:E000E64CCACE
+OKSaved mac,then reboot system!
+
+TestTime:2025.3127ms
+                                                                        PASS
+
+11 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:E000E64CCACE
+OK
+
+TestTime:1931.8448ms
+                                                                        PASS
+
+12 Check BT MAC
+
+BT MAC核验：读出BT MAC：E000E64CCACE，与预写入MAC：E000E64CCACE 一致，PASS 
+
+
+TestTime:54.8921ms
+                                                                        PASS
+
+13 Set Bt FactoryMode
+
+AT Commond=AT+SETFACMODE=1
+
+AT Response=
+OK
+
+TestTime:5853.9104ms
+                                                                        PASS
+
+14 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:854.514ms
+                                                                        PASS
+
+15 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:853.3978ms
+                                                                        PASS
+
+16 Close BT Uart
+
+TestTime:121.6751ms
+                                                                        PASS
+
+17 Open Wifi Uart
+
+TestTime:1020.5682ms
+                                                                        PASS
+
+18 Read MAP From File
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 9848 45CA 93B6
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+更新MAP文件中的MAC成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 00E0 4CE6 CDCA
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:86.7681ms
+                                                                        PASS
+
+19 Write Wifi Map
+
+写入第1行MAP 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第2行MAP 
+AT response:
+[iwpriv config_set wmap,10,FFFFFFFFFFFFFFFFFFFF0200FFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第3行MAP 
+AT response:
+[iwpriv config_set wmap,20,272627272727272728280228FFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第4行MAP 
+AT response:
+[iwpriv config_set wmap,30,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第5行MAP 
+AT response:
+[iwpriv config_set wmap,40,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第6行MAP 
+AT response:
+[iwpriv config_set wmap,50,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第7行MAP 
+AT response:
+[iwpriv config_set wmap,60,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第8行MAP 
+AT response:
+[iwpriv config_set wmap,70,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第9行MAP 
+AT response:
+[iwpriv config_set wmap,80,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第10行MAP 
+AT response:
+[iwpriv config_set wmap,90,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第11行MAP 
+AT response:
+[iwpriv config_set wmap,a0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第12行MAP 
+AT response:
+[iwpriv config_set wmap,b0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第13行MAP 
+AT response:
+[iwpriv config_set wmap,c0,FFFFFFFFFFFFFFFF2B2005200000FF00
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第14行MAP 
+AT response:
+[iwpriv config_set wmap,d0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第15行MAP 
+AT response:
+[iwpriv config_set wmap,e0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第16行MAP 
+AT response:
+[iwpriv config_set wmap,f0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第17行MAP 
+AT response:
+[iwpriv config_set wmap,100,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第18行MAP 
+AT response:
+[iwpriv config_set wmap,110,FFFFFFFFFFFFFFFFFFFF00E04CE6CDCA
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第19行MAP 
+AT response:
+[iwpriv config_set wmap,120,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第20行MAP 
+AT response:
+[iwpriv config_set wmap,130,01FF1000FF00FF000010FFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第21行MAP 
+AT response:
+[iwpriv config_set wmap,140,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第22行MAP 
+AT response:
+[iwpriv config_set wmap,150,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第23行MAP 
+AT response:
+[iwpriv config_set wmap,160,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第24行MAP 
+AT response:
+[iwpriv config_set wmap,170,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第25行MAP 
+AT response:
+[iwpriv config_set wmap,180,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第26行MAP 
+AT response:
+[iwpriv config_set wmap,190,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第27行MAP 
+AT response:
+[iwpriv config_set wmap,1a0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第28行MAP 
+AT response:
+[iwpriv config_set wmap,1b0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第29行MAP 
+AT response:
+[iwpriv config_set wmap,1c0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第30行MAP 
+AT response:
+[iwpriv config_set wmap,1d0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第31行MAP 
+AT response:
+[iwpriv config_set wmap,1e0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第32行MAP 
+AT response:
+[iwpriv config_set wmap,1f0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+TestTime:2081.6009ms
+                                                                        PASS
+
+20 Get Wifi Moudle Map
+
+AT Commond=iwpriv config_get rmap,00,512
+
+AT Response=iwpriv config_get rmap,00,512
+
+Private Message: 0x81 0x95 0x16 0xC2 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x02 0x00 0xFF 0xFF 0xFF 0xFF 0x27 0x26 0x27 0x27 0x27 0x27 0x27 0x27 0x28 0x28 0x02 0x28 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x2B 0x20 0x05 0x20 0x00 0x00 0xFF 0x00 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x00 0xE0 0x4C 0xE6 0xCD 0xCA 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x01 0xFF 0x10 0x00 0xFF 0x00 0xFF 0x00 0x00 0x10 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+TestTime:863.1663ms
+                                                                        PASS
+
+21 Check Wifi Map
+
+WIFI MAP核验：
+读出模组WIFI MAP：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 00E0 4CE6 CDCA
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+文件 WIFI MAP：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 00E0 4CE6 CDCA
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+一致 
+
+
+TestTime:46.8776ms
+                                                                        PASS
+
+22 Wifi Into User Mode
+
+AT Commond=ATSC
+
+AT Response=ATSC
+[ATSC]: _AT_SYSTEM_Switch to OTA2 app!!
+BitIdx: 0 
+currrent is OTA1, select OTA2 
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 5 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+
+WIFI initialized
+Mac:00:e0:4c:b7:23:d8
+mac_i2c_send:00e04cb723d8
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+wifi_data:d8471019fd22:-78
+wifi_data:982f3cea315c:-86
+wifi_data:d8471019fd4e:-87
+wifi_data:982f3cea2d14:-88
+wifi_data:7405a58fa8cb:-89
+wifi_data:d8471019f652:-89
+
+
+TestTime:4058.2616ms
+                                                                        PASS
+
+23 Get Wifi Version
+
+AT Commond=ATS?
+
+AT Response=ATS?
+[ATS?]: _AT_SYSTEM_HELP_
+[ATS?]: COMPILE TIME: 2020/02/29-14:06:20
+[ATS?]: SW VERSION: v.3.4.2020/02/29
+
+[MEM] After do cmd, available heap 41128
+
+
+# 
+
+TestTime:851.5615ms
+                                                                        PASS
+
+24 Close WIFI Uart
+
+TestTime:124.6664ms
+                                                                        PASS
+
+25 Open BT Uart
+
+TestTime:1021.6997ms
+                                                                        PASS
+
+26 NB Soft Version Check
+
+AT Commond=AT+CGMR
+
+AT Response=SOTFWAREVER:AI_LITEOS_NB15_B300SP5_V1.9_20200229SWBuildTime:202002291610FOTA VER:AI-Link@AI-NB15@1.0,V150R100C20B300SP5,V150R100C20B300SP5@5,8,3,1
+OK
+
+
+TestTime:2060.1526ms
+                                                                        PASS
+
+27 AT CFUN
+
+AT Commond=AT+CFUN=1
+
+AT Response=
+OK
+
+
+TestTime:4250.0899ms
+                                                                        PASS
+
+28 Get NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
++CGSN:866203040130091
+
+OK
+
+
+TestTime:850.7588ms
+                                                                        PASS
+
+29 Check NB IMEI
+
+NB IMEI检查：
+模块IMEI：866203040130091，与标签IMEI：866203040130091 一致 
+
+
+TestTime:42.8863ms
+                                                                        PASS
+
+30 Get NB IMSI
+
+AT Commond=AT+CIMI
+
+AT Response=
+460113012320698
+
+OK
+
+
+TestTime:849.0624ms
+                                                                        PASS
+
+31 Get NB ICCID
+
+AT Commond=AT+NCCID
+
+AT Response=
++NCCID:89861118248005427375
+
+OK
+
+
+TestTime:858.7477ms
+                                                                        PASS
+
+32 NB Cling Net
+
+AT Commond=AT+CGATT=1
+
+AT Response=
+OK
+
+
+TestTime:2153.2582ms
+                                                                        PASS
+
+33 NB Net Check
+
+AT Commond=AT+CGATT?
+
+AT Response=
++CGATT:0
+
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 122
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+CGATT?
+
+AT Response=
++CGATT:1
+
+OK
+
+
+TestTime:4525.6239ms
+                                                                        PASS
+
+34 Get NB CSQ
+
+AT Commond=AT+CSQ
+
+AT Response=
++CSQ:14,99
+
+OK
+
+
+TestTime:1052.5887ms
+                                                                        PASS
+
+35 Check Csq
+
+NB 信号强度检查：
+模块信号强度：14，在设定范围：1 ~ 100之间 PASS 
+
+
+TestTime:56.8469ms
+                                                                        PASS
+
+36 Get WIFI PROBE
+
+AT Commond=AT+AIGPSWIFI=WIFI,2
+
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[d8471019fd22:-78,982f3cea315c:-86,d8471019fd4e:-87,982f3cea2d14:-88,7405a58fa8cb:-89,d8471019f652:-89]
+
+TestTime:5050.6516ms
+                                                                        PASS
+
+37 Check WIFI PROBE
+
+WIFI探针-信号强度检查：
+信号强度：-89，在设定范围：-90 ~ -10之间 PASS 
+
+
+TestTime:51.8964ms
+                                                                        PASS
+
+38 Check Pedometer
+
+AT Commond=AT+PEDOTEST
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+PEDOTEST
+
+AT Response=
+OK
+
+TestTime:2323.1568ms
+                                                                        PASS
+
+39 Get Temp
+
+AT Commond=AT+TEMPTEST
+
+AT Response=
+OK
+
+AILinkFactoryAuto.Task.BaseException: read info value fail
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 134
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+TEMPTEST
+
+AT Response=TEMP:1519.7
+
+AILinkFactoryAuto.Task.BaseException: AT response=[TEMP:1519.7] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第2次
+
+AT Commond=AT+TEMPTEST
+
+AT Response=
+OKTEMP:1519.7
+OKTEMP:1519.7
+
+TestTime:3623.4074ms
+                                                                        PASS
+
+40 Check Temp
+
+NB 温度传感器检查：
+模模块温度传感器温度值：1519.7，在设定范围：5 ~ 5000之间 PASS 
+
+
+TestTime:55.8518ms
+                                                                        PASS
+
+41 Signal Power
+
+AT Commond=AT+NUESTATS
+
+AT Response=
+OK
+ERROR
+
+ERROR
+
+ERROR
+
+ER
+
+AILinkFactoryAuto.Task.BaseException: AT response=[
+OK
+ERROR
+
+ERROR
+
+ERROR
+
+ER] contain error=[ERROR]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 101
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+NUESTATS
+
+AT Response=
+Signal power:-954
+Total power:-841
+TX power:210
+TX time:455
+RX time:
+
+AILinkFactoryAuto.Task.BaseException: AT response=[
+Signal power:-954
+Total power:-841
+TX power:210
+TX time:455
+RX time:] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第2次
+
+AT Commond=AT+NUESTATS
+
+AT Response=18154
+Cell ID:166790995
+ECL:0
+SNR:146
+EARFCN:2504
+PCI:173
+RSRQ:-108
+OPERATOR MODE:4
+CURRENT BAND:5
+
+OK
+
+Signal power:-951
+Total power:-841
+TX power:210
+TX time:455
+RX time
+
+TestTime:3028.6658ms
+                                                                        PASS
+
+42 Compare Signal Power
+
+key=-951
+
+condition=GREATER_EQUAL
+
+value=-1000
+
+TestTime:67.8651ms
+                                                                        PASS
+
+43 Close BT Uart
+
+TestTime:126.0009ms
+                                                                        PASS
+
+44 Deinit
+
+TestTime:16.9552ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-11, Test Time: 15:24:52
+
+
+
+1 Init
+
+TestTime:25.93ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=866203040130091
+
+MEID=
+
+SN=AI1903120400020
+
+MAC=
+
+TestTime:68.8174ms
+                                                                        PASS
+
+4 Open Wifi Uart
+
+TestTime:1021.169ms
+                                                                        PASS
+
+5 Find Device
+
+检测到产品上电，AT response=[????????V?OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M:<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# <RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+
+TestTime:4541.0618ms
+                                                                        PASS
+
+6 Close WIFI Uart
+
+TestTime:120.6779ms
+                                                                        PASS
+
+7 Open BT Uart
+
+TestTime:1020.2832ms
+                                                                        PASS
+
+8 Write BT Bin
+
+擦除BT Flash中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+
+写BT 固件中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+
+BT 应用系统复位中...
+
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+
+TestTime:14397.4031ms
+                                                                        PASS
+
+10 Write BT MAC
+
+AT Commond=AT+SETBLEMAC=E000E64CCACE
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[reboot system]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+SETBLEMAC=E000E64CCACE
+
+AT Response=BLE MAC:E000E64CCACE
+OKSaved mac,then reboot system!
+
+TestTime:1931.6013ms
+                                                                        PASS
+
+11 GET BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:E000E64CCACE
+OK
+
+TestTime:1930.8385ms
+                                                                        PASS
+
+12 Check BT MAC
+
+BT MAC核验：读出BT MAC：E000E64CCACE，与预写入MAC：E000E64CCACE 一致，PASS 
+
+
+TestTime:25.9311ms
+                                                                        PASS
+
+13 Set Bt FactoryMode
+
+AT Commond=AT+SETFACMODE=1
+
+AT Response=
+OK
+
+TestTime:5855.8697ms
+                                                                        PASS
+
+14 Wifi PowerOff
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:856.7714ms
+                                                                        PASS
+
+15 Wifi PowerOn
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:856.711ms
+                                                                        PASS
+
+16 Close BT Uart
+
+TestTime:129.8614ms
+                                                                        PASS
+
+17 Open Wifi Uart
+
+TestTime:1021.421ms
+                                                                        PASS
+
+18 Read MAP From File
+
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 9848 45CA 93B6
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+更新MAP文件中的MAC成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 00E0 4CE6 CDCA
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+
+TestTime:59.8744ms
+                                                                        PASS
+
+19 Write Wifi Map
+
+写入第1行MAP 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第2行MAP 
+AT response:
+[iwpriv config_set wmap,10,FFFFFFFFFFFFFFFFFFFF0200FFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第3行MAP 
+AT response:
+[iwpriv config_set wmap,20,272627272727272728280228FFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第4行MAP 
+AT response:
+[iwpriv config_set wmap,30,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第5行MAP 
+AT response:
+[iwpriv config_set wmap,40,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第6行MAP 
+AT response:
+[iwpriv config_set wmap,50,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第7行MAP 
+AT response:
+[iwpriv config_set wmap,60,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第8行MAP 
+AT response:
+[iwpriv config_set wmap,70,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第9行MAP 
+AT response:
+[iwpriv config_set wmap,80,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第10行MAP 
+AT response:
+[iwpriv config_set wmap,90,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第11行MAP 
+AT response:
+[iwpriv config_set wmap,a0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第12行MAP 
+AT response:
+[iwpriv config_set wmap,b0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第13行MAP 
+AT response:
+[iwpriv config_set wmap,c0,FFFFFFFFFFFFFFFF2B2005200000FF00
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第14行MAP 
+AT response:
+[iwpriv config_set wmap,d0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第15行MAP 
+AT response:
+[iwpriv config_set wmap,e0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第16行MAP 
+AT response:
+[iwpriv config_set wmap,f0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第17行MAP 
+AT response:
+[iwpriv config_set wmap,100,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第18行MAP 
+AT response:
+[iwpriv config_set wmap,110,FFFFFFFFFFFFFFFFFFFF00E04CE6CDCA
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第19行MAP 
+AT response:
+[iwpriv config_set wmap,120,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第20行MAP 
+AT response:
+[iwpriv config_set wmap,130,01FF1000FF00FF000010FFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第21行MAP 
+AT response:
+[iwpriv config_set wmap,140,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第22行MAP 
+AT response:
+[iwpriv config_set wmap,150,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第23行MAP 
+AT response:
+[iwpriv config_set wmap,160,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第24行MAP 
+AT response:
+[iwpriv config_set wmap,170,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第25行MAP 
+AT response:
+[iwpriv config_set wmap,180,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第26行MAP 
+AT response:
+[iwpriv config_set wmap,190,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第27行MAP 
+AT response:
+[iwpriv config_set wmap,1a0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第28行MAP 
+AT response:
+[iwpriv config_set wmap,1b0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第29行MAP 
+AT response:
+[iwpriv config_set wmap,1c0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第30行MAP 
+AT response:
+[iwpriv config_set wmap,1d0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第31行MAP 
+AT response:
+[iwpriv config_set wmap,1e0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+写入第32行MAP 
+AT response:
+[iwpriv config_set wmap,1f0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+[MEM] After do cmd, available heap 55704
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+
+TestTime:2064.7993ms
+                                                                        PASS
+
+20 Get Wifi Moudle Map
+
+AT Commond=iwpriv config_get rmap,00,512
+
+AT Response=iwpriv config_get rmap,00,512
+
+Private Message: 0x81 0x95 0x16 0xC2 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x02 0x00 0xFF 0xFF 0xFF 0xFF 0x27 0x26 0x27 0x27 0x27 0x27 0x27 0x27 0x28 0x28 0x02 0x28 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x2B 0x20 0x05 0x20 0x00 0x00 0xFF 0x00 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x00 0xE0 0x4C 0xE6 0xCD 0xCA 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0x01 0xFF 0x10 0x00 0xFF 0x00 0xFF 0x00 0x00 0x10 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+TestTime:858.0502ms
+                                                                        PASS
+
+21 Check Wifi Map
+
+WIFI MAP核验：
+读出模组WIFI MAP：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 00E0 4CE6 CDCA
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+文件 WIFI MAP：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+2726 2727 2727 2727 2828 0228 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2B20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 00E0 4CE6 CDCA
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+一致 
+
+
+TestTime:32.912ms
+                                                                        PASS
+
+23 Get Wifi Version
+
+AT Commond=ATS?
+
+AT Response=ATS?
+[ATS?]: _AT_SYSTEM_HELP_
+[ATS?]: COMPILE TIME: 2019/06/03-21:22:44
+[ATS?]: SW VERSION: v.3.4.2019/06/03
+
+[MEM] After do cmd, available heap 55704
+
+
+# 
+
+TestTime:849.7684ms
+                                                                        PASS
+
+24 Close WIFI Uart
+
+TestTime:116.0687ms
+                                                                        PASS
+
+25 Open BT Uart
+
+TestTime:1025.7485ms
+                                                                        PASS
+
+26 NB Soft Version Check
+
+AT Commond=AT+CGMR
+
+AT Response=SOTFWAREVER:AI_LITEOS_NB15_B300SP5_V1.9_20200229SWBuildTime:202002291610FOTA VER:AI-Link@AI-NB15@1.0,V150R100C20B300SP5,V150R100C20B300SP5@5,8,3,1
+OK
+
+
+TestTime:2044.9229ms
+                                                                        PASS
+
+27 AT CFUN
+
+AT Commond=AT+CFUN=1
+
+AT Response=
+OK
+
+
+TestTime:4249.5443ms
+                                                                        PASS
+
+28 Get NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
++CGSN:866203040130091
+
+OK
+
+
+TestTime:853.7165ms
+                                                                        PASS
+
+29 Check NB IMEI
+
+NB IMEI检查：
+模块IMEI：866203040130091，与标签IMEI：866203040130091 一致 
+
+
+TestTime:23.936ms
+                                                                        PASS
+
+30 Get NB IMSI
+
+AT Commond=AT+CIMI
+
+AT Response=
+460113012320698
+
+OK
+
+
+TestTime:855.1011ms
+                                                                        PASS
+
+31 Get NB ICCID
+
+AT Commond=AT+NCCID
+
+AT Response=
++NCCID:89861118248005427375
+
+OK
+
+
+TestTime:858.7909ms
+                                                                        PASS
+
+32 NB Cling Net
+
+AT Commond=AT+CGATT=1
+
+AT Response=
+OK
+
+
+TestTime:2151.2921ms
+                                                                        PASS
+
+33 NB Net Check
+
+AT Commond=AT+CGATT?
+
+AT Response=
++CGATT:0
+
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 122
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+CGATT?
+
+AT Response=
++CGATT:1
+
+OK
+
+
+TestTime:4525.3724ms
+                                                                        PASS
+
+34 Get NB CSQ
+
+AT Commond=AT+CSQ
+
+AT Response=
++CSQ:15,99
+
+OK
+
+
+TestTime:1050.9895ms
+                                                                        PASS
+
+35 Check Csq
+
+NB 信号强度检查：
+模块信号强度：15，在设定范围：1 ~ 100之间 PASS 
+
+
+TestTime:26.9261ms
+                                                                        PASS
+
+36 Get WIFI PROBE
+
+AT Commond=AT+AIGPSWIFI=WIFI,2
+
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[]
+
+AILinkFactoryAuto.Task.BaseException: read info value fail
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 134
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+AT Commond=AT+AIGPSWIFI=WIFI,2
+
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[]
+
+AILinkFactoryAuto.Task.BaseException: read info value fail
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 134
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第2次
+
+AT Commond=AT+AIGPSWIFI=WIFI,2
+
+AT Response=
+OK
+
+
+ ble mcu start to get WIFI[]
+
+AILinkFactoryAuto.Task.BaseException: read info value fail
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 134
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第3次
+
+AT Commond=AT+AIGPSWIFI=WIFI,2
+
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[]
+
+AILinkFactoryAuto.Task.BaseException: read info value fail
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 134
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:21127.7998ms
+                                                                        FAIL
+
+37 Check WIFI PROBE
+
+TestTime:13.9623ms
+                                                                        SKIP
+
+38 Check Pedometer
+
+TestTime:12.9672ms
+                                                                        SKIP
+
+39 Get Temp
+
+TestTime:12.9667ms
+                                                                        SKIP
+
+40 Check Temp
+
+TestTime:12.9672ms
+                                                                        SKIP
+
+41 Signal Power
+
+TestTime:12.9974ms
+                                                                        SKIP
+
+42 Compare Signal Power
+
+TestTime:12.9667ms
+                                                                        SKIP
+
+43 Close BT Uart
+
+TestTime:115.1068ms
+                                                                        PASS
+
+44 Deinit
+
+TestTime:20.9442ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-11, Test Time: 17:15:11
+
+
+
+1 Init
+
+TestTime:28.92ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=866203040130091
+
+MEID=
+
+SN=AI1903120400020
+
+MAC=
+
+TestTime:114.7256ms
+                                                                        PASS
+
+44 Deinit
+
+TestTime:13.9634ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-11, Test Time: 17:15:22
+
+
+
+1 Init
+
+TestTime:21.9125ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=866203040130091
+
+MEID=
+
+SN=AI1903120400020
+
+MAC=
+
+TestTime:69.8123ms
+                                                                        PASS
+
+9 MES Fetch Sn
+
+TestTime:628.3556ms
+                                                                        PASS
+
+44 Deinit
+
+TestTime:14.9601ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-11, Test Time: 17:15:37
+
+
+
+1 Init
+
+TestTime:19.9003ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=866203040130091
+
+MEID=
+
+SN=AI1903120400020
+
+MAC=
+
+TestTime:71.8387ms
+                                                                        PASS
+
+9 MES Fetch Sn
+
+TestTime:102.866ms
+                                                                        PASS
+
+10 Write BT MAC
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 73
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第1次
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 73
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第2次
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 73
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+重试第3次
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 73
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:1154.9239ms
+                                                                        FAIL
+
+44 Deinit
+
+TestTime:15.9579ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

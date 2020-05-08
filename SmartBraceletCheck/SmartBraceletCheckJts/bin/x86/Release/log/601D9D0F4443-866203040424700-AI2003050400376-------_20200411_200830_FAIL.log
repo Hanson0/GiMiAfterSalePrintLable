@@ -1,0 +1,177 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 20:08:30
+
+
+1 Init
+TestTime:43.8834ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424700
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:65.8249ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:13.9628ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8390004 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+
+#
+WIFI initialized
+Mac:00:e0:4c:b7:23:d0
+mac_i2c_send:00e04cb723d0
+Firmware Version:1.030.00
+Release Date:202]  contain =[WIFI initialized]
+TestTime:1144.0151ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:13.9623ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1013.6931ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+TestTime:845.3354ms
+                                                                        PASS
+36 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+
+TestTime:4745.9233ms
+                                                                        PASS
+37 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424700
+
+OK
+
+TestTime:1061.6652ms
+                                                                        PASS
+40 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+ERROR
+gps_cn_num:0,gps_cn:0,wifi_mac
+AT response=[
+ERROR
+gps_cn_num:0,gps_cn:0,wifi_mac] contain error=[ERROR]
+重试第1次
+AT Commond=AT+CIMI
+AT Response=:
+AT response=[:] not contain error=[OK]
+重试第2次
+AT Commond=AT+CIMI
+AT Response=
+ERROR
+
+ERROR
+
+AT response=[
+ERROR
+
+ERROR
+] contain error=[ERROR]
+重试第3次
+AT Commond=AT+CIMI
+AT Response=
+ERROR
+
+AT response=[
+ERROR
+] contain error=[ERROR]
+TestTime:5080.6712ms
+                                                                        FAIL
+41 获取NB ICCID
+TestTime:11.9688ms
+                                                                        SKIP
+42 NB 附网
+TestTime:13.9628ms
+                                                                        SKIP
+43 NB附网检查
+TestTime:29.9201ms
+                                                                        SKIP
+44 获取NB信号强度
+TestTime:12.9655ms
+                                                                        SKIP
+45 检查NB信号强度
+TestTime:10.971ms
+                                                                        SKIP
+46 获取WIFI探针-信号强度值
+TestTime:31.9465ms
+                                                                        SKIP
+47 WIFI探针-信号强度检查
+TestTime:12.9656ms
+                                                                        SKIP
+51 射频获取
+TestTime:13.9287ms
+                                                                        SKIP
+52 射频检查
+TestTime:12.9746ms
+                                                                        SKIP
+56 关闭BT 串口
+TestTime:15.9579ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4443 PASS 
+
+TestTime:30.9503ms
+                                                                        PASS
+59 Deinit
+TestTime:13.9349ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

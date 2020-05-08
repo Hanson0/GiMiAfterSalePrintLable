@@ -1,0 +1,65 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 19:52:03
+
+
+1 Init
+TestTime:29.8837ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:33.3573ms
+                                                                        PASS
+5 发现设备
+超时：System.Func`1[System.Boolean]
+TestTime:4456.6519ms
+                                                                        FAIL
+6 关闭WIFI串口
+TestTime:13.973ms
+                                                                        PASS
+7 打开BT串口
+TestTime:12.9968ms
+                                                                        SKIP
+13 读BT MAC
+TestTime:15.9573ms
+                                                                        SKIP
+14 展示BT MAC二维码
+TestTime:26.9295ms
+                                                                        SKIP
+20 关闭BT 串口
+给定关键字不在字典中。
+TestTime:242.0037ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:60.0712ms
+                                                                        PASS
+59 Deinit
+TestTime:15.0664ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

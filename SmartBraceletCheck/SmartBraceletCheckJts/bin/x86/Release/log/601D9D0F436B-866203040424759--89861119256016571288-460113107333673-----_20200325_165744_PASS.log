@@ -1,0 +1,156 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:57:44
+
+
+1 Init
+TestTime:27.9256ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1016.0511ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8383135 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+TestTime:3456.7077ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:121.1088ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1017.5319ms
+                                                                        PASS
+11 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F436B
+OK
+TestTime:848.2703ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6842.3316ms
+                                                                        PASS
+33 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4238.0846ms
+                                                                        PASS
+34 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424759
+
+OK
+
+TestTime:844.0667ms
+                                                                        PASS
+36 打印标签IMEI设置为NB IMEI
+打印标签的IMEI 设置为NB IMEI：
+866203040424759 PASS 
+
+TestTime:25.9299ms
+                                                                        PASS
+37 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113107333673
+
+OK
+
+TestTime:848.7464ms
+                                                                        PASS
+38 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861119256016571288
+
+OK
+
+TestTime:852.125ms
+                                                                        PASS
+51 关闭BT 串口
+TestTime:120.7345ms
+                                                                        PASS
+52 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F436B PASS 
+
+TestTime:22.9774ms
+                                                                        PASS
+53 标签打印
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=D:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+content:866203040424759,,89861119256016571288,460113107333673,601D9D0F436B
+TestTime:123.6689ms
+                                                                        PASS
+54 Deinit
+TestTime:7.9781ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

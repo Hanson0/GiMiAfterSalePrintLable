@@ -1,0 +1,235 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 19:03:52
+
+
+1 Init
+TestTime:49.8329ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424700
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:99.6077ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:27.1633ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:40
+mac_i2c_send:00e04cb72340
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+
+#]  contain =[WIFI initialized]
+TestTime:1135.1825ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:14.9686ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1015.398ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+TestTime:845.7564ms
+                                                                        PASS
+35 检查NB软件版本号
+AT Commond=AT+CGMR
+AT Response=
+ERROR
+SOTFWAREVER:AI_LITEOS_NB15_B300Sgps_cn_num:0,gps_cn:0,wifi_mac:
+AT response=[
+ERROR
+SOTFWAREVER:AI_LITEOS_NB15_B300Sgps_cn_num:0,gps_cn:0,wifi_mac:] contain error=[ERROR]
+重试第1次
+AT Commond=AT+CGMR
+AT Response=SOTFWAREVER:AI_LITEOS_NB15_B300SP5_V1.9_20200229SWBuildTime:202002291610FOTA VER:AI-Link@AI-NB15@1.0,V150R100C20B300SP5,V150R100C20B300SP5@5,8,3,1
+OK
+
+TestTime:16365.9649ms
+                                                                        PASS
+36 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4273.2027ms
+                                                                        PASS
+37 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424700
+
+OK
+
+TestTime:872.4064ms
+                                                                        PASS
+38 检查NB IMEI内部与标签一致性
+NB IMEI检查：
+模块IMEI：866203040424700，与标签IMEI：866203040424700 一致 
+
+TestTime:41.8884ms
+                                                                        PASS
+39 打印标签IMEI设置为NB IMEI
+打印标签的IMEI 设置为NB IMEI：
+866203040424700 PASS 
+
+TestTime:28.9206ms
+                                                                        PASS
+40 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113013919842
+
+OK
+
+TestTime:868.4436ms
+                                                                        PASS
+41 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861118257001953771
+
+OK
+
+TestTime:863.1586ms
+                                                                        PASS
+42 NB 附网
+AT Commond=AT+CGATT=1
+AT Response=
+OK
+
+TestTime:2154.0537ms
+                                                                        PASS
+43 NB附网检查
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+重试第1次
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:1
+
+OK
+
+TestTime:10579.3832ms
+                                                                        PASS
+44 获取NB信号强度
+AT Commond=AT+CSQ
+AT Response=
++CSQ:13,99
+
+OK
+
+TestTime:1077.7129ms
+                                                                        PASS
+45 检查NB信号强度
+NB 信号强度检查：
+模块信号强度：13，在设定范围：1 ~ 100之间 PASS 
+
+TestTime:47.8719ms
+                                                                        PASS
+46 获取WIFI探针-信号强度值
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[d8471019fd22:-74,982f3cea3128:-75,a86b7cc2cabc:-76,283334a6efec:-77,d8471019fbba:-78,503aa0cbc6b0:-85]
+read info value fail
+重试第1次
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[d8471019fd22:-74,982f3cea3128:-74,a86b7cc2cabc:-76,283334a6eff1:-78,283334a6efec:-78,94d9b3ebd540:-78]
+read info value fail
+重试第2次
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIFI [d8471019fd22:-73,283334a6efed:-78,283334a6eff1:-78,283334a6efec:-78,d8471019fbba:-80,a86b7cc2cabc:-82]
+read info value fail
+重试第3次
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[d8471019fd22:-74,d8471019fbba:-78,982f3cea3128:-82,503aa0cbc6b0:-83,060588f0aeb4:-83,982f3cea309a:-84]
+read info value fail
+TestTime:21252.1874ms
+                                                                        FAIL
+47 WIFI探针-信号强度检查
+TestTime:14.9606ms
+                                                                        SKIP
+48 计步器检查
+TestTime:14.9611ms
+                                                                        SKIP
+49 温度传感器值获取
+TestTime:16.9546ms
+                                                                        SKIP
+50 温度传感器检查
+TestTime:30.9492ms
+                                                                        SKIP
+51 射频获取
+TestTime:29.9536ms
+                                                                        SKIP
+52 射频检查
+TestTime:27.9239ms
+                                                                        SKIP
+56 关闭BT 串口
+TestTime:27.925ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4443 PASS 
+
+TestTime:53.856ms
+                                                                        PASS
+59 Deinit
+TestTime:27.9256ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

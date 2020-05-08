@@ -1,0 +1,115 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 15:40:36
+
+
+1 Init
+TestTime:40.8461ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:58.6455ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1032.7799ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+#
+WIFI initialized
+Mac:00:e0:4c:b7:23:ba
+mac_i2c_send:00e04cb723ba
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:2329.5612ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:12.3734ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1023.2425ms
+                                                                        PASS
+9 BLE固件版本号检查
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第1次
+AT Commond=AT+GETINFO
+AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:c3:47:73:55:91:b5
+BLE_VER:AI_WRIST_V1.12
+BLE_BT:Apr  8 2020 11:17:23
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+TestTime:3955.4214ms
+                                                                        PASS
+10 取MAC号方式自动判断
+AT Commond=AT+GETBLEMAC
+AT Response=
+OKBLE MAC:000000000000
+OK
+BLE未写过MAC:000000000000
+TestTime:2684.0915ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:
+AT response=[gps_cn_num:0,gps_cn:0,wifi_mac:] not contain error=[OK]
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:000000000000
+OK
+TestTime:1922.0749ms
+                                                                        PASS
+14 展示BT MAC二维码
+TestTime:6698.8894ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:16.9557ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+000000000000 PASS 
+
+TestTime:25.5208ms
+                                                                        PASS
+59 Deinit
+TestTime:14.7945ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

@@ -1,0 +1,21 @@
+2020-04-07 17:17:19,393 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 89 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-04-07 17:17:19,468 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 94 - AILinkFactoryAutoStudio Version 2.02
+2020-04-07 17:17:19,476 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 95 - Version 2.01
+2020-04-07 17:17:19,508 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 102 - FormLog................Success!
+2020-04-07 17:17:19,701 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 105 - FormMain................Success!
+2020-04-07 17:17:19,715 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 120 - AILinkFactoryAutoV0.01
+2020-04-07 17:17:19,719 [FormStudio] INFO  UiDebug AILinkFactoryAuto.View.FormMain FormMain_Shown 121 - AILinkFactoryAutoV0.01
+2020-04-07 17:17:19,738 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 130 - 加载测试序列=[SmartBracelet.jts]
+2020-04-07 17:17:26,014 [FormStudio] ERROR UiInfo AILinkFactoryAuto.View.FormMain LoadJts 157 - 测试序列加载失败
+请检查E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\AILinkFactoryAuto\bin\x86\Debug\jts\SmartBracelet.jts是否存在
+2020-04-07 17:17:39,440 [FormStudio] ERROR UiInfo AILinkFactoryAuto.View.FormMain LoadJts 157 - 测试序列加载失败
+请检查E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\AILinkFactoryAuto\bin\x86\Debug\jts\SmartBracelet.jts是否存在

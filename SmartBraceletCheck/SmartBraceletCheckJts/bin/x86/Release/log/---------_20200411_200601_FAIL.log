@@ -1,0 +1,106 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 20:06:01
+
+
+1 Init
+TestTime:21.9431ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:14.96ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:02
+mac_i2c_send:00e04cb72302
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+
+#]  contain =[WIFI initialized]
+TestTime:2346.1659ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:13.9639ms
+                                                                        PASS
+7 打开BT串口
+超时：System.Func`1[System.Boolean]
+TestTime:11326.2179ms
+                                                                        FAIL
+13 读BT MAC
+TestTime:11.9688ms
+                                                                        SKIP
+36 设置BT CFUN为1
+TestTime:12.9655ms
+                                                                        SKIP
+37 获取NB IMEI
+TestTime:27.9233ms
+                                                                        SKIP
+40 获取NB IMSI
+TestTime:12.9673ms
+                                                                        SKIP
+41 获取NB ICCID
+TestTime:9.0084ms
+                                                                        SKIP
+42 NB 附网
+TestTime:26.9311ms
+                                                                        SKIP
+43 NB附网检查
+TestTime:11.9666ms
+                                                                        SKIP
+44 获取NB信号强度
+TestTime:11.9677ms
+                                                                        SKIP
+45 检查NB信号强度
+TestTime:11.9666ms
+                                                                        SKIP
+46 获取WIFI探针-信号强度值
+TestTime:10.0107ms
+                                                                        SKIP
+47 WIFI探针-信号强度检查
+TestTime:11.9677ms
+                                                                        SKIP
+51 射频获取
+TestTime:13.9633ms
+                                                                        SKIP
+52 射频检查
+TestTime:11.9672ms
+                                                                        SKIP
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:56.8473ms
+                                                                        PASS
+59 Deinit
+TestTime:24.9332ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

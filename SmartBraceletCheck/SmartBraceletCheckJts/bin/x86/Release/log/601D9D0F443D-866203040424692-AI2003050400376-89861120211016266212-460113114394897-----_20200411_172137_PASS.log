@@ -1,0 +1,252 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 17:21:37
+
+
+1 Init
+TestTime:17.9513ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:100.2073ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1026.4505ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[8]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+LDO Mode, BD_Info: 0 
+
+#
+WIFI initialized
+Mac:00:e0:4c:b7:23:a0
+mac_i2c_send:00e04cb723a0
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:2344.0463ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:15.2934ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1013.6573ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F443D
+OK
+TestTime:1914.6481ms
+                                                                        PASS
+19 BT 开始广播
+AT Commond=AT+OPENBLEADV
+AT Response=
+OK
+TestTime:641.0637ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:13.5703ms
+                                                                        PASS
+21 打开蓝牙扫描工具的串口
+TestTime:1013.0918ms
+                                                                        PASS
+22 开始扫描BT广播包并获取BT RSSI
+AT Commond=AT+INQ
+AT Response=OK
++INQS
+0:601D9D0F443D:RSSI:-052:
+
+TestTime:7040.1129ms
+                                                                        PASS
+23 检查BT RSSI
+BT 信号强度检查：
+模块信号强度：-52，在设定范围：-90 ~ -10之间 PASS 
+
+TestTime:33.6434ms
+                                                                        PASS
+24 停止扫描
+AT Commond=AT+SINQ
+AT Response=+INQE
+
+TestTime:843.7078ms
+                                                                        PASS
+25 关闭BT扫描工具串口
+TestTime:12.9666ms
+                                                                        PASS
+34 打开BT串口
+TestTime:1018.0884ms
+                                                                        PASS
+35 检查NB软件版本号
+AT Commond=AT+CGMR
+AT Response=
+ERROR
+
+ERROR
+SOTFWAREVER:AI_L
+AT response=[
+ERROR
+
+ERROR
+SOTFWAREVER:AI_L] contain error=[ERROR]
+重试第1次
+AT Commond=AT+CGMR
+AT Response=SOTFWAREVER:AI_LITEOS_NB15_B300SP5_V1.9_20200229SWBuildTime:202002291610FOTA VER:AI-Link@AI-NB15@1.0,V150R100C20B300SP5,V150R100C20B300SP5@5,8,3,1
+OK
+
+TestTime:4311.0729ms
+                                                                        PASS
+36 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4246.4131ms
+                                                                        PASS
+37 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424692
+
+OK
+
+TestTime:845.5566ms
+                                                                        PASS
+38 检查NB IMEI内部与标签一致性
+NB IMEI检查：
+模块IMEI：866203040424692，与标签IMEI：866203040424692 一致 
+
+TestTime:25.3769ms
+                                                                        PASS
+40 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113114394897
+
+OK
+
+TestTime:858.8868ms
+                                                                        PASS
+41 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861120211016266212
+
+OK
+
+TestTime:838.9177ms
+                                                                        PASS
+46 获取WIFI探针-信号强度值
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WI[d8471019fd22:-79,283334a6efed:-83,283334a6eff1:-84,283334a6efec:-84,982f3cea3128:-84,503aa0cbc6b0:-85]
+read info value fail
+重试第1次
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[283334a6eff1:-76,283334a6efec:-76,a86b7cc2cabc:-77,283334a6efed:-77,d8471019fd22:-83,503aa0cbc6b0:-86]
+read info value fail
+重试第2次
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[283334a6eff1:-77,283334a6efed:-77,283334a6efec:-77,982f3cea3128:-83,7405a58fa8cb:-86,a86b7cc2cabc:-87]
+TestTime:15597.7474ms
+                                                                        PASS
+47 WIFI探针-信号强度检查
+WIFI探针-信号强度检查：
+信号强度：-86，在设定范围：-90 ~ -10之间 PASS 
+
+TestTime:27.7396ms
+                                                                        PASS
+48 计步器检查
+AT Commond=AT+PEDOTEST
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+PEDOTEST
+AT Response=
+OK
+TestTime:2303.8094ms
+                                                                        PASS
+49 温度传感器值获取
+AT Commond=AT+TEMPTEST
+AT Response=
+OKTEMP:4776.1
+OK
+TestTime:2041.7763ms
+                                                                        PASS
+50 温度传感器检查
+NB 温度传感器检查：
+模模块温度传感器温度值：4776.1，在设定范围：5 ~ 5000之间 PASS 
+
+TestTime:28.5223ms
+                                                                        PASS
+56 关闭BT 串口
+TestTime:20.2445ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F443D PASS 
+
+TestTime:25.6079ms
+                                                                        PASS
+59 Deinit
+TestTime:16.9563ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

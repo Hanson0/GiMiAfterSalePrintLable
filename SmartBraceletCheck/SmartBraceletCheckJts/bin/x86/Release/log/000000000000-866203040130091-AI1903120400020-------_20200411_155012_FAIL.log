@@ -1,0 +1,247 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 15:50:12
+
+
+1 Init
+TestTime:25.9003ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:104.7197ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1064.6513ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[fffffffe]
+OTA2 USE
+OTA2 SIGN[35393138:31313738]
+IMG2 DATA[0x80c5da4:5032:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x80c375b]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8390004 
+boot reason: 0 
+System_Init2
+# 2==========cpu clock is: 62500000. ==
+
+Start LOG SERVICE MODE
+
+# 
+Initializing WIFI ...
+LDO Mode, BD_In
+#fo: 0 
+
+LDO Mode, BD_Info: 0 
+
+WIFI initialized
+Mac:00:e0:4c:b7:23:02
+mac_i2c_send:00e04cb72302
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+]  contain =[WIFI initialized]
+TestTime:2362.5999ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:16.0824ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1018.0616ms
+                                                                        PASS
+8 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:13020.2825ms
+                                                                        PASS
+10 取MAC号方式自动判断
+AT Commond=AT+GETBLEMAC
+AT Response=
+不包含BLE MAC:信息
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=
+不包含BLE MAC:信息
+重试第2次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:000000000000
+OKVerified
+Apps A...... Verified
+
+RE
+BLE未写过MAC:000000000000
+TestTime:8338.491ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BOOT_CAUSE_SECURITY_PMU_POWER_ON_RESET
+Neul 
+OK
+BLE MAC:000000000000
+OKgps_cn_num:0,gps_cn:0,wifi_mac:
+TestTime:873.91ms
+                                                                        PASS
+16 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:7846.092ms
+                                                                        PASS
+17 Wifi 断电
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=
+AT response=[] not contain error=[OK]
+重试第2次
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=
+AT response=[] not contain error=[OK]
+重试第3次
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=wifi power off
+gps power off
+
+OK
+wifi power off
+gps power off
+
+OK
+wifi power off
+gps power off
+
+OK
+wifi power off
+gps power off
+
+OK
+
+TestTime:12919.4836ms
+                                                                        PASS
+18 Wifi 上电
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+TestTime:2043.4385ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:17.0223ms
+                                                                        PASS
+26 打开WIFI串口
+超时：System.Func`1[System.Boolean]
+TestTime:11309.6809ms
+                                                                        FAIL
+27 读取WIFI MAP文件并更新MAC至内存
+TestTime:7.0224ms
+                                                                        SKIP
+28 写WIFI MAP
+TestTime:10.0244ms
+                                                                        SKIP
+29 读产品内部WIFI Map
+TestTime:9.712ms
+                                                                        SKIP
+30 校验WIFI Map
+TestTime:7.9798ms
+                                                                        SKIP
+32 检查WIFI版本号
+TestTime:17.9507ms
+                                                                        SKIP
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+000000000000 PASS 
+
+TestTime:19.2323ms
+                                                                        PASS
+59 Deinit
+TestTime:14.109ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

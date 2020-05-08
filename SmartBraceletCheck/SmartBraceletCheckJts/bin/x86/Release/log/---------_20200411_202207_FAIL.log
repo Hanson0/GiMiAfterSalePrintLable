@@ -1,0 +1,106 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 20:22:07
+
+
+1 Init
+TestTime:37.9328ms
+                                                                        PASS
+2 Parse Label
+IMEI=
+MEID=
+SN=
+MAC=
+IMEI null
+TestTime:329.3104ms
+                                                                        FAIL
+4 打开WIFI串口
+TestTime:14.9913ms
+                                                                        SKIP
+5 发现设备
+TestTime:13.04ms
+                                                                        SKIP
+6 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:271.8094ms
+                                                                        FAIL
+7 打开BT串口
+TestTime:20.9436ms
+                                                                        SKIP
+13 读BT MAC
+TestTime:14.9595ms
+                                                                        SKIP
+36 设置BT CFUN为1
+TestTime:17.0416ms
+                                                                        SKIP
+37 获取NB IMEI
+TestTime:30.9486ms
+                                                                        SKIP
+40 获取NB IMSI
+TestTime:31.9146ms
+                                                                        SKIP
+41 获取NB ICCID
+TestTime:27.9238ms
+                                                                        SKIP
+42 NB 附网
+TestTime:20.9788ms
+                                                                        SKIP
+43 NB附网检查
+TestTime:28.9216ms
+                                                                        SKIP
+44 获取NB信号强度
+TestTime:13.9935ms
+                                                                        SKIP
+45 检查NB信号强度
+TestTime:12.9644ms
+                                                                        SKIP
+46 获取WIFI探针-信号强度值
+TestTime:13.9958ms
+                                                                        SKIP
+47 WIFI探针-信号强度检查
+TestTime:13.9588ms
+                                                                        SKIP
+51 射频获取
+TestTime:12.998ms
+                                                                        SKIP
+52 射频检查
+TestTime:25.6984ms
+                                                                        SKIP
+56 关闭BT 串口
+给定关键字不在字典中。
+TestTime:259.5169ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:61.9718ms
+                                                                        PASS
+59 Deinit
+TestTime:16.958ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

@@ -1,0 +1,446 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-17, Test Time: 15:47:06
+
+
+
+1 Init
+
+TestTime:16.9546ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1047.9739ms
+                                                                        PASS
+
+5 发现设备
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 29
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:11593.8013ms
+                                                                        FAIL
+
+6 关闭WIFI串口
+
+TestTime:123.6327ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:8.9782ms
+                                                                        SKIP
+
+11 读BT MAC
+
+TestTime:13.9623ms
+                                                                        SKIP
+
+34 获取NB IMEI
+
+TestTime:10.9705ms
+                                                                        SKIP
+
+36 获取NB IMSI
+
+TestTime:6.9802ms
+                                                                        SKIP
+
+37 获取NB ICCID
+
+TestTime:5.9836ms
+                                                                        SKIP
+
+50 关闭BT 串口
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:270.4442ms
+                                                                        FAIL
+
+51 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+
+TestTime:44.8808ms
+                                                                        PASS
+
+52 Deinit
+
+TestTime:15.9574ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-17, Test Time: 16:15:30
+
+
+
+1 Init
+
+TestTime:16.9546ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1020.7941ms
+                                                                        PASS
+
+5 发现设备
+
+检测到产品上电，AT response=[?u)OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M?DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+
+TestTime:2343.7598ms
+                                                                        PASS
+
+6 关闭WIFI串口
+
+TestTime:119.5674ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:1018.1596ms
+                                                                        PASS
+
+11 读BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:601D9D0F4351
+OK
+
+TestTime:895.7044ms
+                                                                        PASS
+
+34 获取NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第1次
+
+AT Commond=AT+CGSN=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第2次
+
+AT Commond=AT+CGSN=1
+
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+
+
+AILinkFactoryAuto.Task.BaseException: read info value fail
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 134
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+重试第3次
+
+AT Commond=AT+CGSN=1
+
+AT Response=
+
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[OK]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\AILinkFactoryAuto\AILinkFactoryAuto\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 109
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+TestTime:4218.6144ms
+                                                                        FAIL
+
+36 获取NB IMSI
+
+TestTime:9.9732ms
+                                                                        SKIP
+
+37 获取NB ICCID
+
+TestTime:8.9759ms
+                                                                        SKIP
+
+50 关闭BT 串口
+
+TestTime:119.915ms
+                                                                        PASS
+
+51 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC：
+601D9D0F4351 PASS 
+
+
+TestTime:11.9672ms
+                                                                        PASS
+
+52 Deinit
+
+TestTime:8.9759ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-17, Test Time: 16:21:59
+
+
+
+1 Init
+
+TestTime:11.9694ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1039.0377ms
+                                                                        PASS
+
+5 发现设备
+
+检测到产品上电，AT response=[
+WIFI initialized
+
+init_thread(67), Available heap 0xca98
+#]  contain =[WIFI initialized]
+
+TestTime:3454.1993ms
+                                                                        PASS
+
+6 关闭WIFI串口
+
+TestTime:127.6672ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:1017.3727ms
+                                                                        PASS
+
+11 读BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:601D9D0F4351
+OK
+
+TestTime:886.8878ms
+                                                                        PASS
+
+13 设置BT 进入工厂模式
+
+AT Commond=AT+SETFACMODE=1
+
+AT Response=
+OK
+
+TestTime:6859.4964ms
+                                                                        PASS
+
+14 Wifi 断电
+
+AT Commond=AT+SETGPSWIFIPWR=0
+
+AT Response=wifi power off
+gps power off
+
+OK
+
+
+TestTime:842.672ms
+                                                                        PASS
+
+15 Wifi 上电
+
+AT Commond=AT+SETGPSWIFIPWR=1
+
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+
+TestTime:830.4455ms
+                                                                        PASS
+
+33 设置BT CFUN为1
+
+AT Commond=AT+CFUN=1
+
+AT Response=
+OK
+
+
+TestTime:4232.0675ms
+                                                                        PASS
+
+34 获取NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
++CGSN:866203040130398
+
+OK
+
+
+TestTime:844.3548ms
+                                                                        PASS
+
+36 获取NB IMSI
+
+AT Commond=AT+CIMI
+
+AT Response=
+460113012320700
+
+OK
+
+
+TestTime:835.0091ms
+                                                                        PASS
+
+37 获取NB ICCID
+
+AT Commond=AT+NCCID
+
+AT Response=
++NCCID:89861118248005427391
+
+OK
+
+
+TestTime:833.3616ms
+                                                                        PASS
+
+50 关闭BT 串口
+
+TestTime:115.4726ms
+                                                                        PASS
+
+51 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC：
+601D9D0F4351 PASS 
+
+
+TestTime:14.9601ms
+                                                                        PASS
+
+52 Deinit
+
+TestTime:9.9749ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

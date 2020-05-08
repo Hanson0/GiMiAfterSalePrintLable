@@ -1,0 +1,784 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 13:56:51
+
+
+
+1 Init
+
+TestTime:17.9519ms
+                                                                        PASS
+
+52 Print Label
+
+TestTime:6.9825ms
+                                                                        PASS
+
+53 Deinit
+
+TestTime:6.5382ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 13:59:21
+
+
+
+1 Init
+
+TestTime:16.9552ms
+                                                                        PASS
+
+52 Print Label
+
+TestTime:49113.4272ms
+                                                                        PASS
+
+53 Deinit
+
+TestTime:7.9809ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:41:52
+
+
+
+1 Init
+
+TestTime:14.9629ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1042.8441ms
+                                                                        PASS
+
+5 发现设备
+
+检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+
+TestTime:5684.6615ms
+                                                                        PASS
+
+6 关闭WIFI串口
+
+TestTime:129.9488ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:1014.8258ms
+                                                                        PASS
+
+11 读BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:601D9D0F436B
+OK
+
+TestTime:874.9687ms
+                                                                        PASS
+
+13 设置BT 进入工厂模式
+
+AT Commond=AT+SETFACMODE=1
+
+AT Response=
+OK
+
+TestTime:6859.6264ms
+                                                                        PASS
+
+33 设置BT CFUN为1
+
+AT Commond=AT+CFUN=1
+
+AT Response=
+OK
+
+
+TestTime:4233.1979ms
+                                                                        PASS
+
+34 获取NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
++CGSN:866203040424759
+
+OK
+
+
+TestTime:837.1252ms
+                                                                        PASS
+
+36 打印标签IMEI设置为NB IMEI
+
+打印标签的IMEI 设置为NB IMEI：
+866203040424759 PASS 
+
+
+TestTime:34.9058ms
+                                                                        PASS
+
+37 获取NB IMSI
+
+AT Commond=AT+CIMI
+
+AT Response=
+460113107333673
+
+OK
+
+
+TestTime:834.7887ms
+                                                                        PASS
+
+38 获取NB ICCID
+
+AT Commond=AT+NCCID
+
+AT Response=
++NCCID:89861119256016571288
+
+OK
+
+
+TestTime:833.3853ms
+                                                                        PASS
+
+51 关闭BT 串口
+
+TestTime:123.6972ms
+                                                                        PASS
+
+52 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC：
+601D9D0F436B PASS 
+
+
+TestTime:15.9232ms
+                                                                        PASS
+
+53 标签打印
+
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=D:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+
+content:866203040424759,,89861119256016571288,460113107333673,601D9D0F436B
+
+TestTime:143656.8162ms
+                                                                        PASS
+
+54 Deinit
+
+TestTime:9.9726ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:55:46
+
+
+
+1 Init
+
+TestTime:15.9573ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1052.8781ms
+                                                                        PASS
+
+5 发现设备
+
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\TaskBase\Utils\TimeUtils.cs:行号 71
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 29
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 269
+
+TestTime:11627.0685ms
+                                                                        FAIL
+
+6 关闭WIFI串口
+
+TestTime:133.4696ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:4.9869ms
+                                                                        SKIP
+
+11 读BT MAC
+
+TestTime:8.0048ms
+                                                                        SKIP
+
+13 设置BT 进入工厂模式
+
+TestTime:24.9326ms
+                                                                        SKIP
+
+33 设置BT CFUN为1
+
+TestTime:6.9814ms
+                                                                        SKIP
+
+34 获取NB IMEI
+
+TestTime:19.9453ms
+                                                                        SKIP
+
+36 打印标签IMEI设置为NB IMEI
+
+TestTime:18.9457ms
+                                                                        SKIP
+
+37 获取NB IMSI
+
+TestTime:10.9699ms
+                                                                        SKIP
+
+38 获取NB ICCID
+
+TestTime:11.9683ms
+                                                                        SKIP
+
+51 关闭BT 串口
+
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\TaskAtCommand\AtCommand\Executer\ClosePhoneExecutor.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\插件框架\Platform\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 275
+
+TestTime:246.9013ms
+                                                                        FAIL
+
+52 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+
+TestTime:37.8987ms
+                                                                        PASS
+
+53 标签打印
+
+TestTime:5.9835ms
+                                                                        SKIP
+
+54 Deinit
+
+TestTime:16.9546ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:56:05
+
+
+
+1 Init
+
+TestTime:18.9798ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1018.8854ms
+                                                                        PASS
+
+5 发现设备
+
+检测到产品上电，AT response=[
+WIFI initialized
+
+init_thread(67), Available heap 0xca98
+#]  contain =[WIFI initialized]
+
+TestTime:3464.6123ms
+                                                                        PASS
+
+6 关闭WIFI串口
+
+TestTime:120.3539ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:1026.1273ms
+                                                                        PASS
+
+11 读BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:601D9D0F436B
+OK
+
+TestTime:926.6357ms
+                                                                        PASS
+
+13 设置BT 进入工厂模式
+
+AT Commond=AT+SETFACMODE=1
+
+AT Response=
+OK
+
+TestTime:6860.3346ms
+                                                                        PASS
+
+33 设置BT CFUN为1
+
+AT Commond=AT+CFUN=1
+
+AT Response=
+OK
+
+
+TestTime:4296.3626ms
+                                                                        PASS
+
+34 获取NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
++CGSN:866203040424759
+
+OK
+
+
+TestTime:870.9256ms
+                                                                        PASS
+
+36 打印标签IMEI设置为NB IMEI
+
+打印标签的IMEI 设置为NB IMEI：
+866203040424759 PASS 
+
+
+TestTime:23.9359ms
+                                                                        PASS
+
+37 获取NB IMSI
+
+AT Commond=AT+CIMI
+
+AT Response=
+460113107333673
+
+OK
+
+
+TestTime:848.0984ms
+                                                                        PASS
+
+38 获取NB ICCID
+
+AT Commond=AT+NCCID
+
+AT Response=
++NCCID:89861119256016571288
+
+OK
+
+
+TestTime:871.379ms
+                                                                        PASS
+
+51 关闭BT 串口
+
+TestTime:126.6703ms
+                                                                        PASS
+
+52 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC：
+601D9D0F436B PASS 
+
+
+TestTime:19.9458ms
+                                                                        PASS
+
+53 标签打印
+
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=D:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+
+content:866203040424759,,89861119256016571288,460113107333673,601D9D0F436B
+
+TestTime:123.7006ms
+                                                                        PASS
+
+54 Deinit
+
+TestTime:14.9617ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-25, Test Time: 16:57:44
+
+
+
+1 Init
+
+TestTime:27.9256ms
+                                                                        PASS
+
+4 打开WIFI串口
+
+TestTime:1016.0511ms
+                                                                        PASS
+
+5 发现设备
+
+检测到产品上电，AT response=[<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+<RTL8195A>ROM:[V0.1]
+FLASHRATE:4
+BOOT TYPE:0 XTAL:40000000
+IMG1 DATA[1128:10002000]
+IMG1 ENTRY[800052d:100021ef]
+IMG1 ENTER
+CHIPID[000000f6]
+read_mode idx:0, flash_speed idx:0
+calibration_result:[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8383135 
+boot reason: 0 
+DONT PG EFUSE Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+
+TestTime:3456.7077ms
+                                                                        PASS
+
+6 关闭WIFI串口
+
+TestTime:121.1088ms
+                                                                        PASS
+
+7 打开BT串口
+
+TestTime:1017.5319ms
+                                                                        PASS
+
+11 读BT MAC
+
+AT Commond=AT+GETBLEMAC
+
+AT Response=BLE MAC:601D9D0F436B
+OK
+
+TestTime:848.2703ms
+                                                                        PASS
+
+13 设置BT 进入工厂模式
+
+AT Commond=AT+SETFACMODE=1
+
+AT Response=
+OK
+
+TestTime:6842.3316ms
+                                                                        PASS
+
+33 设置BT CFUN为1
+
+AT Commond=AT+CFUN=1
+
+AT Response=
+OK
+
+
+TestTime:4238.0846ms
+                                                                        PASS
+
+34 获取NB IMEI
+
+AT Commond=AT+CGSN=1
+
+AT Response=
++CGSN:866203040424759
+
+OK
+
+
+TestTime:844.0667ms
+                                                                        PASS
+
+36 打印标签IMEI设置为NB IMEI
+
+打印标签的IMEI 设置为NB IMEI：
+866203040424759 PASS 
+
+
+TestTime:25.9299ms
+                                                                        PASS
+
+37 获取NB IMSI
+
+AT Commond=AT+CIMI
+
+AT Response=
+460113107333673
+
+OK
+
+
+TestTime:848.7464ms
+                                                                        PASS
+
+38 获取NB ICCID
+
+AT Commond=AT+NCCID
+
+AT Response=
++NCCID:89861119256016571288
+
+OK
+
+
+TestTime:852.125ms
+                                                                        PASS
+
+51 关闭BT 串口
+
+TestTime:120.7345ms
+                                                                        PASS
+
+52 LOG MAC为BT MAC
+
+LOG MAC设置为BT MAC：
+601D9D0F436B PASS 
+
+
+TestTime:22.9774ms
+                                                                        PASS
+
+53 标签打印
+
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\手环IMEI打印测试模板.btw /D=D:\DataMac.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+
+content:866203040424759,,89861119256016571288,460113107333673,601D9D0F436B
+
+TestTime:123.6689ms
+                                                                        PASS
+
+54 Deinit
+
+TestTime:7.9781ms
+                                                                        PASS
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+

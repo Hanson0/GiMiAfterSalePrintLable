@@ -1,0 +1,79 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 15:34:52
+
+
+1 Init
+TestTime:18.9514ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:94.8313ms
+                                                                        PASS
+4 打开WIFI串口
+超时：System.Func`1[System.Boolean]
+TestTime:11271.2673ms
+                                                                        FAIL
+5 发现设备
+TestTime:10.8732ms
+                                                                        SKIP
+6 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:261.8533ms
+                                                                        FAIL
+7 打开BT串口
+TestTime:8.9782ms
+                                                                        SKIP
+9 BLE固件版本号检查
+TestTime:9.0379ms
+                                                                        SKIP
+10 取MAC号方式自动判断
+TestTime:10.1109ms
+                                                                        SKIP
+13 读BT MAC
+TestTime:10.5654ms
+                                                                        SKIP
+14 展示BT MAC二维码
+TestTime:8.0162ms
+                                                                        SKIP
+20 关闭BT 串口
+给定关键字不在字典中。
+TestTime:248.7821ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:33.0376ms
+                                                                        PASS
+59 Deinit
+TestTime:13.0697ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

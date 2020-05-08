@@ -1,0 +1,152 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 15:26:35
+
+
+1 Init
+TestTime:23.9343ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:72.5383ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1018.4826ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:dc
+mac_i2c_send:00e04cb723dc
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+
+#]  contain =[WIFI initialized]
+TestTime:3435.2214ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:15.0198ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1015.5562ms
+                                                                        PASS
+9 BLE固件版本号检查
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第1次
+AT Commond=AT+GETINFO
+AT Response=Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+
+AT response=[Verified
+Apps A...... Verified
+
+REBOOT_CAUSE_SECURITY_RESET_PIN
+Neul 
+OK
+] not contain error=[GET INFO OK]
+重试第2次
+AT Commond=AT+GETINFO
+AT Response=
+OK
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:c3:47:73:55:91:b5
+BLE_VER:AI_WRIST_V1.12
+BLE_BT:Apr  8 2020 11:17:23
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+TestTime:6049.64ms
+                                                                        PASS
+10 取MAC号方式自动判断
+AT Commond=AT+GETBLEMAC
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:
+OKBLE MAC:000000000000
+OK
+BLE未写过MAC:000000000000
+TestTime:8781.8925ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:000000000000
+OK
+TestTime:867.9936ms
+                                                                        PASS
+14 展示BT MAC二维码
+值“0”不是 Interval 的有效值。Interval 必须大于 0。
+参数名: Interval
+TestTime:54278.8756ms
+                                                                        FAIL
+17 Wifi 断电
+TestTime:15.8549ms
+                                                                        SKIP
+18 Wifi 上电
+TestTime:10.4459ms
+                                                                        SKIP
+20 关闭BT 串口
+TestTime:15.1261ms
+                                                                        PASS
+26 打开WIFI串口
+TestTime:14.0447ms
+                                                                        SKIP
+27 读取WIFI MAP文件并更新MAC至内存
+TestTime:13.4685ms
+                                                                        SKIP
+28 写WIFI MAP
+TestTime:13.3398ms
+                                                                        SKIP
+29 读产品内部WIFI Map
+TestTime:12.6413ms
+                                                                        SKIP
+30 校验WIFI Map
+TestTime:14.0106ms
+                                                                        SKIP
+32 检查WIFI版本号
+TestTime:15.6831ms
+                                                                        SKIP
+33 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:260.2371ms
+                                                                        FAIL
+59 Deinit
+TestTime:14.9544ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

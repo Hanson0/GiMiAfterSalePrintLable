@@ -1,0 +1,248 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 20:26:17
+
+
+1 Init
+TestTime:18.9502ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:22.9381ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:f2
+mac_i2c_send:00e04cb723f2
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+
+#]  contain =[WIFI initialized]
+TestTime:1759.7553ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:15.0261ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1014.654ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4443
+OK
+TestTime:915.3063ms
+                                                                        PASS
+36 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+ERROR
+gps_cn_num:0,gps_cn:0,wifi_mac:
+AT response=[
+ERROR
+gps_cn_num:0,gps_cn:0,wifi_mac:] contain error=[ERROR]
+重试第1次
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:15316.2408ms
+                                                                        PASS
+37 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040424700
+
+OK
+
+TestTime:1038.5683ms
+                                                                        PASS
+39 打印标签IMEI设置为NB IMEI
+打印标签的IMEI 设置为NB IMEI：
+866203040424700 PASS 
+
+TestTime:41.9168ms
+                                                                        PASS
+40 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113013919842
+
+OK
+
+TestTime:2040.8012ms
+                                                                        PASS
+41 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861118257001953771
+
+OK
+
+TestTime:1039.5724ms
+                                                                        PASS
+42 NB 附网
+AT Commond=AT+CGATT=1
+AT Response=
+OK
+
+TestTime:2142.6526ms
+                                                                        PASS
+43 NB附网检查
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+重试第1次
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:0
+
+OK
+
+AT response=[
++CGATT:0
+
+OK
+] not contain check info=[CGATT:1]
+重试第2次
+AT Commond=AT+CGATT?
+AT Response=
++CGATT:1
+
+OK
+
+TestTime:6879.2934ms
+                                                                        PASS
+44 获取NB信号强度
+AT Commond=AT+CSQ
+AT Response=
++CSQ:13,99
+
+OK
+
+TestTime:1541.2244ms
+                                                                        PASS
+45 检查NB信号强度
+NB 信号强度检查：
+模块信号强度：13，在设定范围：1 ~ 100之间 PASS 
+
+TestTime:28.9229ms
+                                                                        PASS
+46 获取WIFI探针-信号强度值
+AT Commond=AT+AIGPSWIFI=WIFI,2
+AT Response=
+OK
+
+
+ ble mcu start to get WIF[d8471019fd22:-72,283334a6efed:-74,283334a6efec:-74,283334a6eff1:-75,a86b7cc2cabc:-77,982f3cea3128:-77]
+TestTime:4036.0254ms
+                                                                        PASS
+47 WIFI探针-信号强度检查
+WIFI探针-信号强度检查：
+信号强度：-72，在设定范围：-90 ~ -10之间 PASS 
+
+TestTime:31.9135ms
+                                                                        PASS
+51 射频获取
+AT Commond=AT+NUESTATS
+AT Response=
+Signal power:-989
+Total power:-873
+TX power:230
+TX time:770
+RX time:10596
+Cell ID:166790995
+ECL:1
+SNR:34
+EARFCN:2504
+PCI:173
+RSRQ:-125
+OPERATOR MODE:4
+CURRENT BAND:5
+
+OK
+
+TestTime:2047.712ms
+                                                                        PASS
+52 射频检查
+key=-989
+condition=GREATER_EQUAL
+value=-1000
+TestTime:50.8899ms
+                                                                        PASS
+54 进入出厂状态
+AT Commond=AT+FACOUT
+AT Response=
+OK
+TestTime:1057.1471ms
+                                                                        PASS
+55 出厂状态检查
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第1次
+AT Commond=AT+GETINFO
+AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:60:1d:9d:0f:44:43
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:1
+
+TestTime:2321.9723ms
+                                                                        PASS
+56 关闭BT 串口
+TestTime:13.9628ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4443 PASS 
+
+TestTime:29.1276ms
+                                                                        PASS
+58 Print Label
+标签打印失败error:BarTender打印模板不存在
+TestTime:248.3422ms
+                                                                        FAIL
+59 Deinit
+TestTime:12.9661ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

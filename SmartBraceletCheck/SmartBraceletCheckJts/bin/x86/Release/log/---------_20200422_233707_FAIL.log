@@ -1,0 +1,103 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-22, Test Time: 23:37:07
+
+
+1 Init
+TestTime:26.7702ms
+                                                                        PASS
+2 Parse Label
+IMEI=
+MEID=
+SN=
+MAC=
+IMEI null
+TestTime:293.817ms
+                                                                        FAIL
+4 打开WIFI串口
+TestTime:32.8243ms
+                                                                        SKIP
+5 发现设备
+TestTime:29.4969ms
+                                                                        SKIP
+6 关闭WIFI串口
+给定关键字不在字典中。
+TestTime:304.0473ms
+                                                                        FAIL
+7 打开BT串口
+TestTime:39.2294ms
+                                                                        SKIP
+8 BT MAC预读
+TestTime:63.7559ms
+                                                                        SKIP
+9 写BT固件
+TestTime:79.5897ms
+                                                                        SKIP
+10 BLE固件版本号检查
+TestTime:67.9161ms
+                                                                        SKIP
+11 MES Fetch Sn
+TestTime:13.8911ms
+                                                                        SKIP
+12 写BT MAC
+TestTime:15.591ms
+                                                                        SKIP
+13 读BT MAC
+TestTime:13.9531ms
+                                                                        SKIP
+15 校验BT MAC
+TestTime:73.9515ms
+                                                                        SKIP
+20 关闭BT 串口
+给定关键字不在字典中。
+TestTime:229.9434ms
+                                                                        FAIL
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC失败
+,取号BT MAC，模块BT MAC: 
+
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:90.4305ms
+                                                                        PASS
+59 Deinit
+TestTime:14.9276ms
+                                                                        PASS
+
+第2项:
+Parse Label
+AILinkFactoryAuto.Task.BaseException: IMEI null
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckImei(String imei)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+第6项:
+关闭WIFI串口
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

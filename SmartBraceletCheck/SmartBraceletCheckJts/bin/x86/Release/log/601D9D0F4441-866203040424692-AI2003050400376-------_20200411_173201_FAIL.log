@@ -1,0 +1,388 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-04-11, Test Time: 17:32:01
+
+
+1 Init
+TestTime:42.9038ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040424692
+MEID=
+SN=AI2003050400376
+MAC=
+TestTime:88.4501ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:7869.3441ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+Mac:00:e0:4c:b7:23:c6
+mac_i2c_send:00e04cb723c6
+Firmware Version:1.030.00
+Release Date:2020/02/29
+product debuging end
+[ATWS]: _AT_WLAN_SCAN_
+buf:(null) ,flags:528 ,buf_len:0
+i2c_idx:0
+
+#]  contain =[WIFI initialized]
+TestTime:4548.6114ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:12.4632ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1019.4281ms
+                                                                        PASS
+8 写BT固件
+擦除BT Flash中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --eraseall -f NRF52
+Erasing code and UICR flash areas.
+Applying system reset.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --eraseall -f NRF52成功 
+
+写BT 固件中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --program  ./bin/whole.hex --verify -f NRF52
+Parsing hex file.
+Reading flash area to program to guarantee it is erased.
+Checking that the area to write is not protected.
+Programing device.
+Verifying programming.
+Verified OK.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --program {0} --verify -f NRF52成功 
+
+BT 应用系统复位中...
+
+详情：Microsoft Windows [版本 10.0.17134.1304]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>nrfjprog.exe --reset -f NRF52
+Applying system reset.
+Run.
+
+E:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug>exit
+
+执行nrfjprog.exe --reset -f NRF52成功 
+
+擦除BT Flash成功，写BT 固件成功，BT应用系统复位成功 
+
+TestTime:14666.9908ms
+                                                                        PASS
+9 BLE固件版本号检查
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第1次
+AT Commond=AT+GETINFO
+AT Response=
+AT response=[] not contain error=[GET INFO OK]
+重试第2次
+AT Commond=AT+GETINFO
+AT Response=
+GET INFO OK
+NB_IMEI:
+NB_IMSI:
+NB_ICCID:
+BLE_MAC:d1:48:9f:d8:ed:dc
+BLE_VER:AI_WRIST_V1.15
+BLE_BT:Apr  9 2020 18:58:47
+GPS:
+WIFI:
+WIFIMAC:
+FACOUT:0
+
+TestTime:6033.8403ms
+                                                                        PASS
+10 取MAC号方式自动判断
+AT Commond=AT+GETBLEMAC
+AT Response=
+OKBLE MAC:000000000000
+OK
+BLE未写过MAC:000000000000
+TestTime:1683.8298ms
+                                                                        PASS
+11 MES Fetch Sn
+TestTime:74.3923ms
+                                                                        PASS
+12 写BT MAC
+AT Commond=AT+SETBLEMAC=601D9D0F4441
+AT Response=gps_cn_num:0,gps_cn:0,wifi_mac:BLE MAC:601D9D0F4441
+OKSaved mac,then reboot system!
+TestTime:3863.546ms
+                                                                        PASS
+13 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+GETBLEMAC
+AT Response=
+AT response=[] not contain error=[OK]
+重试第2次
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4441
+OK
+TestTime:3049.8705ms
+                                                                        PASS
+15 校验BT MAC
+BT MAC核验：读出BT MAC：601D9D0F4441，与预写入MAC：601D9D0F4441 一致，PASS 
+
+TestTime:32.042ms
+                                                                        PASS
+16 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:7852.8737ms
+                                                                        PASS
+17 Wifi 断电
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=
+AT response=[] not contain error=[OK]
+重试第1次
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=
+AT response=[] not contain error=[OK]
+重试第2次
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=
+AT response=[] not contain error=[OK]
+重试第3次
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=wifi power off
+gps power off
+
+OK
+wifi power off
+gps power off
+
+OK
+wifi power off
+gps power off
+
+OK
+wifi power off
+gps power off
+
+OK
+
+TestTime:12926.5561ms
+                                                                        PASS
+18 Wifi 上电
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+TestTime:2049.4364ms
+                                                                        PASS
+20 关闭BT 串口
+TestTime:15.9573ms
+                                                                        PASS
+26 打开WIFI串口
+TestTime:1018.9702ms
+                                                                        PASS
+27 读取WIFI MAP文件并更新MAC至内存
+读取MAP文件成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+1616 1616 1616 2020 2020 0020 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2A20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 33DC 9C0D 64A6
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+更新MAP文件中的MAC成功：
+8195 16C2 FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 0200 FFFF FFFF
+1616 1616 1616 2020 2020 0020 FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF 2A20 0520 0000 FF00
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF 601D 9D0F 4440
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+01FF 1000 FF00 FF00 0010 FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF
+
+TestTime:66.5633ms
+                                                                        PASS
+28 写WIFI MAP
+写入第1行MAP错误 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+ioctl[SIOCDEVPRIVATE] error. ret=-95
+
+Private Message: config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+[MEM] After do cmd, available heap 41128
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+重试第1次
+写入第1行MAP错误 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+ioctl[SIOCDEVPRIVATE] error. ret=-95
+
+Private Message: config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+[MEM] After do cmd, available heap 41128
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+重试第2次
+写入第1行MAP错误 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+ioctl[SIOCDEVPRIVATE] error. ret=-95
+
+Private Message: config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+[MEM] After do cmd, available heap 41128
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+重试第3次
+写入第1行MAP错误 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+ioctl[SIOCDEVPRIVATE] error. ret=-95
+
+Private Message: config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+[MEM] After do cmd, available heap 41128
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+重试第4次
+写入第1行MAP错误 
+AT response:
+[iwpriv config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+
+ioctl[SIOCDEVPRIVATE] error. ret=-95
+
+Private Message: config_set wmap,0,819516C2FFFFFFFFFFFFFFFFFFFFFFFF
+[MEM] After do cmd, available heap 41128
+
+
+# ] 
+contain OK=[[MEM] After do cmd] 
+not contain ERROR=[unknown command] [FAIL]
+重试第5次
+写入错误 行数=1 
+
+TestTime:957.1258ms
+                                                                        FAIL
+29 读产品内部WIFI Map
+TestTime:16.5586ms
+                                                                        SKIP
+30 校验WIFI Map
+TestTime:19.9919ms
+                                                                        SKIP
+33 关闭WIFI串口
+TestTime:28.1611ms
+                                                                        PASS
+57 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4441 PASS 
+
+TestTime:46.8394ms
+                                                                        PASS
+59 Deinit
+TestTime:31.914ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

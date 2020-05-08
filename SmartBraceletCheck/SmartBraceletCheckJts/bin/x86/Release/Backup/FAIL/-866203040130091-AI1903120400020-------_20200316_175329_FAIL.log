@@ -1,0 +1,157 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-16, Test Time: 17:53:29
+
+
+1 Init
+TestTime:8.9765ms
+                                                                        PASS
+2 Parse Label
+IMEI=866203040130091
+MEID=
+SN=AI1903120400020
+MAC=
+TestTime:73.8019ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1041.6933ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[??%??????[1:0:0][ff:ff] 
+calibration_result:[2:0:0][ff:ff] 
+calibration_result:[3:0:0][ff:ff] 
+OTA2 ADDR[8080000]
+OTAx SELE[ffffffff]
+OTA1 USE
+IMG2 DATA[0x8053cf8:5072:0x10005000]
+IMG2 SIGN[RTKWin(10005008)]
+IMG2 ENTRY[0x10005000:0x804fdc1]
+===== Enter Image 2 ====
+System_Init1
+OSC8M: 8386568 
+boot reason: 0 
+DONT PG EFUSE
+ Under MP 
+System_Init2
+#interface 0 is initialized
+interface 1 is initialized
+
+Initializing WIFI ...
+LDO Mode, BD_Info: 0 
+
+RTL8195A[Driver]: The driver is for MP
+
+LDO Mode, BD_Info: 0 
+
+Start LOG SERVICE MODE
+
+# 
+WIFI initialized
+
+init_thread(67), Available heap 0xca98]  contain =[WIFI initialized]
+TestTime:4577.3712ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:124.5071ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1017.6765ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6861.5557ms
+                                                                        PASS
+14 Wifi 断电
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=wifi power off
+gps power off
+
+OK
+
+TestTime:845.1444ms
+                                                                        PASS
+15 Wifi 上电
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+TestTime:833.4918ms
+                                                                        PASS
+32 检查NB软件版本号
+AT Commond=AT+CGMR
+AT Response=SOTFWAREVER:AI_LITEOS_NB15_B300SP5_V1.9_20200229SWBuildTime:202002291610FOTA VER:AI-Link@AI-NB15@1.0,V150R100C20B300SP5,V150R100C20B300SP5@5,8,3,1
+OK
+
+TestTime:2061.2034ms
+                                                                        PASS
+33 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4230.4917ms
+                                                                        PASS
+34 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040130398
+
+OK
+
+TestTime:843.7126ms
+                                                                        PASS
+35 检查NB IMEI内部与标签一致性
+NB IMEI检查：
+模块IMEI：866203040130398，与标签IMEI：866203040130091 不一致 
+
+AILinkFactoryAuto.Task.BaseException: NB IMEI检查：
+模块IMEI：866203040130398，与标签IMEI：866203040130091 不一致 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Property.CheckNbImeiExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 e:\2_工作和软件\1_工作存档\01长虹爱联\AI-WB15智能手环\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\CheckNbImeiExecuter.cs:行号 28
+   在 AILinkFactoryAuto.View.FormMain.Run()
+TestTime:317.1545ms
+                                                                        FAIL
+36 获取NB IMSI
+TestTime:5.9835ms
+                                                                        SKIP
+37 获取NB ICCID
+TestTime:4.9863ms
+                                                                        SKIP
+50 关闭BT 串口
+TestTime:122.9847ms
+                                                                        PASS
+51 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+ PASS 
+
+TestTime:15.9898ms
+                                                                        PASS
+52 Deinit
+TestTime:5.9864ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

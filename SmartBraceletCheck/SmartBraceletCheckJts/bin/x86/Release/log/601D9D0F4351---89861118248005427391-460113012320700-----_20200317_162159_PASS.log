@@ -1,0 +1,123 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-03-17, Test Time: 16:21:59
+
+
+1 Init
+TestTime:11.9694ms
+                                                                        PASS
+4 打开WIFI串口
+TestTime:1039.0377ms
+                                                                        PASS
+5 发现设备
+检测到产品上电，AT response=[
+WIFI initialized
+
+init_thread(67), Available heap 0xca98
+#]  contain =[WIFI initialized]
+TestTime:3454.1993ms
+                                                                        PASS
+6 关闭WIFI串口
+TestTime:127.6672ms
+                                                                        PASS
+7 打开BT串口
+TestTime:1017.3727ms
+                                                                        PASS
+11 读BT MAC
+AT Commond=AT+GETBLEMAC
+AT Response=BLE MAC:601D9D0F4351
+OK
+TestTime:886.8878ms
+                                                                        PASS
+13 设置BT 进入工厂模式
+AT Commond=AT+SETFACMODE=1
+AT Response=
+OK
+TestTime:6859.4964ms
+                                                                        PASS
+14 Wifi 断电
+AT Commond=AT+SETGPSWIFIPWR=0
+AT Response=wifi power off
+gps power off
+
+OK
+
+TestTime:842.672ms
+                                                                        PASS
+15 Wifi 上电
+AT Commond=AT+SETGPSWIFIPWR=1
+AT Response=wifi power on  
+gps power on 
+
+OK
+
+TestTime:830.4455ms
+                                                                        PASS
+33 设置BT CFUN为1
+AT Commond=AT+CFUN=1
+AT Response=
+OK
+
+TestTime:4232.0675ms
+                                                                        PASS
+34 获取NB IMEI
+AT Commond=AT+CGSN=1
+AT Response=
++CGSN:866203040130398
+
+OK
+
+TestTime:844.3548ms
+                                                                        PASS
+36 获取NB IMSI
+AT Commond=AT+CIMI
+AT Response=
+460113012320700
+
+OK
+
+TestTime:835.0091ms
+                                                                        PASS
+37 获取NB ICCID
+AT Commond=AT+NCCID
+AT Response=
++NCCID:89861118248005427391
+
+OK
+
+TestTime:833.3616ms
+                                                                        PASS
+50 关闭BT 串口
+TestTime:115.4726ms
+                                                                        PASS
+51 LOG MAC为BT MAC
+LOG MAC设置为BT MAC：
+601D9D0F4351 PASS 
+
+TestTime:14.9601ms
+                                                                        PASS
+52 Deinit
+TestTime:9.9749ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
