@@ -21,3 +21,10 @@ E:\2_工作和软件\1_工作存档\01长虹爱联\美的Hi3861项目\Code\Smart
 E:\2_工作和软件\1_工作存档\01长虹爱联\美的Hi3861项目\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.dll
 E:\2_工作和软件\1_工作存档\01长虹爱联\美的Hi3861项目\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
 E:\2_工作和软件\1_工作存档\01长虹爱联\美的Hi3861项目\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.dll
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\AILinkFactoryAuto.Task.Common.QrCodeForm.resources
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\SmartBraceletCheck.csproj.GenerateResource.Cache
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.dll
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
+E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\obj\x86\Debug\SmartBraceletCheck.csprojResolveAssemblyReference.cache

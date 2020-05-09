@@ -1,0 +1,61 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-09, Test Time: 10:10:23
+
+
+1 Init
+TestTime:26.2895ms
+                                                                        PASS
+2 Parse Label
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:95.2803ms
+                                                                        PASS
+4 标签SN插入内容
+标签：30768026FL570001
+插入内容后：30768026FL57R0001
+TestTime:30.7075ms
+                                                                        PASS
+5 LOG名设置为标签SN
+设置LOG的Mac=30768026FL57R0001成功
+TestTime:29.7933ms
+                                                                        PASS
+6 Print Label
+标签打印失败error:存在未打印的打印数据
+TestTime:247.8226ms
+                                                                        FAIL
+7 Deinit
+TestTime:20.8315ms
+                                                                        PASS
+
+第6项:
+Print Label
+System.Exception: 标签打印失败error:存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

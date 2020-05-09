@@ -92,6 +92,7 @@
     <Compile Include="SmartBracelet\Executer\CheckWifiProbeExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\GetLicenseExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\IsitWrittenToTheBtMacExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\LabelGetAndCheckExecutor.cs" />
     <Compile Include="SmartBracelet\Executer\PrintLabelImeiChangetToNbImeiExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\ShowBtMacQrCodeExecuter.cs" />
     <Compile Include="SmartBracelet\Property\AccessToMacProperties.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="SmartBracelet\Executer\LogMacChangeToBtMacExecuter.cs" />
     <Compile Include="SmartBracelet\Property\GetLicenseProperties.cs" />
     <Compile Include="SmartBracelet\Property\IsitWrittenToTheBtMacProperties.cs" />
+    <Compile Include="SmartBracelet\Property\LabelGetAndCheckProperties.cs" />
     <Compile Include="SmartBracelet\Property\LogMacChangeToBtMacProperties.cs" />
     <Compile Include="SmartBracelet\Property\PrintLabelImeiChangetToNbImeiProperties.cs" />
     <Compile Include="SmartBracelet\Property\ReadMapProperties.cs" />

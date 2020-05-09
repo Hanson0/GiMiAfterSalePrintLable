@@ -1,0 +1,60 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:45:21
+
+
+1 Init
+TestTime:21.3287ms
+                                                                        PASS
+2 Parse Label
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:96.7201ms
+                                                                        PASS
+4 获取并检查标签SN
+GimiSn=30768026FL570001
+TestTime:33.2299ms
+                                                                        PASS
+5 LOG名设置为标签SN
+设置LOG的Mac=30768026FL570001成功
+TestTime:34.2255ms
+                                                                        PASS
+6 Print Label
+标签打印失败error:存在未打印的打印数据
+TestTime:38568.2569ms
+                                                                        FAIL
+7 Deinit
+TestTime:19.3445ms
+                                                                        PASS
+
+第6项:
+Print Label
+System.Exception: 标签打印失败error:存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+

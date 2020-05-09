@@ -47,7 +47,7 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.Property.MesPreCheckProperties, AILinkFactoryAuto.Base",
         "EnableCheckSn": false,
-        "EnableCheckMac": true,
+        "EnableCheckMac": false,
         "EnableCheckImei": false,
         "ExecuteCondition": 1,
         "Timeout": 1000,
@@ -63,56 +63,11 @@
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
       "Enable": true,
-      "Item": "打开AT指令串口",
+      "Item": "标签SN插入内容",
       "CommonProperties": {
-        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
-        "AtType": 0,
-        "SleepTimeAfterFindDut": 1000,
-        "PortName": "COM5",
-        "BaudRate": 115200,
-        "Rts": true,
-        "Dtr": true,
-        "EndLine": "\\r\\n",
-        "AutoKey": null,
-        "ExecuteCondition": 1,
-        "Timeout": 10000,
-        "SleepTimeBefore": 0,
-        "SleepTimeAfter": 0,
-        "RetryCount": 0,
-        "RetryInterval": 200
-      },
-      "Executer": {
-        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
-      }
-    },
-    {
-      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
-      "Item": "发现设备",
-      "CommonProperties": {
-        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.FindDeviceProperties, AILinkFactoryAuto.Task.SmartBracelet",
-        "TestPowerOnAT": "",
-        "AtCommandInterval": 1000,
-        "EndLine": "\r\n",
-        "AtCommandOk": "ERROR",
-        "ExecuteCondition": 1,
-        "Timeout": 10000,
-        "SleepTimeBefore": 200,
-        "SleepTimeAfter": 0,
-        "RetryCount": 0,
-        "RetryInterval": 200
-      },
-      "Executer": {
-        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter, AILinkFactoryAuto.Task.SmartBracelet"
-      }
-    },
-    {
-      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
-      "Item": "读取License文件",
-      "CommonProperties": {
-        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.ReadMapProperties, AILinkFactoryAuto.Task.SmartBracelet",
-        "BinFolderPath": "./bin",
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.LabelGetAndCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "Value": "R",
+        "InsertIndex": 12,
         "ExecuteCondition": 1,
         "Timeout": 1000,
         "SleepTimeBefore": 0,
@@ -121,48 +76,15 @@
         "RetryInterval": 200
       },
       "Executer": {
-        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.ReadMapExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor, AILinkFactoryAuto.Task.SmartBracelet"
       }
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
       "Enable": true,
-      "Item": "检查产品License",
+      "Item": "LOG名设置为标签SN",
       "CommonProperties": {
-        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.GetLicenseProperties, AILinkFactoryAuto.Task.SmartBracelet",
-        "PortName": "COM25",
-        "BaudRate": 115200,
-        "Rts": false,
-        "Dtr": false,
-        "AtCommand": "AT+LIC?",
-        "AtCommandError": "ERROR",
-        "AtCommandOk": "OK",
-        "AtCommandInterval": 2000,
-        "CheckInfo": {
-          "$type": "System.String[], mscorlib",
-          "$values": [
-            "{BinFileString}"
-          ]
-        },
-        "IsToUpper": true,
-        "EndLine": "\r\n",
-        "ExecuteCondition": 1,
-        "Timeout": 1000,
-        "SleepTimeBefore": 0,
-        "SleepTimeAfter": 0,
-        "RetryCount": 0,
-        "RetryInterval": 200
-      },
-      "Executer": {
-        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.GetLicenseExecuter, AILinkFactoryAuto.Task.SmartBracelet"
-      }
-    },
-    {
-      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
-      "Item": "关闭WIFI串口",
-      "CommonProperties": {
-        "$type": "AILinkFactoryAuto.Task.Property.CommonProperties, AILinkFactoryAuto.Base",
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.LogMacChangeToBtMacProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "ExecuteCondition": 0,
         "Timeout": 1000,
         "SleepTimeBefore": 0,
@@ -171,7 +93,28 @@
         "RetryInterval": 200
       },
       "Executer": {
-        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.LogMacChangeToBtMacExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Print Label",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.PrintLabelProperties, AILinkFactoryAuto.Base",
+        "BartenderFile": "C:\\Program Files (x86)\\Seagull\\BarTender\\8.0\\bartend.exe",
+        "TempalteFile": "E:\\2_工作和软件\\1_工作存档\\01长虹爱联\\极米售后在线打标\\Code\\SmartBraceletCheck\\SmartBraceletCheckJts\\bin\\x86\\Debug\\Bartender\\251-00754-001(MX-PD_DRIVER_A_V01_A.9)_20x10.btw",
+        "DataFile": "E:\\DataFile.txt",
+        "DataHead": "GimiSn",
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 5000,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.PrintLabelExecuter, AILinkFactoryAuto.Base"
       }
     },
     {

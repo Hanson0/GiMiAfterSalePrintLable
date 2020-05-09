@@ -1,0 +1,140 @@
+{
+  "$type": "System.Collections.Generic.List`1[[AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base]], mscorlib",
+  "$values": [
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Init",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.InitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.InitExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Parse Label",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.ParseLabelProperties, AILinkFactoryAuto.Base",
+        "SnLocation": 0,
+        "ImeiLocation": 0,
+        "MeidLocation": 0,
+        "MacLocation": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.ParseLabelExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "iMES Pre Check",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.MesPreCheckProperties, AILinkFactoryAuto.Base",
+        "EnableCheckSn": false,
+        "EnableCheckMac": false,
+        "EnableCheckImei": false,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.MesPreCheckExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "标签SN插入内容",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.LabelGetAndCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "Value": "R",
+        "InsertIndex": 12,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "LOG名设置为标签SN",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.LogMacChangeToBtMacProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.LogMacChangeToBtMacExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Print Label",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.PrintLabelProperties, AILinkFactoryAuto.Base",
+        "BartenderFile": "C:\\Program Files (x86)\\Seagull\\BarTender\\8.0\\bartend.exe",
+        "TempalteFile": "D:\\251-00754-001(MX-PD_DRIVER_A_V01_A.9)_20x10.btw",
+        "DataFile": "D:\\DataFile.txt",
+        "DataHead": "GimiSn",
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 5000,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.PrintLabelExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Deinit",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.DeinitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "LogType": 0,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.DeinitExecuter, AILinkFactoryAuto.Base"
+      }
+    }
+  ]
+}

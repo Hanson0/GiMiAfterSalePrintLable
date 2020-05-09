@@ -1,29 +1,33 @@
 ﻿using AILinkFactoryAuto.Core;
 using AILinkFactoryAuto.Task.Executer;
 using AILinkFactoryAuto.Task.Property;
+using AILinkFactoryAuto.Task.SmartBracelet.Property;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
-namespace AILinkFactoryAuto.Task.SmartBracelet.Property
+namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 {
-
-    public class LogMacChangeToBtMacExecuter : IExecuter
+    public class LabelGetAndCheckExecutor : IExecuter
     {
-        //CheckBtRssiProperties config;
+        LabelGetAndCheckProperties config;
         private GlobalVaribles configGv;
         public void Run(IProperties properties, GlobalDic<string, object> globalDic)//virtual
         {
-            //config = properties as CheckBtRssiProperties;
+            config = properties as LabelGetAndCheckProperties;
             ILog log = globalDic[typeof(ILog).ToString()] as ILog;
             configGv = globalDic[typeof(GlobalVaribles).ToString()] as GlobalVaribles;
 
-            //string[] data = configGv.Get(GlobalVaribles.LABEL_SN).Split(new[] { ',' });
-            //configGv.Add("GimiSn", data[0]);
-            //log.Info(string.Format("Sn={0}", configGv.Get("GimiSn")));
-            configGv.Add("MAC", configGv.Get("GimiSn"));
-            log.Info(string.Format("设置LOG的Mac={0}成功", configGv.Get("GimiSn")));
+            string[] data = configGv.Get(GlobalVaribles.LABEL_SN).Split(new[] { ',' });
+            string gimiSn = data[0];
+            CheckSn(gimiSn);
+
+            gimiSn=gimiSn.Insert(config.InsertIndex, config.Value);
+            configGv.Add("GimiSn", gimiSn);
+
+            log.Info(string.Format("标签：{0}\r\n插入内容后：{1}", data[0], gimiSn));
 
             //try
             //{
@@ -55,6 +59,20 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             //    throw new Exception("LOG MAC设置为BT MAC出错，" + ex.Message);
             //}
 
+        }
+        private void CheckSn(string sn)
+        {
+            string format = "^[0-9A-Z]{16}$";
+
+            if (string.IsNullOrEmpty(sn))
+            {
+                throw new BaseException("SN null");
+            }
+
+            if (!Regex.IsMatch(sn, format))
+            {
+                throw new BaseException("SN invalid");
+            }
         }
 
     }

@@ -30,107 +30,123 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
         {
             ParseLabelProperties properties = new ParseLabelProperties()
             {
-                MacLocation=1,
+                //MacLocation=1,
                 //ImeiLocation = 1,
                 //SnLocation = 2,
             };
             TaskItemManager taskItemManager = new TaskItemManager(properties);
-            taskItemManager.MesPreCheckProperties.EnableCheckMac = true;
+            //taskItemManager.MesPreCheckProperties.EnableCheckMac = true;
             taskItemManager.TaskItemParseLabel.Enable = true;
             //生成log
             taskItemManager.DeinitProperties.LogType = LogType.MAC;
 
-
-            //打开WIFI UART
-            OpenPhoneProperties configOpenWifiUart = new OpenPhoneProperties();
-            configOpenWifiUart.PortName = "COM5";
-            configOpenWifiUart.BaudRate = 115200;
-            configOpenWifiUart.Dtr = true;
-            configOpenWifiUart.Rts = true;
-            configOpenWifiUart.EndLine = "\\r\\n";
-            configOpenWifiUart.Timeout = 10 * 1000;
-            configOpenWifiUart.RetryCount = 0;
-            configOpenWifiUart.AtType = AtType.Manual;
-            configOpenWifiUart.SleepTimeAfterFindDut = 1000;
-            TaskItem openWifiUartItem = new TaskItem();
-            openWifiUartItem.Enable = true;
-            openWifiUartItem.Item = "打开AT指令串口";//Open Wifi Uart
-            openWifiUartItem.CommonProperties = configOpenWifiUart;
-            openWifiUartItem.Executer = new OpenPhoneExecutor();
-            taskItemManager.Put(openWifiUartItem);
-
-            //发现设备
-            TaskItem findDevice = new TaskItem();
-            findDevice.Enable = true;
-            findDevice.Item = "发现设备";//Find Device
-            findDevice.CommonProperties = new FindDeviceProperties()
-            {
-                TestPowerOnAT = "",
-                AtCommandInterval = 1000,
-                EndLine = "\r\n",//\r\n
-                AtCommandOk = "ERROR",//+NOTICE:SCANFINISH
-                Timeout = 10 * 1000,
-                RetryCount = 0,
-                SleepTimeBefore = 200,
-            };
-            findDevice.Executer = new FindDeviceExecuter();
-            taskItemManager.Put(findDevice);
-
-            //读取License文件至内存
+            //获取并检查标签SN
             if (true)
             {
-                TaskItem readBinItem = new TaskItem();
-                readBinItem.Enable = true;
-                readBinItem.Item = "读取License文件";//Read MAP From File
-                readBinItem.CommonProperties = new ReadMapProperties()
+                TaskItem labelGetAndCheckItem = new TaskItem();
+                labelGetAndCheckItem.Enable = true;
+                labelGetAndCheckItem.Item = "标签SN插入内容";
+                labelGetAndCheckItem.CommonProperties = new LabelGetAndCheckProperties()
                 {
-                    BinFolderPath = "./bin",
-                    RetryCount = 0,
+                    RetryCount=0,
+                    InsertIndex=0,
+                    Value="R",
                 };
-                readBinItem.Executer = new ReadMapExecuter();
-                taskItemManager.Put(readBinItem);
+                labelGetAndCheckItem.Executer = new LabelGetAndCheckExecutor();
+                taskItemManager.Put(labelGetAndCheckItem);
             }
 
-            //发AT+LIC?命令
-            if (true)
-            {
-                TaskItem getLicenseItem = new TaskItem();
-                getLicenseItem.Enable = true;
-                getLicenseItem.Item = "检查产品License";//Check BT MAC
-                getLicenseItem.CommonProperties = new GetLicenseProperties()
-                {
-                    RetryCount = 0,
 
-                    AtCommand = "AT+LIC?",
-                    EndLine = "\r\n",//\r\n
-                    AtCommandOk = "OK",
-                    AtCommandError = "ERROR",
-                    CheckInfo = new string[] { "{BinFileString}" },
-                    AtCommandInterval = 2000,
+            ////打开WIFI UART
+            //OpenPhoneProperties configOpenWifiUart = new OpenPhoneProperties();
+            //configOpenWifiUart.PortName = "COM5";
+            //configOpenWifiUart.BaudRate = 115200;
+            //configOpenWifiUart.Dtr = true;
+            //configOpenWifiUart.Rts = true;
+            //configOpenWifiUart.EndLine = "\\r\\n";
+            //configOpenWifiUart.Timeout = 10 * 1000;
+            //configOpenWifiUart.RetryCount = 0;
+            //configOpenWifiUart.AtType = AtType.Manual;
+            //configOpenWifiUart.SleepTimeAfterFindDut = 1000;
+            //TaskItem openWifiUartItem = new TaskItem();
+            //openWifiUartItem.Enable = true;
+            //openWifiUartItem.Item = "打开AT指令串口";//Open Wifi Uart
+            //openWifiUartItem.CommonProperties = configOpenWifiUart;
+            //openWifiUartItem.Executer = new OpenPhoneExecutor();
+            //taskItemManager.Put(openWifiUartItem);
 
-                    IsToUpper=true,
-                    PortName = "COM25",
-                    BaudRate = 115200,
-                    Dtr = false,
-                    Rts = false,
+            ////发现设备
+            //TaskItem findDevice = new TaskItem();
+            //findDevice.Enable = true;
+            //findDevice.Item = "发现设备";//Find Device
+            //findDevice.CommonProperties = new FindDeviceProperties()
+            //{
+            //    TestPowerOnAT = "",
+            //    AtCommandInterval = 1000,
+            //    EndLine = "\r\n",//\r\n
+            //    AtCommandOk = "ERROR",//+NOTICE:SCANFINISH
+            //    Timeout = 10 * 1000,
+            //    RetryCount = 0,
+            //    SleepTimeBefore = 200,
+            //};
+            //findDevice.Executer = new FindDeviceExecuter();
+            //taskItemManager.Put(findDevice);
 
-                };
+            ////读取License文件至内存
+            //if (true)
+            //{
+            //    TaskItem readBinItem = new TaskItem();
+            //    readBinItem.Enable = true;
+            //    readBinItem.Item = "读取License文件";//Read MAP From File
+            //    readBinItem.CommonProperties = new ReadMapProperties()
+            //    {
+            //        BinFolderPath = "./bin",
+            //        RetryCount = 0,
+            //    };
+            //    readBinItem.Executer = new ReadMapExecuter();
+            //    taskItemManager.Put(readBinItem);
+            //}
 
-                getLicenseItem.Executer = new GetLicenseExecuter();
-                taskItemManager.Put(getLicenseItem);
-            }
+            ////发AT+LIC?命令
+            //if (true)
+            //{
+            //    TaskItem getLicenseItem = new TaskItem();
+            //    getLicenseItem.Enable = true;
+            //    getLicenseItem.Item = "检查产品License";//Check BT MAC
+            //    getLicenseItem.CommonProperties = new GetLicenseProperties()
+            //    {
+            //        RetryCount = 0,
 
-            //关闭WIFI UART
-            TaskItem closeWifiUartItem = new TaskItem();
-            closeWifiUartItem.Enable = true;
-            closeWifiUartItem.Item = "关闭WIFI串口";//Close WIFI Uart
-            closeWifiUartItem.Executer = new ClosePhoneExecutor();
-            closeWifiUartItem.CommonProperties = new CommonProperties()
-            {
-                ExecuteCondition = ExecuteCondition.ALWAYS,
-                RetryCount = 0,
-            };
-            taskItemManager.Put(closeWifiUartItem);
+            //        AtCommand = "AT+LIC?",
+            //        EndLine = "\r\n",//\r\n
+            //        AtCommandOk = "OK",
+            //        AtCommandError = "ERROR",
+            //        CheckInfo = new string[] { "{BinFileString}" },
+            //        AtCommandInterval = 2000,
+
+            //        IsToUpper=true,
+            //        PortName = "COM25",
+            //        BaudRate = 115200,
+            //        Dtr = false,
+            //        Rts = false,
+
+            //    };
+
+            //    getLicenseItem.Executer = new GetLicenseExecuter();
+            //    taskItemManager.Put(getLicenseItem);
+            //}
+
+            ////关闭WIFI UART
+            //TaskItem closeWifiUartItem = new TaskItem();
+            //closeWifiUartItem.Enable = true;
+            //closeWifiUartItem.Item = "关闭WIFI串口";//Close WIFI Uart
+            //closeWifiUartItem.Executer = new ClosePhoneExecutor();
+            //closeWifiUartItem.CommonProperties = new CommonProperties()
+            //{
+            //    ExecuteCondition = ExecuteCondition.ALWAYS,
+            //    RetryCount = 0,
+            //};
+            //taskItemManager.Put(closeWifiUartItem);
 
             ////打开BT
             //OpenPhoneProperties configOpenPhone = new OpenPhoneProperties();
@@ -1057,17 +1073,17 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             //taskItemManager.Put(closePhoneItem);
 
 
-            ////LOG MAC CHANGE TO BT MAC
-            //TaskItem logMacChangeToBtMacItem = new TaskItem();
-            //logMacChangeToBtMacItem.Enable = true;
-            //logMacChangeToBtMacItem.Item = "LOG MAC为BT MAC";//LOG MAC CHANGE TO BT MAC
-            //logMacChangeToBtMacItem.CommonProperties = new LogMacChangeToBtMacProperties()
-            //{
-            //    RetryCount = 0,
-            //    ExecuteCondition = ExecuteCondition.ALWAYS,
-            //};
-            //logMacChangeToBtMacItem.Executer = new LogMacChangeToBtMacExecuter();
-            //taskItemManager.Put(logMacChangeToBtMacItem);
+            //LOG MAC CHANGE TO BT MAC
+            TaskItem logMacChangeToBtMacItem = new TaskItem();
+            logMacChangeToBtMacItem.Enable = true;
+            logMacChangeToBtMacItem.Item = "LOG名设置为标签SN";//LOG MAC CHANGE TO BT MAC
+            logMacChangeToBtMacItem.CommonProperties = new LogMacChangeToBtMacProperties()
+            {
+                RetryCount = 0,
+                ExecuteCondition = ExecuteCondition.ALWAYS,
+            };
+            logMacChangeToBtMacItem.Executer = new LogMacChangeToBtMacExecuter();
+            taskItemManager.Put(logMacChangeToBtMacItem);
 
 
             ////TaskItem writeImeiItem = new TaskItem();
@@ -1083,23 +1099,23 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             ////taskItemManager.Put(writeImeiItem);
 
 
-            ////标签打印
-            //if (true)
-            //{
-            //    PrintLabelProperties printLabelProperties = new PrintLabelProperties()
-            //    {
-            //        RetryCount = 0,
-            //        Timeout = 8000,
-            //        SleepTimeAfter = 5000,
-            //    };
-            //    taskItemManager.AppendPrintLabel(printLabelProperties);
-            //}
+            //标签打印
+            if (true)
+            {
+                PrintLabelProperties printLabelProperties = new PrintLabelProperties()
+                {
+                    RetryCount = 0,
+                    Timeout = 8000,
+                    SleepTimeAfter = 5000,//5s后判断是否打印成功
+                };
+                taskItemManager.AppendPrintLabel(printLabelProperties);
+            }
 
 
             //StringBuilder jtsFileName = new StringBuilder();
             //jtsFileName.Append("Hi3861Check");
 
-            string jtsFileName = "Hi3861Check";
+            string jtsFileName = "GiMiPrintLabel";
             taskItemManager.Save2Jts(this, 1, jtsFileName);
 
             //jtsFileName.Append(".jts");

@@ -1,0 +1,332 @@
+2020-05-08 17:24:02,482 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-05-08 17:24:02,564 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-05-08 17:24:02,571 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.02
+2020-05-08 17:24:02,584 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 0 - FormLog................Success!
+2020-05-08 17:24:02,590 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2020-05-08 17:24:02,599 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\projects\smartTest\DUT1_Hi3861Check.jts]
+2020-05-08 17:24:03,025 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:24:03,052 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2020-05-08 17:24:24,453 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2020-05-08 17:24:24,461 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\projects\smartTest\DUT1_GiMiPrintLabel.jts]
+2020-05-08 17:24:24,472 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:24:24,476 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2020-05-08 17:24:24,506 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2020-05-08 17:24:24,514 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\projects\smartTest\DUT1_Hi3861Check.jts]
+2020-05-08 17:24:24,520 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:24:24,524 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2020-05-08 17:24:44,399 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2020-05-08 17:24:44,405 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\projects\smartTest\DUT1_GiMiPrintLabel.jts]
+2020-05-08 17:24:44,414 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:24:44,417 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2020-05-08 17:24:50,830 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio TsmSaveLayout_Click 0 - save layout ./projects/layout.xml success
+2020-05-08 17:25:04,617 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:25:04
+
+
+2020-05-08 17:25:04,673 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-05-08 17:25:04,695 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2020-05-08 17:25:04,711 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:44.6924ms
+                                                                        PASS
+2020-05-08 17:25:04,732 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-05-08 17:25:04,753 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=
+2020-05-08 17:25:04,768 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-05-08 17:25:04,778 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=
+2020-05-08 17:25:04,792 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-05-08 17:25:04,808 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:82.8301ms
+                                                                        PASS
+2020-05-08 17:25:04,832 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 获取并检查标签SN
+2020-05-08 17:25:04,882 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - Sn=123
+2020-05-08 17:25:14,102 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN invalid
+2020-05-08 17:25:14,123 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.CheckSn(String sn) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 69
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:25:14,333 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第1次
+2020-05-08 17:25:14,382 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - Sn=123
+2020-05-08 17:25:15,360 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN invalid
+2020-05-08 17:25:15,387 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.CheckSn(String sn) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 69
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:25:15,598 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第2次
+2020-05-08 17:25:15,617 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - Sn=123
+2020-05-08 17:25:16,259 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN invalid
+2020-05-08 17:25:16,292 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.CheckSn(String sn) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 69
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:25:16,515 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - 重试第3次
+2020-05-08 17:25:16,534 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - Sn=123
+2020-05-08 17:25:17,187 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN invalid
+2020-05-08 17:25:17,211 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.CheckSn(String sn) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 69
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:25:17,423 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:12595.6643ms
+                                                                        FAIL
+2020-05-08 17:25:17,441 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 LOG名设置为标签SN
+2020-05-08 17:25:17,479 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 设置LOG的Mac=123成功
+2020-05-08 17:25:17,515 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:74.4584ms
+                                                                        PASS
+2020-05-08 17:25:17,550 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 Print Label
+2020-05-08 17:25:17,568 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:17.8557ms
+                                                                        SKIP
+2020-05-08 17:25:17,587 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 Deinit
+2020-05-08 17:25:17,603 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:15.344ms
+                                                                        PASS
+2020-05-08 17:25:17,619 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第4项:
+获取并检查标签SN
+AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.CheckSn(String sn) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 69
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-05-08 17:25:17,736 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-05-08 17:27:57,900 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2020-05-08 17:27:57,978 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - AILinkFactoryAutoStudio Version 2.02
+2020-05-08 17:27:57,986 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - Version 2.02
+2020-05-08 17:27:57,992 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 0 - FormLog................Success!
+2020-05-08 17:27:57,999 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2020-05-08 17:27:58,008 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\projects\smartTest\DUT1_GiMiPrintLabel.jts]
+2020-05-08 17:27:58,355 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:27:58,378 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2020-05-08 17:28:00,818 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio TsmDeleteLayout_Click 0 - delete layout ./projects/layout.xml success
+2020-05-08 17:28:17,711 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2020-05-08 17:28:17,722 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\projects\smartTest\DUT1_GiMiPrintLabel.jts]
+2020-05-08 17:28:17,727 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:28:17,731 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2020-05-08 17:28:20,531 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio TsmSaveLayout_Click 0 - save layout ./projects/layout.xml success
+2020-05-08 17:33:03,392 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:43:55,566 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:43:55
+
+
+2020-05-08 17:43:55,615 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-05-08 17:43:55,633 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2020-05-08 17:43:55,639 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:29.2624ms
+                                                                        PASS
+2020-05-08 17:43:55,661 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-05-08 17:43:55,677 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=
+2020-05-08 17:43:55,693 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-05-08 17:43:55,707 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=
+2020-05-08 17:43:55,718 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-05-08 17:43:55,732 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:71.9712ms
+                                                                        PASS
+2020-05-08 17:43:55,755 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 获取并检查标签SN
+2020-05-08 17:43:55,799 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - GimiSn=30768026FL570001
+2020-05-08 17:43:55,820 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:64.5341ms
+                                                                        PASS
+2020-05-08 17:43:55,836 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 LOG名设置为标签SN
+2020-05-08 17:43:55,867 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 设置LOG的Mac=30768026FL570001成功
+2020-05-08 17:43:55,903 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:67.6414ms
+                                                                        PASS
+2020-05-08 17:43:55,919 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 Print Label
+2020-05-08 17:45:06,078 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 标签打印失败,error:内容获取错误,未能找到路径“F:\”的一部分。
+2020-05-08 17:45:06,175 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 标签打印失败,error:内容获取错误,未能找到路径“F:\”的一部分。
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 61
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:45:06,382 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:70463.8045ms
+                                                                        FAIL
+2020-05-08 17:45:06,398 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 Deinit
+2020-05-08 17:45:06,415 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:17.3284ms
+                                                                        PASS
+2020-05-08 17:45:06,428 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第6项:
+Print Label
+System.Exception: 标签打印失败,error:内容获取错误,未能找到路径“F:\”的一部分。
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 61
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-05-08 17:45:06,552 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-05-08 17:45:18,926 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2020-05-08 17:45:21,197 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:45:21
+
+
+2020-05-08 17:45:21,221 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-05-08 17:45:21,236 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2020-05-08 17:45:21,241 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:21.3287ms
+                                                                        PASS
+2020-05-08 17:45:21,262 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-05-08 17:45:21,287 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=
+2020-05-08 17:45:21,304 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-05-08 17:45:21,320 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=
+2020-05-08 17:45:21,343 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-05-08 17:45:21,355 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:96.7201ms
+                                                                        PASS
+2020-05-08 17:45:21,371 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 获取并检查标签SN
+2020-05-08 17:45:21,384 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - GimiSn=30768026FL570001
+2020-05-08 17:45:21,401 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:33.2299ms
+                                                                        PASS
+2020-05-08 17:45:21,414 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 LOG名设置为标签SN
+2020-05-08 17:45:21,426 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 设置LOG的Mac=30768026FL570001成功
+2020-05-08 17:45:21,447 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:34.2255ms
+                                                                        PASS
+2020-05-08 17:45:21,468 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 Print Label
+2020-05-08 17:45:59,775 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 标签打印失败error:存在未打印的打印数据
+2020-05-08 17:45:59,825 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 标签打印失败error:存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:46:00,033 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:38568.2569ms
+                                                                        FAIL
+2020-05-08 17:46:00,050 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 Deinit
+2020-05-08 17:46:00,069 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:19.3445ms
+                                                                        PASS
+2020-05-08 17:46:00,084 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第6项:
+Print Label
+System.Exception: 标签打印失败error:存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-05-08 17:46:00,099 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-05-08 17:46:11,147 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:46:11
+
+
+2020-05-08 17:46:11,166 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2020-05-08 17:46:11,180 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2020-05-08 17:46:11,201 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:35.7119ms
+                                                                        PASS
+2020-05-08 17:46:11,224 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 Parse Label
+2020-05-08 17:46:11,240 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=
+2020-05-08 17:46:11,255 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2020-05-08 17:46:11,269 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=
+2020-05-08 17:46:11,284 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2020-05-08 17:46:11,316 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:91.7595ms
+                                                                        PASS
+2020-05-08 17:46:11,345 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 4 获取并检查标签SN
+2020-05-08 17:46:11,355 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - GimiSn=30768026FL570001
+2020-05-08 17:46:11,366 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:25.3486ms
+                                                                        PASS
+2020-05-08 17:46:11,381 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 LOG名设置为标签SN
+2020-05-08 17:46:11,395 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 设置LOG的Mac=30768026FL570001成功
+2020-05-08 17:46:11,410 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:29.3956ms
+                                                                        PASS
+2020-05-08 17:46:11,439 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 Print Label
+2020-05-08 17:46:12,524 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\Bartender\251-00754-001(MX-PD_DRIVER_A_V01_A.9)_20x10.btw /D=E:\DataFile.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+2020-05-08 17:46:12,568 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - content:30768026FL570001
+2020-05-08 17:46:19,837 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 标签打印失败error:打印失败,还存在未打印的打印数据
+2020-05-08 17:46:19,870 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Exception: 标签打印失败error:打印失败,还存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2020-05-08 17:46:20,079 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:8640.5138ms
+                                                                        FAIL
+2020-05-08 17:46:20,105 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 Deinit
+2020-05-08 17:46:20,122 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:16.8653ms
+                                                                        PASS
+2020-05-08 17:46:20,137 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第6项:
+Print Label
+System.Exception: 标签打印失败error:打印失败,还存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2020-05-08 17:46:20,157 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+

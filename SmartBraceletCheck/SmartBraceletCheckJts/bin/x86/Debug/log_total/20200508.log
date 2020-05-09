@@ -286,3 +286,630 @@ TestTime:34.4251ms
      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
 
 
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:25:04
+
+
+
+1 Init
+
+TestTime:44.6924ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:82.8301ms
+                                                                        PASS
+
+4 获取并检查标签SN
+
+Sn=123
+
+SN invalid
+
+重试第1次
+
+Sn=123
+
+SN invalid
+
+重试第2次
+
+Sn=123
+
+SN invalid
+
+重试第3次
+
+Sn=123
+
+SN invalid
+
+TestTime:12595.6643ms
+                                                                        FAIL
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=123成功
+
+TestTime:74.4584ms
+                                                                        PASS
+
+6 Print Label
+
+TestTime:17.8557ms
+                                                                        SKIP
+
+7 Deinit
+
+TestTime:15.344ms
+                                                                        PASS
+
+
+第4项:
+获取并检查标签SN
+AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.CheckSn(String sn) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 69
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.LabelGetAndCheckExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheck\SmartBracelet\Executer\LabelGetAndCheckExecutor.cs:行号 25
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:43:55
+
+
+
+1 Init
+
+TestTime:29.2624ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:71.9712ms
+                                                                        PASS
+
+4 获取并检查标签SN
+
+GimiSn=30768026FL570001
+
+TestTime:64.5341ms
+                                                                        PASS
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=30768026FL570001成功
+
+TestTime:67.6414ms
+                                                                        PASS
+
+6 Print Label
+
+标签打印失败,error:内容获取错误,未能找到路径“F:\”的一部分。
+
+TestTime:70463.8045ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:17.3284ms
+                                                                        PASS
+
+
+第6项:
+Print Label
+System.Exception: 标签打印失败,error:内容获取错误,未能找到路径“F:\”的一部分。
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 61
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:45:21
+
+
+
+1 Init
+
+TestTime:21.3287ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:96.7201ms
+                                                                        PASS
+
+4 获取并检查标签SN
+
+GimiSn=30768026FL570001
+
+TestTime:33.2299ms
+                                                                        PASS
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=30768026FL570001成功
+
+TestTime:34.2255ms
+                                                                        PASS
+
+6 Print Label
+
+标签打印失败error:存在未打印的打印数据
+
+TestTime:38568.2569ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:19.3445ms
+                                                                        PASS
+
+
+第6项:
+Print Label
+System.Exception: 标签打印失败error:存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 17:46:11
+
+
+
+1 Init
+
+TestTime:35.7119ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:91.7595ms
+                                                                        PASS
+
+4 获取并检查标签SN
+
+GimiSn=30768026FL570001
+
+TestTime:25.3486ms
+                                                                        PASS
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=30768026FL570001成功
+
+TestTime:29.3956ms
+                                                                        PASS
+
+6 Print Label
+
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\Bartender\251-00754-001(MX-PD_DRIVER_A_V01_A.9)_20x10.btw /D=E:\DataFile.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+
+content:30768026FL570001
+
+标签打印失败error:打印失败,还存在未打印的打印数据
+
+TestTime:8640.5138ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:16.8653ms
+                                                                        PASS
+
+
+第6项:
+Print Label
+System.Exception: 标签打印失败error:打印失败,还存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 18:17:32
+
+
+
+1 Init
+
+TestTime:35.2176ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:87.6077ms
+                                                                        PASS
+
+4 标签SN插入内容
+
+标签：30768026FL570001
+增加后:R30768026FL570001
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 18:19:12
+
+
+
+1 Init
+
+TestTime:31.2479ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:77.9366ms
+                                                                        PASS
+
+4 标签SN插入内容
+
+标签：30768026FL570001
+插入内容后：R30768026FL570001
+
+TestTime:36.8071ms
+                                                                        PASS
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=R30768026FL570001成功
+
+TestTime:66.428ms
+                                                                        PASS
+
+6 Print Label
+
+标签打印失败error:BarTender打印模板不存在
+
+TestTime:4686.0226ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:16.8777ms
+                                                                        PASS
+
+
+第6项:
+Print Label
+System.Exception: 标签打印失败error:BarTender打印模板不存在
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 18:20:33
+
+
+
+1 Init
+
+TestTime:22.3198ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:81.8409ms
+                                                                        PASS
+
+4 标签SN插入内容
+
+标签：30768026FL570001
+插入内容后：R30768026FL570001
+
+TestTime:27.7754ms
+                                                                        PASS
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=R30768026FL570001成功
+
+TestTime:37.5967ms
+                                                                        PASS
+
+6 Print Label
+
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\Bartender\251-00754-001(MX-PD_DRIVER_A_V01_A.9)_20x10.btw /D=E:\DataFile.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+
+content:R30768026FL570001
+
+TestTime:15116.5493ms
+                                                                        PASS
+
+7 Deinit
+
+TestTime:15.8737ms
+                                                                        PASS
+
+
+
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  AILink                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2020-05-08, Test Time: 18:21:36
+
+
+
+1 Init
+
+TestTime:44.6395ms
+                                                                        PASS
+
+2 Parse Label
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:84.3395ms
+                                                                        PASS
+
+4 标签SN插入内容
+
+标签：30768026FL570001
+插入内容后：30768026FL57R0001
+
+TestTime:25.79ms
+                                                                        PASS
+
+5 LOG名设置为标签SN
+
+设置LOG的Mac=30768026FL57R0001成功
+
+TestTime:38.1587ms
+                                                                        PASS
+
+6 Print Label
+
+cmd==="C:\Program Files (x86)\Seagull\BarTender\8.0\bartend.exe" "/AF=E:\2_工作和软件\1_工作存档\01长虹爱联\极米售后在线打标\Code\SmartBraceletCheck\SmartBraceletCheckJts\bin\x86\Debug\Bartender\251-00754-001(MX-PD_DRIVER_A_V01_A.9)_20x10.btw /D=E:\DataFile.txt /R=1 /P" "/NOSPLASH" "/DD" "/MIN=SystemTray" 
+
+content:30768026FL57R0001
+
+标签打印失败error:打印失败,还存在未打印的打印数据
+
+TestTime:7189.3415ms
+                                                                        FAIL
+
+7 Deinit
+
+TestTime:13.8877ms
+                                                                        PASS
+
+
+第6项:
+Print Label
+System.Exception: 标签打印失败error:打印失败,还存在未打印的打印数据
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Print(String content) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 117
+   在 AILinkFactoryAuto.Task.Executer.PrintLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 E:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\Platform\TaskBase\Task\Executer\PrintLabelExecuter.cs:行号 64
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
